@@ -1,0 +1,103 @@
+**评判标准：**
+高度复杂的 SQL 查询应满足以下一项或多项条件：
+- **使用多个 CTE**（含至少一个递归 CTE）组织逻辑；
+- **结合嵌套子查询与多类型 JOIN**（如 `INNER JOIN` + `LEFT JOIN`）；
+- **使用递归 CTE 处理树形结构**（如组织架构、分类目录）；
+- **使用基础窗口函数**（如 `ROW_NUMBER()`, `SUM() OVER (...)`, `RANK()`）；
+- **合理使用 `UNION ALL` 合并异构结果集**（避免 `UNION` 带来的去重开销）；
+- **综合运用 `GROUP BY`、`HAVING`、`EXISTS` 和 `CASE` 实现复杂过滤**；
+- **仅依赖 SQLite 核心函数**（如 `strftime()`, `COALESCE()`, `SUBSTR()`，避免 JSON/FTS 等扩展）。
+
+---
+
+**示例 1：递归组织架构 + 窗口累计薪资（单条语句）**
+
+```sql
+WITH RECURSIVE EmployeeHierarchy AS (
+    SELECT employee_id, name, manager_id, department_id, 1 AS level
+    FROM employees
+    WHERE manager_id IS NULL
+    UNION ALL
+    SELECT e.employee_id, e.name, e.manager_id, e.department_id, eh.level + 1
+    FROM employees e
+    JOIN EmployeeHierarchy eh ON e.manager_id = eh.employee_id
+),
+EmployeeDetails AS (
+    SELECT
+        eh.employee_id,
+        eh.name,
+        eh.level,
+        d.department_name,
+        s.salary
+    FROM EmployeeHierarchy eh
+    JOIN departments d ON eh.department_id = d.department_id
+    JOIN salaries s ON eh.employee_id = s.employee_id
+)
+SELECT
+    department_name,
+    name,
+    level,
+    salary,
+    SUM(salary) OVER (
+        PARTITION BY department_name
+        ORDER BY level, name
+        ROWS UNBOUNDED PRECEDING
+    ) AS cumulative_salary_in_dept
+FROM EmployeeDetails
+ORDER BY department_name, level, name;
+```
+
+> ✅ 说明：
+> - 单条 SQL 语句；
+> - 使用递归 CTE + 多个 CTE；
+> - 窗口函数含明确 `ROWS` 定义；
+> - 输出包含 `department_name`，使累计薪资语义清晰；
+> - 仅用核心 JOIN 和函数，无扩展依赖。
+
+---
+
+**示例 2：多路径合并 + 窗口排名（单条语句）**
+
+```sql
+WITH TopPerformers AS (
+    SELECT
+        e.name,
+        d.department_name,
+        p.project_count,
+        ROW_NUMBER() OVER (PARTITION BY d.department_id ORDER BY p.project_count DESC) AS rn
+    FROM employees e
+    JOIN departments d ON e.department_id = d.department_id
+    JOIN (
+        SELECT employee_id, COUNT(*) AS project_count
+        FROM project_assignments
+        GROUP BY employee_id
+    ) p ON e.employee_id = p.employee_id
+),
+NewHires AS (
+    SELECT
+        e.name,
+        d.department_name,
+        0 AS project_count,
+        999 AS rn
+    FROM employees e
+    JOIN departments d ON e.department_id = d.department_id
+    WHERE strftime('%Y', e.hire_date) = '2025'
+)
+SELECT
+    department_name,
+    name,
+    project_count,
+    rn AS rank_in_dept
+FROM TopPerformers
+WHERE rn <= 3
+UNION ALL
+SELECT department_name, name, project_count, rn
+FROM NewHires
+ORDER BY department_name, rank_in_dept;
+```
+
+> ✅ 说明：
+> - 使用 `UNION ALL` 合并两类员工；
+> - 含子查询聚合 + 窗口函数；
+> - 用 `strftime` 处理日期（SQLite 核心函数）；
+> - 单条语句，无扩展。

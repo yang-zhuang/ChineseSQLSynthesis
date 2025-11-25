@@ -1,0 +1,64 @@
+# 任务目标
+你是一个数据库专家，需要将数据库表的 DDL 结构转换为简洁、语义丰富的自然语言描述，用于 Text2SQL 任务中的向量化表示。目标是在保留核心业务语义的前提下，生成高信息密度、低冗余的摘要。
+
+# 输出要求
+- **格式**：严格使用 JSON 格式，仅包含一个字段 `"summary"`
+```json
+{
+  "summary": ""
+}
+```
+- **内容要求**：
+  1. 用 1–2 句话清晰说明表的核心业务用途，体现其在业务系统中的角色（例如：“用于分析用户在 App 内的点击与转化行为”，而非“用户行为表”）
+  2. 按功能逻辑分组描述字段（如“用户标识类”“行为属性类”“时间与状态类”，可参考样例分组逻辑），仅对高频查询字段（如时间、金额、状态、ID、关键维度）保留英文列名，并用中文简要提炼其业务含义
+  3. 避免枚举所有字段，聚焦可能出现在 SQL 的 SELECT、WHERE、GROUP BY 中的关键字段
+  4. 忽略技术性或低信息量字段（如 updated_at、is_deleted、internal_version），除非其具有明确业务意义
+  5. 语言自然流畅，**总字数不超过 350 字**
+- **完整示例**
+## 输入 DDL
+```sql
+CREATE TABLE user_event_log (
+    event_id VARCHAR(64) PRIMARY KEY COMMENT '事件唯一ID，全局递增',
+    user_id BIGINT COMMENT '用户ID，匿名用户为 -1',
+    device_id VARCHAR(128) COMMENT '设备指纹ID',
+    app_version VARCHAR(20) COMMENT 'App 版本号',
+    event_type VARCHAR(50) NOT NULL COMMENT '事件类型，如 page_view, button_click, purchase',
+    event_params JSON COMMENT '事件参数，包含商品ID、页面路径等动态字段',
+    session_id VARCHAR(64) COMMENT '会话ID，用于关联同一会话内的行为',
+    platform ENUM('ios', 'android', 'web') COMMENT '用户平台',
+    country CHAR(2) COMMENT '用户国家代码（ISO 3166-1）',
+    city VARCHAR(100) COMMENT '城市名称',
+    is_paid_user TINYINT(1) DEFAULT 0 COMMENT '是否为付费用户',
+    event_timestamp DATETIME(3) NOT NULL COMMENT '事件发生时间（毫秒精度）',
+    processed_at DATETIME COMMENT '数据入仓时间',
+    is_test_event TINYINT(1) DEFAULT 0 COMMENT '是否为测试流量'
+);
+```
+## 样例数据（可选）
+| event_id | user_id | event_type    | platform | country | event_timestamp        | is_paid_user |
+|----------|---------|---------------|----------|---------|------------------------|--------------|
+| ev_12345 | 80912   | purchase      | ios      | CN      | 2025-10-18 09:23:45.123| 1            |
+| ev_12346 | -1      | page_view     | web      | US      | 2025-10-18 09:24:01.000| 0            |
+## 输出
+```json
+{
+  "summary": "用户行为日志表，记录用户在iOS/Android/Web多端的交互事件（如page_view页面浏览、button_click按钮点击、purchase购买），核心用于分析产品使用路径、付费转化漏斗及跨区域用户行为。关键字段包括：user_id（用户ID，匿名为-1）、device_id（设备指纹，关联匿名用户）、event_type（事件类型，明确行为类型）、event_params（JSON动态参数，含商品ID/页面路径等细节）、session_id（会话ID，串联单次访问行为）、platform（平台）、country/city（地域）、is_paid_user（是否付费用户，支撑转化分析）、event_timestamp（事件时间，毫秒精度）；此外需注意is_test_event（排除测试流量）和processed_at（数据入仓时间，关注时效性）。"
+}
+```
+
+# 注意事项
+1. 不要复制 DDL 中的完整注释，而是提炼其核心业务含义，避免冗余
+2. 字段取舍标准：仅保留有明确业务分析价值的字段（如支撑过滤、分组、分析的字段）；若字段仅用于数据处理（如 processed_at）或内容不可控（如 event_params 无固定结构），可忽略；支撑数据质量的字段（如 is_test_event，用于排除测试流量）需保留
+3. 若样例数据缺失，仅基于 DDL 语句提炼核心信息，无需额外假设
+4. 禁止输出除 JSON 以外的任何内容（如解释说明、额外字段、格式说明）
+
+# 输入信息
+1. **DDL语句**：
+{sql_ddl}
+
+2. **样例数据（可选）**：
+```
+{sample_data}
+```
+
+现在请基于当前提供的输入信息（DDL 语句 + 可选的样例数据），生成符合前文 “输出要求” 的 JSON 格式摘要（仅含 “summary” 字段）。

@@ -1,0 +1,62 @@
+你是一个SQL专家，需要评估模型生成的SQL查询与标准答案（gold SQL）在**语义上**是否等价。请注意，这不是简单的字符串匹配，而是判断两个SQL查询是否会产生完全相同的结果集。
+
+## 评估指南
+1. **语义等价性**：两个SQL在任何可能的数据库状态下产生完全相同的结果
+   - 忽略大小写差异（如SELECT与select）
+   - 忽略格式差异（空格、换行、缩进）
+   - 忽略列/表别名的差异（如果它们引用相同的数据）
+   - 忽略WHERE条件中AND连接的子句顺序
+   - 忽略等价的JOIN写法（显式JOIN与隐式JOIN，如果逻辑相同）
+   - 忽略等价的表达式（如`price*0.9`与`price/10*9`）
+
+2. **不等价的情况**：
+   - 不同的聚合函数（SUM vs COUNT）
+   - 不同的JOIN类型（INNER JOIN vs LEFT JOIN）
+   - 不同的过滤条件
+   - 不同的排序或LIMIT子句
+   - 忽略必要表或包含额外表
+   - 逻辑不等价的表达式（如`price > 10`与`price >= 10`）
+
+## 评估输出格式
+请严格按以下JSON格式输出评估结果：
+
+```json
+{
+  "is_equivalent": true/false,
+  "reason": "简要解释判断理由，引用两个SQL的具体差异",
+  "confidence": "high/medium/low"
+}
+```
+
+### 字段说明
+- `is_equivalent`: 布尔值，表示两个SQL在语义上是否等价
+- `reason`: 字符串，清晰解释判断依据，指出关键差异点
+- `confidence`: 字符串，表示判断的置信度：
+  - `high`: 有明确证据证明等价/不等价
+  - `medium`: 有合理依据但存在不确定性
+  - `low`: 无法完全确定，需要更多上下文
+
+## 评估示例
+**用户问题**：显示所有价格高于100美元的产品名称
+**Gold SQL**: `SELECT product_name FROM products WHERE price > 100`
+**预测SQL**: `select PRODUCT_NAME from PRODUCTS where PRICE>100`
+
+**评估结果**:
+```json
+{
+  "is_equivalent": true,
+  "reason": "两个SQL查询在语义上完全相同，仅存在大小写和空格差异，但会返回完全相同的结果集",
+  "confidence": "high"
+}
+```
+
+## 待评估内容
+**用户问题**: {user_question}
+**Gold SQL**:
+```
+{gold_sql}
+```
+**预测SQL**:
+```
+{predicted_sql}
+```

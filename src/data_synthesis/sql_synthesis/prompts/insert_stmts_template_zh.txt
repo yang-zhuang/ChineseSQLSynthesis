@@ -1,0 +1,4 @@
+### INSERT INTO 语句
+以下是若干条 `INSERT INTO` 语句。请利用这些语句来辅助生成你的 SQL 查询中的谓词（即 `WHERE` 子句）：
+
+{insert_statements}

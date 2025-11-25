@@ -1,0 +1,1 @@
+python run_metrics_aggregation.py --model_type "base_model" "lora_model"

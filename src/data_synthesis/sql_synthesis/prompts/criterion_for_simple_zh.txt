@@ -1,0 +1,13 @@
+**评判标准：**
+简单 SQL 查询应满足以下一项或多项条件：
+- 仅从单个表中选择数据。
+- 允许使用基本的聚合函数，例如 `COUNT`、`SUM`、`AVG`、`MIN`、`MAX`。
+- 不允许使用连接（JOIN）；查询必须仅操作单个表。
+
+**简单 SQL 查询示例：**
+```sql
+SELECT name, level, age
+FROM employees
+WHERE level > 5
+ORDER BY age DESC;
+```

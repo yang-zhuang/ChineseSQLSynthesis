@@ -1,0 +1,2790 @@
+{
+  "timestamp": "2025-11-22T23:59:13.739261",
+  "stats": {
+    "total_databases": 166,
+    "successful_merges": 166,
+    "failed_merges": 0,
+    "total_tables": 694,
+    "total_rows": 1508698,
+    "conflicts": 694
+  },
+  "output_database": "../report/merged_cspider.sqlite",
+  "conflict_resolution": {
+    "author": {
+      "original_table": "aid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "conference": {
+      "original_table": "cid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "domain": {
+      "original_table": "did",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "journal": {
+      "original_table": "homepage",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "keyword": {
+      "original_table": "keyword",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "publication": {
+      "original_table": "abstract",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "organization": {
+      "original_table": "continent",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cite": {
+      "original_table": "cited",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Activity": {
+      "original_table": "actid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Participates_in": {
+      "original_table": "stuid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Faculty_Participates_in": {
+      "original_table": "FacID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Faculty": {
+      "original_table": "FacID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "pilot": {
+      "original_table": "Pilot_Id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "aircraft": {
+      "original_table": "Aircraft_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "match": {
+      "original_table": "Round",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "airport": {
+      "original_table": "Airport_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Allergy_Type": {
+      "original_table": "Allergy",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Has_Allergy": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "allergy_1_Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Apartment_Buildings": {
+      "original_table": "building_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Apartments": {
+      "original_table": "apt_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Guests": {
+      "original_table": "guest_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Apartment_Bookings": {
+      "original_table": "apt_booking_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "View_Unit_Status": {
+      "original_table": "apt_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "architect": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "bridge": {
+      "original_table": "architect_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "mill": {
+      "original_table": "architect_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Third_Party_Companies": {
+      "original_table": "company_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Maintenance_Contracts": {
+      "original_table": "maintenance_contract_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Parts": {
+      "original_table": "part_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Skills": {
+      "original_table": "skill_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Staff": {
+      "original_table": "staff_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Assets": {
+      "original_table": "asset_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Asset_Parts": {
+      "original_table": "asset_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Maintenance_Engineers": {
+      "original_table": "engineer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Engineer_Skills": {
+      "original_table": "engineer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Fault_Log": {
+      "original_table": "fault_log_entry_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Engineer_Visits": {
+      "original_table": "engineer_visit_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Part_Faults": {
+      "original_table": "part_fault_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Fault_Log_Parts": {
+      "original_table": "fault_log_entry_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Skills_Required_To_Fix": {
+      "original_table": "part_fault_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "all_star": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "appearances": {
+      "original_table": "year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "manager_award": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "player_award": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "manager_award_vote": {
+      "original_table": "award_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "player_award_vote": {
+      "original_table": "award_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "batting": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "batting_postseason": {
+      "original_table": "year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "player_college": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "fielding": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "fielding_outfield": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "fielding_postseason": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "hall_of_fame": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "home_game": {
+      "original_table": "year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "manager": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "manager_half": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "player": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "park": {
+      "original_table": "park_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "pitching": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "pitching_postseason": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "salary": {
+      "original_table": "year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "college": {
+      "original_table": "college_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "postseason": {
+      "original_table": "year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "team": {
+      "original_table": "year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "team_franchise": {
+      "original_table": "franchise_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "team_half": {
+      "original_table": "year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "battle": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "ship": {
+      "original_table": "lost_in_battle",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "death": {
+      "original_table": "caused_by_ship_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Address_Types": {
+      "original_table": "address_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Detention_Type": {
+      "original_table": "detention_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Incident_Type": {
+      "original_table": "incident_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Students": {
+      "original_table": "student_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Teachers": {
+      "original_table": "teacher_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Assessment_Notes": {
+      "original_table": "notes_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Behavior_Incident": {
+      "original_table": "incident_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Detention": {
+      "original_table": "detention_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Student_Addresses": {
+      "original_table": "student_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Students_in_Detention": {
+      "original_table": "student_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "station": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "status": {
+      "original_table": "station_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "trip": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "weather": {
+      "original_table": "date",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "body_builder": {
+      "original_table": "Body_Builder_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "book_2_publication": {
+      "original_table": "Publication_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "book": {
+      "original_table": "Book_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Web_client_accelerator": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "browser": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "candidate": {
+      "original_table": "Candidate_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "candidate_poll_people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "continents": {
+      "original_table": "ContId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "countries": {
+      "original_table": "CountryId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "car_makers": {
+      "original_table": "Id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "model_list": {
+      "original_table": "ModelId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "car_names": {
+      "original_table": "MakeId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cars_data": {
+      "original_table": "Id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Album": {
+      "original_table": "AlbumId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Artist": {
+      "original_table": "ArtistId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer": {
+      "original_table": "CustomerId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Employee": {
+      "original_table": "EmployeeId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Genre": {
+      "original_table": "GenreId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Invoice": {
+      "original_table": "InvoiceId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "InvoiceLine": {
+      "original_table": "InvoiceLineId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "MediaType": {
+      "original_table": "MediaTypeId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Playlist": {
+      "original_table": "PlaylistId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Track": {
+      "original_table": "TrackId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "film": {
+      "original_table": "Film_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cinema": {
+      "original_table": "Cinema_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "city": {
+      "original_table": "City_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "city_record_match": {
+      "original_table": "Match_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "temperature": {
+      "original_table": "City_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "hosting_city": {
+      "original_table": "Year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "mountain": {
+      "original_table": "Mountain_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "climber": {
+      "original_table": "Climber_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "club_1_Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Club": {
+      "original_table": "ClubID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Member_of_club": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "shop": {
+      "original_table": "Shop_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "member": {
+      "original_table": "Member_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "CLASS": {
+      "original_table": "CLASS_CODE",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "COURSE": {
+      "original_table": "CRS_CODE",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "DEPARTMENT": {
+      "original_table": "DEPT_CODE",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "ENROLL": {
+      "original_table": "CLASS_CODE",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "PROFESSOR": {
+      "original_table": "EMP_NUM",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "instructor": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "advisor": {
+      "original_table": "s_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "college_3_Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "college_3_Faculty": {
+      "original_table": "FacID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Member_of": {
+      "original_table": "FacID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Minor_in": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Enrolled_in": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Gradeconversion": {
+      "original_table": "lettergrade",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "project": {
+      "original_table": "Pname",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "company_employee_people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "company": {
+      "original_table": "Company_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "buildings": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Companies": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "stadium": {
+      "original_table": "Stadium_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "singer": {
+      "original_table": "Singer_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "concert": {
+      "original_table": "concert_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "county_public_safety": {
+      "original_table": "County_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "county_public_safety_city": {
+      "original_table": "City_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "teacher": {
+      "original_table": "Teacher_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Document_Types": {
+      "original_table": "Document_Type_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Budget_Codes": {
+      "original_table": "Budget_Type_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Projects": {
+      "original_table": "Project_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Documents": {
+      "original_table": "Document_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Statements": {
+      "original_table": "Statement_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Documents_with_Expenses": {
+      "original_table": "Document_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Accounts": {
+      "original_table": "Account_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Doc_Control_Systems_Ref_Document_Types": {
+      "original_table": "document_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Roles": {
+      "original_table": "role_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Doc_Control_Systems_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Document_Status": {
+      "original_table": "document_status_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Shipping_Agents": {
+      "original_table": "shipping_agent_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Doc_Control_Systems_Documents": {
+      "original_table": "document_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Employees": {
+      "original_table": "employee_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Template_Types": {
+      "original_table": "Template_Type_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Templates": {
+      "original_table": "Template_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Doc_Template_Mgt_Documents": {
+      "original_table": "Document_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Paragraphs": {
+      "original_table": "Paragraph_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Doc_Tracking_DB_Ref_Document_Types": {
+      "original_table": "Document_Type_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Calendar": {
+      "original_table": "Calendar_Date",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Locations": {
+      "original_table": "Location_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Doc_Tracking_DB_Roles": {
+      "original_table": "Role_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "All_Documents": {
+      "original_table": "Document_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Doc_Tracking_DB_Employees": {
+      "original_table": "Employee_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Documents_to_be_Destroyed": {
+      "original_table": "Document_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Payment_Methods": {
+      "original_table": "payment_method_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Service_Types": {
+      "original_table": "Service_Type_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Drama_Workshop_Groups_Addresses": {
+      "original_table": "Address_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Products": {
+      "original_table": "Product_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Marketing_Regions": {
+      "original_table": "Marketing_Region_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Clients": {
+      "original_table": "Client_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Drama_Workshop_Groups": {
+      "original_table": "Workshop_Group_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Performers": {
+      "original_table": "Performer_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customers": {
+      "original_table": "Customer_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Stores": {
+      "original_table": "Store_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Bookings": {
+      "original_table": "Booking_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer_Orders": {
+      "original_table": "Order_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Order_Items": {
+      "original_table": "Order_Item_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Invoices": {
+      "original_table": "Invoice_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Services": {
+      "original_table": "Service_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Invoice_Items": {
+      "original_table": "Invoice_Item_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Hotel_Star_Ratings": {
+      "original_table": "star_rating_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Locations": {
+      "original_table": "Location_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Attraction_Types": {
+      "original_table": "Attraction_Type_Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Visitors": {
+      "original_table": "Tourist_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Features": {
+      "original_table": "Feature_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Hotels": {
+      "original_table": "hotel_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Tourist_Attractions": {
+      "original_table": "Tourist_Attraction_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Street_Markets": {
+      "original_table": "Market_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Shops": {
+      "original_table": "Shop_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Museums": {
+      "original_table": "Museum_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Royal_Family": {
+      "original_table": "Royal_Family_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Theme_Parks": {
+      "original_table": "Theme_Park_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Visits": {
+      "original_table": "Visit_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Photos": {
+      "original_table": "Photo_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cre_Theme_park_Staff": {
+      "original_table": "Staff_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Campuses": {
+      "original_table": "Id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "csu_fees": {
+      "original_table": "Campus",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "book_club": {
+      "original_table": "book_club_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "movie": {
+      "original_table": "movie_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "culture_company": {
+      "original_table": "Company_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_addresses_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_addresses_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_addresses_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer_Addresses": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer_Contact_Channels": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_addresses_Customer_Orders": {
+      "original_table": "order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_addresses_Order_Items": {
+      "original_table": "order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_invoices_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Orders": {
+      "original_table": "order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_invoices_Invoices": {
+      "original_table": "invoice_number",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_invoices_Accounts": {
+      "original_table": "account_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Product_Categories": {
+      "original_table": "production_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_invoices_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Financial_Transactions": {
+      "original_table": "transaction_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_invoices_Order_Items": {
+      "original_table": "order_item_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Invoice_Line_Items": {
+      "original_table": "order_item_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_products_contacts_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_products_contacts_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_products_contacts_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Contacts": {
+      "original_table": "contact_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer_Address_History": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_products_contacts_Customer_Orders": {
+      "original_table": "order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_and_products_contacts_Order_Items": {
+      "original_table": "order_item_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Premises": {
+      "original_table": "premise_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_campaigns_ecommerce_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_campaigns_ecommerce_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Mailshot_Campaigns": {
+      "original_table": "mailshot_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_campaigns_ecommerce_Customer_Addresses": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_campaigns_ecommerce_Customer_Orders": {
+      "original_table": "order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Mailshot_Customers": {
+      "original_table": "mailshot_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_campaigns_ecommerce_Order_Items": {
+      "original_table": "item_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_card_transactions_Accounts": {
+      "original_table": "account_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_card_transactions_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customers_Cards": {
+      "original_table": "card_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customers_card_transactions_Financial_Transactions": {
+      "original_table": "transaction_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customer_complaints_Staff": {
+      "original_table": "staff_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customer_complaints_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customer_complaints_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Complaints": {
+      "original_table": "complaint_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customer_deliveries_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customer_deliveries_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customer_deliveries_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Regular_Orders": {
+      "original_table": "regular_order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Regular_Order_Products": {
+      "original_table": "regular_order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Actual_Orders": {
+      "original_table": "actual_order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Actual_Order_Products": {
+      "original_table": "actual_order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customer_deliveries_Customer_Addresses": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Delivery_Routes": {
+      "original_table": "route_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Delivery_Route_Locations": {
+      "original_table": "location_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Trucks": {
+      "original_table": "truck_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "customer_deliveries_Employees": {
+      "original_table": "employee_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Order_Deliveries": {
+      "original_table": "location_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "debate_people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "debate": {
+      "original_table": "Debate_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "decoration_competition_college": {
+      "original_table": "College_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "decoration_competition_member": {
+      "original_table": "Member_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "head": {
+      "original_table": "head_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "department_store_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "department_store_Staff": {
+      "original_table": "staff_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Suppliers": {
+      "original_table": "supplier_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Department_Store_Chain": {
+      "original_table": "dept_store_chain_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "department_store_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "department_store_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "department_store_Customer_Orders": {
+      "original_table": "order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Department_Stores": {
+      "original_table": "dept_store_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Departments": {
+      "original_table": "department_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "department_store_Order_Items": {
+      "original_table": "order_item_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "device": {
+      "original_table": "Device_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "device_shop": {
+      "original_table": "Shop_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "document_management_Roles": {
+      "original_table": "role_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Users": {
+      "original_table": "user_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Document_Structures": {
+      "original_table": "document_structure_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Functional_Areas": {
+      "original_table": "functional_area_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Images": {
+      "original_table": "image_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "document_management_Documents": {
+      "original_table": "document_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Document_Functional_Areas": {
+      "original_table": "document_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Document_Sections": {
+      "original_table": "section_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Breeds": {
+      "original_table": "breed_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Charges": {
+      "original_table": "charge_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Sizes": {
+      "original_table": "size_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Treatment_Types": {
+      "original_table": "treatment_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Owners": {
+      "original_table": "owner_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Dogs": {
+      "original_table": "dog_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Professionals": {
+      "original_table": "professional_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Treatments": {
+      "original_table": "treatment_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "dorm_1_Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Dorm": {
+      "original_table": "dormid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Dorm_amenity": {
+      "original_table": "amenid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Has_amenity": {
+      "original_table": "dormid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Lives_in": {
+      "original_table": "stuid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "driving_school_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "driving_school_Staff": {
+      "original_table": "staff_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Vehicles": {
+      "original_table": "vehicle_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "driving_school_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Lessons": {
+      "original_table": "lesson_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "county": {
+      "original_table": "County_Id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "party": {
+      "original_table": "Party_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "election": {
+      "original_table": "Election_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "election_representative_election": {
+      "original_table": "Election_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "representative": {
+      "original_table": "Representative_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "employee_hire_evaluation_shop": {
+      "original_table": "Shop_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "hiring": {
+      "original_table": "Shop_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "festival_detail": {
+      "original_table": "Festival_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "artwork": {
+      "original_table": "Artwork_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "entrepreneur": {
+      "original_table": "Entrepreneur_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "entrepreneur_people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "item": {
+      "original_table": "i_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "review": {
+      "original_table": "a_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "useracct": {
+      "original_table": "u_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "trust": {
+      "original_table": "source_u_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "e_government_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "e_government_Services": {
+      "original_table": "service_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Forms": {
+      "original_table": "form_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Individuals": {
+      "original_table": "individual_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Organizations": {
+      "original_table": "organization_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Parties": {
+      "original_table": "party_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Party_Services": {
+      "original_table": "booking_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Course_Authors_and_Tutors": {
+      "original_table": "author_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "e_learning_Students": {
+      "original_table": "student_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Subjects": {
+      "original_table": "subject_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Courses": {
+      "original_table": "course_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Student_Course_Enrolment": {
+      "original_table": "registration_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Student_Tests_Taken": {
+      "original_table": "registration_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "farm_city": {
+      "original_table": "City_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "farm": {
+      "original_table": "Farm_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "farm_competition": {
+      "original_table": "Competition_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "film_rank_film": {
+      "original_table": "Film_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "market": {
+      "original_table": "Market_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "film_market_estimation": {
+      "original_table": "Estimation_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "flight": {
+      "original_table": "flno",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "flight_1_aircraft": {
+      "original_table": "aid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "airlines": {
+      "original_table": "uid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "airports": {
+      "original_table": "City",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "routes": {
+      "original_table": "rid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "flight_4_airports": {
+      "original_table": "apid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "flight_4_airlines": {
+      "original_table": "alid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "flight_company_airport": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "operate_company": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "flight_company_flight": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "circuits": {
+      "original_table": "circuitId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "races": {
+      "original_table": "raceId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "drivers": {
+      "original_table": "driverId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "formula_1_status": {
+      "original_table": "statusId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "seasons": {
+      "original_table": "year",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "constructors": {
+      "original_table": "constructorId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "constructorStandings": {
+      "original_table": "constructorStandingsId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "results": {
+      "original_table": "resultId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "driverStandings": {
+      "original_table": "driverStandingsId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "constructorResults": {
+      "original_table": "constructorResultsId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "qualifying": {
+      "original_table": "qualifyId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "game_1_Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Video_Games": {
+      "original_table": "GameID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Plays_Games": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "SportsInfo": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "game_injury_stadium": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "game": {
+      "original_table": "stadium_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "injury_accident": {
+      "original_table": "game_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "gas_company_company": {
+      "original_table": "Company_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "gas_station": {
+      "original_table": "Station_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "state": {
+      "original_table": "state_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "highlow": {
+      "original_table": "state_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "lake": {
+      "original_table": "lake_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "river": {
+      "original_table": "river_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "gymnast": {
+      "original_table": "Gymnast_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "gymnast_people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Physician": {
+      "original_table": "EmployeeID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Procedures": {
+      "original_table": "Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Patient": {
+      "original_table": "SSN",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Nurse": {
+      "original_table": "EmployeeID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Appointment": {
+      "original_table": "AppointmentID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Medication": {
+      "original_table": "Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Room": {
+      "original_table": "RoomNumber",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Stay": {
+      "original_table": "StayID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "regions": {
+      "original_table": "REGION_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "hr_1_countries": {
+      "original_table": "COUNTRY_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "jobs": {
+      "original_table": "JOB_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Inst": {
+      "original_table": "instID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Authors": {
+      "original_table": "authID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Papers": {
+      "original_table": "paperID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "actor": {
+      "original_table": "aid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "copyright": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "cast": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "classification": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "imdb_company": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "director": {
+      "original_table": "did",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "producer": {
+      "original_table": "pid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "directed_by": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "imdb_keyword": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "made_by": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "imdb_movie": {
+      "original_table": "mid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tags": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tv_series": {
+      "original_table": "sid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "writer": {
+      "original_table": "wid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "written_by": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Rooms": {
+      "original_table": "RoomId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Reservations": {
+      "original_table": "Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "insurance_and_eClaims_Customers": {
+      "original_table": "Customer_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "insurance_and_eClaims_Staff": {
+      "original_table": "Staff_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Policies": {
+      "original_table": "Policy_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Claim_Headers": {
+      "original_table": "Claim_Header_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Claims_Processing_Stages": {
+      "original_table": "Claim_Stage_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Claims_Processing": {
+      "original_table": "Claim_Processing_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "insurance_fnol_Customers": {
+      "original_table": "Customer_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "insurance_fnol_Services": {
+      "original_table": "Service_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Available_Policies": {
+      "original_table": "Policy_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "First_Notification_of_Loss": {
+      "original_table": "FNOL_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Claims": {
+      "original_table": "Claim_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Settlements": {
+      "original_table": "Settlement_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "insurance_policies_Customers": {
+      "original_table": "Customer_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer_Policies": {
+      "original_table": "Policy_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "insurance_policies_Claims": {
+      "original_table": "Claim_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "insurance_policies_Settlements": {
+      "original_table": "Settlement_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Payments": {
+      "original_table": "Payment_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "journal_committee_journal": {
+      "original_table": "Journal_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "editor": {
+      "original_table": "Editor_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "bank": {
+      "original_table": "branch_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "loan": {
+      "original_table": "loan_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "local_govt_and_lot_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Properties": {
+      "original_table": "property_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "local_govt_and_lot_Organizations": {
+      "original_table": "organization_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "local_govt_and_lot_Services": {
+      "original_table": "service_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Things": {
+      "original_table": "thing_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer_Events": {
+      "original_table": "Customer_Event_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer_Event_Notes": {
+      "original_table": "Customer_Event_Note_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "local_govt_in_alabama_Services": {
+      "original_table": "Service_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Participants": {
+      "original_table": "Participant_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Events": {
+      "original_table": "Event_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Customer_Master_Index": {
+      "original_table": "master_customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "CMI_Cross_References": {
+      "original_table": "cmi_cross_ref_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Council_Tax": {
+      "original_table": "council_tax_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Business_Rates": {
+      "original_table": "business_rates_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Benefits_Overpayments": {
+      "original_table": "council_tax_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Parking_Fines": {
+      "original_table": "council_tax_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Rent_Arrears": {
+      "original_table": "council_tax_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Electoral_Register": {
+      "original_table": "electoral_register_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "repair": {
+      "original_table": "repair_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "machine": {
+      "original_table": "Machine_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "technician": {
+      "original_table": "technician_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Manufacturers": {
+      "original_table": "Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "manufactory_1_Products": {
+      "original_table": "Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "manufacturer": {
+      "original_table": "Manufacturer_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "furniture": {
+      "original_table": "Furniture_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "country": {
+      "original_table": "Country_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "match_season_team": {
+      "original_table": "Team_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "match_season": {
+      "original_table": "Season",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "match_season_player": {
+      "original_table": "Player_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "medicine": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "enzyme": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "mountain_photos_mountain": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "camera_lens": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Reviewer": {
+      "original_table": "rID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Rating": {
+      "original_table": "rID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "museum": {
+      "original_table": "Museum_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "visitor": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "musical": {
+      "original_table": "Musical_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "musical_actor": {
+      "original_table": "Actor_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "files": {
+      "original_table": "f_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "song": {
+      "original_table": "song_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Songs": {
+      "original_table": "SongId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Albums": {
+      "original_table": "AId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Band": {
+      "original_table": "Id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "volume": {
+      "original_table": "Volume_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "music_festival": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Highschooler": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Person": {
+      "original_table": "name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "PersonFriend": {
+      "original_table": "name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "event": {
+      "original_table": "Event_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "journalist": {
+      "original_table": "journalist_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "conductor": {
+      "original_table": "Conductor_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "orchestra": {
+      "original_table": "Orchestra_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "performance": {
+      "original_table": "Performance_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "show": {
+      "original_table": "Show_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "party_host_party": {
+      "original_table": "Party_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "host": {
+      "original_table": "Host_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "region": {
+      "original_table": "Region_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "party_people_party": {
+      "original_table": "Party_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "party_people_member": {
+      "original_table": "Member_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "party_events": {
+      "original_table": "Event_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "performance_attendance_member": {
+      "original_table": "Member_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "performance_attendance_performance": {
+      "original_table": "Performance_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "perpetrator": {
+      "original_table": "Perpetrator_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "perpetrator_people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "pets_1_Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Has_Pet": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Pets": {
+      "original_table": "PetID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "chip_model": {
+      "original_table": "Model_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "screen_mode": {
+      "original_table": "Graphics_mode",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "phone": {
+      "original_table": "Company_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "phone_market_phone": {
+      "original_table": "Name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "phone_market_market": {
+      "original_table": "Market_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "pilot_record_aircraft": {
+      "original_table": "Aircraft_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "pilot_record_pilot": {
+      "original_table": "Pilot_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "poker_player": {
+      "original_table": "Poker_Player_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "poker_player_people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Discount_Coupons": {
+      "original_table": "coupon_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "products_for_hire_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "products_for_hire_Bookings": {
+      "original_table": "booking_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Products_for_Hire": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "products_for_hire_Payments": {
+      "original_table": "payment_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "View_Product_Availability": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Characteristic_Types": {
+      "original_table": "characteristic_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Colors": {
+      "original_table": "color_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Product_Categories": {
+      "original_table": "product_category_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Characteristics": {
+      "original_table": "characteristic_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "products_gen_characteristics_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Product_Characteristics": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Attribute_Definitions": {
+      "original_table": "attribute_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Catalogs": {
+      "original_table": "catalog_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Catalog_Structure": {
+      "original_table": "catalog_level_number",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Catalog_Contents": {
+      "original_table": "catalog_entry_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Catalog_Contents_Additional_Attributes": {
+      "original_table": "catalog_entry_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "program": {
+      "original_table": "Program_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "channel": {
+      "original_table": "Channel_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "building": {
+      "original_table": "building_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Institution": {
+      "original_table": "Institution_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "protein": {
+      "original_table": "common_name",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "race": {
+      "original_table": "Race_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "railway": {
+      "original_table": "Railway_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "train": {
+      "original_table": "Train_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "railway_manager": {
+      "original_table": "Manager_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Feature_Types": {
+      "original_table": "feature_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Property_Types": {
+      "original_table": "property_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Other_Available_Features": {
+      "original_table": "feature_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "real_estate_properties_Properties": {
+      "original_table": "property_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Other_Property_Features": {
+      "original_table": "property_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "GEOGRAPHIC": {
+      "original_table": "CITY_NAME",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "RESTAURANT": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "LOCATION": {
+      "original_table": "RESTAURANT_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "restaurant_1_Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Type_Of_Restaurant": {
+      "original_table": "ResID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Restaurant_Type": {
+      "original_table": "ResTypeID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Visits_Restaurant": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "riding_club_player": {
+      "original_table": "Player_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "coach": {
+      "original_table": "Coach_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "roller_coaster": {
+      "original_table": "Roller_Coaster_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "roller_coaster_country": {
+      "original_table": "Country_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "sakila_1_actor": {
+      "original_table": "actor_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "address": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "category": {
+      "original_table": "category_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "sakila_1_city": {
+      "original_table": "city_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "sakila_1_country": {
+      "original_table": "country_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "sakila_1_film": {
+      "original_table": "film_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "film_text": {
+      "original_table": "film_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "inventory": {
+      "original_table": "inventory_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "language": {
+      "original_table": "language_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "payment": {
+      "original_table": "payment_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "rental": {
+      "original_table": "rental_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "store": {
+      "original_table": "store_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "venue": {
+      "original_table": "venueId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "scholar_author": {
+      "original_table": "authorId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "dataset": {
+      "original_table": "datasetId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "scholar_journal": {
+      "original_table": "journalId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "keyphrase": {
+      "original_table": "keyphraseId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "paper": {
+      "original_table": "paperId",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "driver": {
+      "original_table": "Driver_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "school": {
+      "original_table": "School_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "endowment": {
+      "original_table": "endowment_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "school_player_school": {
+      "original_table": "School_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "school_details": {
+      "original_table": "School_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "school_player_player": {
+      "original_table": "Player_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Scientists": {
+      "original_table": "SSN",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "scientist_1_Projects": {
+      "original_table": "Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "captain": {
+      "original_table": "Captain_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "mission": {
+      "original_table": "Mission_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "ship_mission_ship": {
+      "original_table": "Ship_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "shop_membership_member": {
+      "original_table": "Member_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "branch": {
+      "original_table": "Branch_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "membership_register_branch": {
+      "original_table": "Member_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "singer_singer": {
+      "original_table": "Singer_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "singer_song": {
+      "original_table": "Song_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "SAVINGS": {
+      "original_table": "custid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "CHECKING": {
+      "original_table": "custid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Player_Attributes": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "League": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Team_Attributes": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "solvency_ii_Addresses": {
+      "original_table": "Address_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "solvency_ii_Locations": {
+      "original_table": "Location_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "solvency_ii_Products": {
+      "original_table": "Product_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "solvency_ii_Parties": {
+      "original_table": "Party_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "solvency_ii_Assets": {
+      "original_table": "Asset_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Channels": {
+      "original_table": "Channel_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Finances": {
+      "original_table": "Finance_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "solvency_ii_Events": {
+      "original_table": "Event_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Products_in_Events": {
+      "original_table": "Product_in_Event_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Agreements": {
+      "original_table": "Document_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "sports_competition_player": {
+      "original_table": "Player_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "competition": {
+      "original_table": "Competition_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "station_weather_train": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "station_weather_station": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "artists": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "genres": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "media_types": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracks": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "invoice_lines": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "playlists": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "product": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "store_product_store": {
+      "original_table": "Store_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "district": {
+      "original_table": "District_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "store_district": {
+      "original_table": "Store_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "storm": {
+      "original_table": "Storm_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "storm_record_region": {
+      "original_table": "Region_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "student_assessment_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "student_assessment_Students": {
+      "original_table": "student_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "student_assessment_Courses": {
+      "original_table": "course_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "People_Addresses": {
+      "original_table": "person_address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Candidates": {
+      "original_table": "candidate_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "student_transcripts_tracking_Addresses": {
+      "original_table": "address_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "student_transcripts_tracking_Courses": {
+      "original_table": "course_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "student_transcripts_tracking_Departments": {
+      "original_table": "department_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Degree_Programs": {
+      "original_table": "degree_program_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Sections": {
+      "original_table": "section_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Semesters": {
+      "original_table": "semester_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "student_transcripts_tracking_Students": {
+      "original_table": "student_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Student_Enrolment": {
+      "original_table": "student_enrolment_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Student_Enrolment_Courses": {
+      "original_table": "student_course_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Transcripts": {
+      "original_table": "transcript_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Transcript_Contents": {
+      "original_table": "student_course_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "swimmer": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "swimming_stadium": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "swimming_event": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "exhibition": {
+      "original_table": "Exhibition_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Document_Types": {
+      "original_table": "document_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracking_grants_for_research_Documents": {
+      "original_table": "document_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Grants": {
+      "original_table": "grant_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Organisation_Types": {
+      "original_table": "organisation_type",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Organisations": {
+      "original_table": "organisation_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Project_Outcomes": {
+      "original_table": "project_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Project_Staff": {
+      "original_table": "staff_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracking_grants_for_research_Projects": {
+      "original_table": "project_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Research_Outcomes": {
+      "original_table": "outcome_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Research_Staff": {
+      "original_table": "staff_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Staff_Roles": {
+      "original_table": "role_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Tasks": {
+      "original_table": "task_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracking_orders_Customers": {
+      "original_table": "customer_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracking_orders_Invoices": {
+      "original_table": "invoice_number",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracking_orders_Orders": {
+      "original_table": "order_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracking_orders_Products": {
+      "original_table": "product_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracking_orders_Order_Items": {
+      "original_table": "order_item_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Shipments": {
+      "original_table": "shipment_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Shipment_Items": {
+      "original_table": "shipment_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Investors": {
+      "original_table": "investor_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Lots": {
+      "original_table": "lot_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Ref_Transaction_Types": {
+      "original_table": "transaction_type_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Transactions": {
+      "original_table": "transaction_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Sales": {
+      "original_table": "sales_transaction_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Purchases": {
+      "original_table": "purchase_transaction_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Transactions_Lots": {
+      "original_table": "transaction_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Problem_Category_Codes": {
+      "original_table": "problem_category_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Problem_Log": {
+      "original_table": "problem_log_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Problem_Status_Codes": {
+      "original_table": "problem_status_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tracking_software_problems_Staff": {
+      "original_table": "staff_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Problems": {
+      "original_table": "problem_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "train_station_station": {
+      "original_table": "Station_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "train_station_train": {
+      "original_table": "Train_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "TV_Channel": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Cartoon": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tweets": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "user_profiles": {
+      "original_table": "uid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "basketball_match": {
+      "original_table": "Team_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "university": {
+      "original_table": "School_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "AREA_CODE_STATE": {
+      "original_table": "area_code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "CONTESTANTS": {
+      "original_table": "contestant_number",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "VOTES": {
+      "original_table": "vote_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "voter_2_Student": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Voting_record": {
+      "original_table": "StuID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "wedding_people": {
+      "original_table": "People_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "church": {
+      "original_table": "Church_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "grapes": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "appellations": {
+      "original_table": "No",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "wine": {
+      "original_table": "No",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "workshop": {
+      "original_table": "Workshop_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "submission": {
+      "original_table": "Submission_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "world_1_city": {
+      "original_table": "ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "world_1_country": {
+      "original_table": "Code",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "wrestler": {
+      "original_table": "Wrestler_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "Elimination": {
+      "original_table": "Elimination_ID",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "players": {
+      "original_table": "player_id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "matches": {
+      "original_table": "best_of",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "rankings": {
+      "original_table": "ranking_date",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "business": {
+      "original_table": "bid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "yelp_category": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "user": {
+      "original_table": "uid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "checkin": {
+      "original_table": "cid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "neighbourhood": {
+      "original_table": "id",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "yelp_review": {
+      "original_table": "rid",
+      "resolution_method": "prefix_with_db_name"
+    },
+    "tip": {
+      "original_table": "tip_id",
+      "resolution_method": "prefix_with_db_name"
+    }
+  }
+}

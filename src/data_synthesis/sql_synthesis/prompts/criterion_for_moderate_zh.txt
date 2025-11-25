@@ -1,0 +1,30 @@
+**评判标准：**
+中等复杂度的 SQL 查询应满足以下一项或多项条件：
+- 涉及表连接操作，例如 `JOIN`、`INNER JOIN`、`LEFT JOIN`、`CROSS JOIN` 等。
+- 在 `SELECT` 或 `WHERE` 子句中包含子查询。
+- 结合 `GROUP BY` 子句使用聚合函数。
+- 包含复杂的 `WHERE` 条件，例如使用 `IN`、`BETWEEN`、`LIKE` 等操作符。
+- 使用 `HAVING` 子句对聚合结果进行筛选。
+- 使用聚合函数，如 `COUNT`、`SUM`、`AVG`、`MIN`、`MAX` 等。
+
+**中等复杂度 SQL 查询示例：**
+```sql
+SELECT
+    e.name,
+    d.department_name,
+    AVG(s.salary) AS average_salary
+FROM employees e
+INNER JOIN departments d
+    ON e.department_id = d.department_id
+LEFT JOIN salaries s
+    ON e.employee_id = s.employee_id
+WHERE
+    e.age > 30
+    AND e.status = 'active'
+    AND s.salary IS NOT NULL  -- 显式排除无薪资记录（可选）
+GROUP BY
+    e.name,
+    d.department_name
+HAVING
+    AVG(s.salary) > 50000;
+```

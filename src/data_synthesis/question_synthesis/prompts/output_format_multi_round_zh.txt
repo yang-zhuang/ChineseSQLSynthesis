@@ -1,0 +1,12 @@
+请按照以下格式组织你的回答：
+
+[EXPLANATION-START]
+（SQL 解释）
+[EXPLANATION-END]
+
+[QUESTION-START]
+（自然语言问题，格式为 [{"User": ...}, {"Assistant": ...}, {"User": ...}, ...]）
+[QUESTION-END]
+
+- **SQL 解释**：在 [EXPLANATION-START] 和 [EXPLANATION-END] 之间，对 SQL 查询进行清晰且详细的解释。
+- **自然语言问题**：在 [QUESTION-START] 和 [QUESTION-END] 之间，将 SQL 查询转化为一段多轮对话，以用户（User）与助手（Assistant）之间的多轮交互形式呈现，表示为一个包含多轮对话的列表。

@@ -1,0 +1,12 @@
+请按照以下格式组织你的回答：
+
+[EXPLANATION-START]
+（SQL 解释）
+[EXPLANATION-END]
+
+[QUESTION-START]
+（自然语言问题）
+[QUESTION-END]
+
+- **SQL 解释**：在 [EXPLANATION-START] 和 [EXPLANATION-END] 之间，对 SQL 查询进行清晰且详细的解释。
+- **自然语言问题**：在 [QUESTION-START] 和 [QUESTION-END] 之间，将 SQL 查询转化为一个自然语言问题。

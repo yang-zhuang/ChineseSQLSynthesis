@@ -1,0 +1,2060 @@
+[2025-11-22 23:59:07] 输出数据库初始化成功
+[2025-11-22 23:59:07] 找到 166 个SQLite数据库文件
+[2025-11-22 23:59:07] 开始合并数据库: academic
+[2025-11-22 23:59:07] 创建表: author
+[2025-11-22 23:59:07] 创建表: conference
+[2025-11-22 23:59:07] 创建表: domain
+[2025-11-22 23:59:07] 创建表失败 domain_author: table "domain_author" has more than one primary key
+[2025-11-22 23:59:07] 创建表失败 domain_conference: table "domain_conference" has more than one primary key
+[2025-11-22 23:59:07] 创建表: journal
+[2025-11-22 23:59:07] 创建表失败 domain_journal: table "domain_journal" has more than one primary key
+[2025-11-22 23:59:07] 创建表: keyword
+[2025-11-22 23:59:07] 创建表失败 domain_keyword: table "domain_keyword" has more than one primary key
+[2025-11-22 23:59:07] 创建表: publication
+[2025-11-22 23:59:07] 创建表失败 domain_publication: table "domain_publication" has more than one primary key
+[2025-11-22 23:59:07] 创建表: organization
+[2025-11-22 23:59:07] 创建表失败 publication_keyword: table "publication_keyword" has more than one primary key
+[2025-11-22 23:59:07] 创建表失败 writes: table "writes" has more than one primary key
+[2025-11-22 23:59:07] 创建表: cite
+[2025-11-22 23:59:07] 数据库合并完成: academic (表: 8, 行: 0)
+[2025-11-22 23:59:07] 开始合并数据库: activity_1
+[2025-11-22 23:59:07] 创建表: Activity
+[2025-11-22 23:59:07] 数据复制完成: Activity -> Activity (插入: 16, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Participates_in
+[2025-11-22 23:59:07] 数据复制完成: Participates_in -> Participates_in (插入: 70, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Faculty_Participates_in
+[2025-11-22 23:59:07] 数据复制完成: Faculty_Participates_in -> Faculty_Participates_in (插入: 40, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Student
+[2025-11-22 23:59:07] 数据复制完成: Student -> Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Faculty
+[2025-11-22 23:59:07] 数据复制完成: Faculty -> Faculty (插入: 58, 跳过: 0)
+[2025-11-22 23:59:07] 数据库合并完成: activity_1 (表: 5, 行: 218)
+[2025-11-22 23:59:07] 开始合并数据库: aircraft
+[2025-11-22 23:59:07] 创建表: pilot
+[2025-11-22 23:59:07] 数据复制完成: pilot -> pilot (插入: 12, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: aircraft
+[2025-11-22 23:59:07] 数据复制完成: aircraft -> aircraft (插入: 5, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: match
+[2025-11-22 23:59:07] 数据复制完成: match -> match (插入: 7, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: airport
+[2025-11-22 23:59:07] 数据复制完成: airport -> airport (插入: 10, 跳过: 0)
+[2025-11-22 23:59:07] 创建表失败 airport_aircraft: table "airport_aircraft" has more than one primary key
+[2025-11-22 23:59:07] 数据库合并完成: aircraft (表: 4, 行: 34)
+[2025-11-22 23:59:07] 开始合并数据库: allergy_1
+[2025-11-22 23:59:07] 创建表: Allergy_Type
+[2025-11-22 23:59:07] 数据复制完成: Allergy_Type -> Allergy_Type (插入: 14, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Has_Allergy
+[2025-11-22 23:59:07] 数据复制完成: Has_Allergy -> Has_Allergy (插入: 59, 跳过: 0)
+[2025-11-22 23:59:07] 表名冲突: Student -> allergy_1_Student
+[2025-11-22 23:59:07] 创建表: allergy_1_Student
+[2025-11-22 23:59:07] 数据复制完成: Student -> allergy_1_Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:07] 数据库合并完成: allergy_1 (表: 3, 行: 107)
+[2025-11-22 23:59:07] 开始合并数据库: apartment_rentals
+[2025-11-22 23:59:07] 创建表: Apartment_Buildings
+[2025-11-22 23:59:07] 数据复制完成: Apartment_Buildings -> Apartment_Buildings (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Apartments
+[2025-11-22 23:59:07] 数据复制完成: Apartments -> Apartments (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表失败 Apartment_Facilities: table "Apartment_Facilities" has more than one primary key
+[2025-11-22 23:59:07] 创建表: Guests
+[2025-11-22 23:59:07] 数据复制完成: Guests -> Guests (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Apartment_Bookings
+[2025-11-22 23:59:07] 数据复制完成: Apartment_Bookings -> Apartment_Bookings (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: View_Unit_Status
+[2025-11-22 23:59:07] 数据复制完成: View_Unit_Status -> View_Unit_Status (插入: 20, 跳过: 0)
+[2025-11-22 23:59:07] 数据库合并完成: apartment_rentals (表: 5, 行: 80)
+[2025-11-22 23:59:07] 开始合并数据库: architecture
+[2025-11-22 23:59:07] 创建表: architect
+[2025-11-22 23:59:07] 数据复制完成: architect -> architect (插入: 5, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: bridge
+[2025-11-22 23:59:07] 数据复制完成: bridge -> bridge (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: mill
+[2025-11-22 23:59:07] 数据复制完成: mill -> mill (插入: 6, 跳过: 0)
+[2025-11-22 23:59:07] 数据库合并完成: architecture (表: 3, 行: 26)
+[2025-11-22 23:59:07] 开始合并数据库: assets_maintenance
+[2025-11-22 23:59:07] 创建表: Third_Party_Companies
+[2025-11-22 23:59:07] 数据复制完成: Third_Party_Companies -> Third_Party_Companies (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Maintenance_Contracts
+[2025-11-22 23:59:07] 数据复制完成: Maintenance_Contracts -> Maintenance_Contracts (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Parts
+[2025-11-22 23:59:07] 数据复制完成: Parts -> Parts (插入: 3, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Skills
+[2025-11-22 23:59:07] 数据复制完成: Skills -> Skills (插入: 3, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Staff
+[2025-11-22 23:59:07] 数据复制完成: Staff -> Staff (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Assets
+[2025-11-22 23:59:07] 数据复制完成: Assets -> Assets (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Asset_Parts
+[2025-11-22 23:59:07] 数据复制完成: Asset_Parts -> Asset_Parts (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Maintenance_Engineers
+[2025-11-22 23:59:07] 数据复制完成: Maintenance_Engineers -> Maintenance_Engineers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Engineer_Skills
+[2025-11-22 23:59:07] 数据复制完成: Engineer_Skills -> Engineer_Skills (插入: 20, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Fault_Log
+[2025-11-22 23:59:07] 数据复制完成: Fault_Log -> Fault_Log (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Engineer_Visits
+[2025-11-22 23:59:07] 数据复制完成: Engineer_Visits -> Engineer_Visits (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Part_Faults
+[2025-11-22 23:59:07] 数据复制完成: Part_Faults -> Part_Faults (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Fault_Log_Parts
+[2025-11-22 23:59:07] 数据复制完成: Fault_Log_Parts -> Fault_Log_Parts (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: Skills_Required_To_Fix
+[2025-11-22 23:59:07] 数据复制完成: Skills_Required_To_Fix -> Skills_Required_To_Fix (插入: 15, 跳过: 0)
+[2025-11-22 23:59:07] 数据库合并完成: assets_maintenance (表: 14, 行: 191)
+[2025-11-22 23:59:07] 开始合并数据库: baseball_1
+[2025-11-22 23:59:07] 创建表: all_star
+[2025-11-22 23:59:07] 数据复制完成: all_star -> all_star (插入: 5069, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: appearances
+[2025-11-22 23:59:07] 数据复制完成: appearances -> appearances (插入: 100951, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: manager_award
+[2025-11-22 23:59:07] 数据复制完成: manager_award -> manager_award (插入: 177, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: player_award
+[2025-11-22 23:59:07] 数据复制完成: player_award -> player_award (插入: 6078, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: manager_award_vote
+[2025-11-22 23:59:07] 数据复制完成: manager_award_vote -> manager_award_vote (插入: 414, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: player_award_vote
+[2025-11-22 23:59:07] 数据复制完成: player_award_vote -> player_award_vote (插入: 6795, 跳过: 0)
+[2025-11-22 23:59:07] 创建表: batting
+[2025-11-22 23:59:08] 数据复制完成: batting -> batting (插入: 101332, 跳过: 0)
+[2025-11-22 23:59:08] 创建表: batting_postseason
+[2025-11-22 23:59:08] 数据复制完成: batting_postseason -> batting_postseason (插入: 11690, 跳过: 0)
+[2025-11-22 23:59:08] 创建表: player_college
+[2025-11-22 23:59:08] 数据复制完成: player_college -> player_college (插入: 17350, 跳过: 0)
+[2025-11-22 23:59:08] 创建表: fielding
+[2025-11-22 23:59:09] 数据复制完成: fielding -> fielding (插入: 170526, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: fielding_outfield
+[2025-11-22 23:59:09] 数据复制完成: fielding_outfield -> fielding_outfield (插入: 12028, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: fielding_postseason
+[2025-11-22 23:59:09] 数据复制完成: fielding_postseason -> fielding_postseason (插入: 12311, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: hall_of_fame
+[2025-11-22 23:59:09] 数据复制完成: hall_of_fame -> hall_of_fame (插入: 4120, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: home_game
+[2025-11-22 23:59:09] 数据复制完成: home_game -> home_game (插入: 2944, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: manager
+[2025-11-22 23:59:09] 数据复制完成: manager -> manager (插入: 3405, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: manager_half
+[2025-11-22 23:59:09] 数据复制完成: manager_half -> manager_half (插入: 93, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: player
+[2025-11-22 23:59:09] 数据复制完成: player -> player (插入: 18846, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: park
+[2025-11-22 23:59:09] 数据复制完成: park -> park (插入: 250, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: pitching
+[2025-11-22 23:59:09] 数据复制完成: pitching -> pitching (插入: 44139, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: pitching_postseason
+[2025-11-22 23:59:09] 数据复制完成: pitching_postseason -> pitching_postseason (插入: 5109, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: salary
+[2025-11-22 23:59:09] 数据复制完成: salary -> salary (插入: 25575, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: college
+[2025-11-22 23:59:09] 数据复制完成: college -> college (插入: 1207, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: postseason
+[2025-11-22 23:59:09] 数据复制完成: postseason -> postseason (插入: 307, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: team
+[2025-11-22 23:59:09] 数据复制完成: team -> team (插入: 2805, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: team_franchise
+[2025-11-22 23:59:09] 数据复制完成: team_franchise -> team_franchise (插入: 120, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: team_half
+[2025-11-22 23:59:09] 数据复制完成: team_half -> team_half (插入: 52, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: baseball_1 (表: 26, 行: 553693)
+[2025-11-22 23:59:09] 开始合并数据库: battle_death
+[2025-11-22 23:59:09] 创建表: battle
+[2025-11-22 23:59:09] 数据复制完成: battle -> battle (插入: 8, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: ship
+[2025-11-22 23:59:09] 数据复制完成: ship -> ship (插入: 7, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: death
+[2025-11-22 23:59:09] 数据复制完成: death -> death (插入: 13, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: battle_death (表: 3, 行: 28)
+[2025-11-22 23:59:09] 开始合并数据库: behavior_monitoring
+[2025-11-22 23:59:09] 创建表: Ref_Address_Types
+[2025-11-22 23:59:09] 数据复制完成: Ref_Address_Types -> Ref_Address_Types (插入: 2, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Ref_Detention_Type
+[2025-11-22 23:59:09] 数据复制完成: Ref_Detention_Type -> Ref_Detention_Type (插入: 3, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Ref_Incident_Type
+[2025-11-22 23:59:09] 数据复制完成: Ref_Incident_Type -> Ref_Incident_Type (插入: 3, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Addresses
+[2025-11-22 23:59:09] 数据复制完成: Addresses -> Addresses (插入: 20, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Students
+[2025-11-22 23:59:09] 数据复制完成: Students -> Students (插入: 15, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Teachers
+[2025-11-22 23:59:09] 数据复制完成: Teachers -> Teachers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Assessment_Notes
+[2025-11-22 23:59:09] 数据复制完成: Assessment_Notes -> Assessment_Notes (插入: 15, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Behavior_Incident
+[2025-11-22 23:59:09] 数据复制完成: Behavior_Incident -> Behavior_Incident (插入: 15, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Detention
+[2025-11-22 23:59:09] 数据复制完成: Detention -> Detention (插入: 15, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Student_Addresses
+[2025-11-22 23:59:09] 数据复制完成: Student_Addresses -> Student_Addresses (插入: 20, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Students_in_Detention
+[2025-11-22 23:59:09] 数据复制完成: Students_in_Detention -> Students_in_Detention (插入: 15, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: behavior_monitoring (表: 11, 行: 138)
+[2025-11-22 23:59:09] 开始合并数据库: bike_1
+[2025-11-22 23:59:09] 创建表: station
+[2025-11-22 23:59:09] 数据复制完成: station -> station (插入: 70, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: status
+[2025-11-22 23:59:09] 数据复制完成: status -> status (插入: 8487, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: trip
+[2025-11-22 23:59:09] 数据复制完成: trip -> trip (插入: 9959, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: weather
+[2025-11-22 23:59:09] 数据复制完成: weather -> weather (插入: 3665, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: bike_1 (表: 4, 行: 22181)
+[2025-11-22 23:59:09] 开始合并数据库: body_builder
+[2025-11-22 23:59:09] 创建表: body_builder
+[2025-11-22 23:59:09] 数据复制完成: body_builder -> body_builder (插入: 5, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: people
+[2025-11-22 23:59:09] 数据复制完成: people -> people (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: body_builder (表: 2, 行: 11)
+[2025-11-22 23:59:09] 开始合并数据库: book_2
+[2025-11-22 23:59:09] 表名冲突: publication -> book_2_publication
+[2025-11-22 23:59:09] 创建表: book_2_publication
+[2025-11-22 23:59:09] 数据复制完成: publication -> book_2_publication (插入: 7, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: book
+[2025-11-22 23:59:09] 数据复制完成: book -> book (插入: 10, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: book_2 (表: 2, 行: 17)
+[2025-11-22 23:59:09] 开始合并数据库: browser_web
+[2025-11-22 23:59:09] 创建表: Web_client_accelerator
+[2025-11-22 23:59:09] 数据复制完成: Web_client_accelerator -> Web_client_accelerator (插入: 19, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: browser
+[2025-11-22 23:59:09] 数据复制完成: browser -> browser (插入: 4, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 accelerator_compatible_browser: table "accelerator_compatible_browser" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: browser_web (表: 2, 行: 23)
+[2025-11-22 23:59:09] 开始合并数据库: candidate_poll
+[2025-11-22 23:59:09] 创建表: candidate
+[2025-11-22 23:59:09] 数据复制完成: candidate -> candidate (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 表名冲突: people -> candidate_poll_people
+[2025-11-22 23:59:09] 创建表: candidate_poll_people
+[2025-11-22 23:59:09] 数据复制完成: people -> candidate_poll_people (插入: 9, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: candidate_poll (表: 2, 行: 15)
+[2025-11-22 23:59:09] 开始合并数据库: car_1
+[2025-11-22 23:59:09] 创建表: continents
+[2025-11-22 23:59:09] 数据复制完成: continents -> continents (插入: 5, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: countries
+[2025-11-22 23:59:09] 数据复制完成: countries -> countries (插入: 15, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: car_makers
+[2025-11-22 23:59:09] 数据复制完成: car_makers -> car_makers (插入: 22, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: model_list
+[2025-11-22 23:59:09] 数据复制完成: model_list -> model_list (插入: 36, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: car_names
+[2025-11-22 23:59:09] 数据复制完成: car_names -> car_names (插入: 406, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: cars_data
+[2025-11-22 23:59:09] 数据复制完成: cars_data -> cars_data (插入: 406, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: car_1 (表: 6, 行: 890)
+[2025-11-22 23:59:09] 开始合并数据库: chinook_1
+[2025-11-22 23:59:09] 创建表: Album
+[2025-11-22 23:59:09] 数据复制完成: Album -> Album (插入: 347, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Artist
+[2025-11-22 23:59:09] 数据复制完成: Artist -> Artist (插入: 275, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Customer
+[2025-11-22 23:59:09] 数据复制完成: Customer -> Customer (插入: 59, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Employee
+[2025-11-22 23:59:09] 数据复制完成: Employee -> Employee (插入: 8, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Genre
+[2025-11-22 23:59:09] 数据复制完成: Genre -> Genre (插入: 25, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Invoice
+[2025-11-22 23:59:09] 数据复制完成: Invoice -> Invoice (插入: 412, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: InvoiceLine
+[2025-11-22 23:59:09] 数据复制完成: InvoiceLine -> InvoiceLine (插入: 2240, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: MediaType
+[2025-11-22 23:59:09] 数据复制完成: MediaType -> MediaType (插入: 5, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Playlist
+[2025-11-22 23:59:09] 数据复制完成: Playlist -> Playlist (插入: 18, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 PlaylistTrack: table "PlaylistTrack" has more than one primary key
+[2025-11-22 23:59:09] 创建表: Track
+[2025-11-22 23:59:09] 数据复制完成: Track -> Track (插入: 3503, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: chinook_1 (表: 10, 行: 6892)
+[2025-11-22 23:59:09] 开始合并数据库: cinema
+[2025-11-22 23:59:09] 创建表: film
+[2025-11-22 23:59:09] 数据复制完成: film -> film (插入: 5, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: cinema
+[2025-11-22 23:59:09] 数据复制完成: cinema -> cinema (插入: 10, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 schedule: table "schedule" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: cinema (表: 2, 行: 15)
+[2025-11-22 23:59:09] 开始合并数据库: city_record
+[2025-11-22 23:59:09] 创建表: city
+[2025-11-22 23:59:09] 数据复制完成: city -> city (插入: 13, 跳过: 0)
+[2025-11-22 23:59:09] 表名冲突: match -> city_record_match
+[2025-11-22 23:59:09] 创建表: city_record_match
+[2025-11-22 23:59:09] 数据复制完成: match -> city_record_match (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: temperature
+[2025-11-22 23:59:09] 数据复制完成: temperature -> temperature (插入: 8, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: hosting_city
+[2025-11-22 23:59:09] 数据复制完成: hosting_city -> hosting_city (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: city_record (表: 4, 行: 33)
+[2025-11-22 23:59:09] 开始合并数据库: climbing
+[2025-11-22 23:59:09] 创建表: mountain
+[2025-11-22 23:59:09] 数据复制完成: mountain -> mountain (插入: 7, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: climber
+[2025-11-22 23:59:09] 数据复制完成: climber -> climber (插入: 10, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: climbing (表: 2, 行: 17)
+[2025-11-22 23:59:09] 开始合并数据库: club_1
+[2025-11-22 23:59:09] 表名冲突: Student -> club_1_Student
+[2025-11-22 23:59:09] 创建表: club_1_Student
+[2025-11-22 23:59:09] 数据复制完成: Student -> club_1_Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Club
+[2025-11-22 23:59:09] 数据复制完成: Club -> Club (插入: 4, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Member_of_club
+[2025-11-22 23:59:09] 数据复制完成: Member_of_club -> Member_of_club (插入: 4, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: club_1 (表: 3, 行: 42)
+[2025-11-22 23:59:09] 开始合并数据库: coffee_shop
+[2025-11-22 23:59:09] 创建表: shop
+[2025-11-22 23:59:09] 数据复制完成: shop -> shop (插入: 10, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: member
+[2025-11-22 23:59:09] 数据复制完成: member -> member (插入: 10, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 happy_hour: table "happy_hour" has more than one primary key
+[2025-11-22 23:59:09] 创建表失败 happy_hour_member: table "happy_hour_member" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: coffee_shop (表: 2, 行: 20)
+[2025-11-22 23:59:09] 开始合并数据库: college_1
+[2025-11-22 23:59:09] 创建表: CLASS
+[2025-11-22 23:59:09] 数据复制完成: CLASS -> CLASS (插入: 13, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: COURSE
+[2025-11-22 23:59:09] 数据复制完成: COURSE -> COURSE (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: DEPARTMENT
+[2025-11-22 23:59:09] 数据复制完成: DEPARTMENT -> DEPARTMENT (插入: 11, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 EMPLOYEE: table "EMPLOYEE" already exists
+[2025-11-22 23:59:09] 创建表: ENROLL
+[2025-11-22 23:59:09] 数据复制完成: ENROLL -> ENROLL (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: PROFESSOR
+[2025-11-22 23:59:09] 数据复制完成: PROFESSOR -> PROFESSOR (插入: 22, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 STUDENT: table "STUDENT" already exists
+[2025-11-22 23:59:09] 数据库合并完成: college_1 (表: 5, 行: 58)
+[2025-11-22 23:59:09] 开始合并数据库: college_2
+[2025-11-22 23:59:09] 创建表失败 classroom: table "classroom" has more than one primary key
+[2025-11-22 23:59:09] 创建表失败 department: table "department" already exists
+[2025-11-22 23:59:09] 创建表失败 course: table "course" already exists
+[2025-11-22 23:59:09] 创建表: instructor
+[2025-11-22 23:59:09] 数据复制完成: instructor -> instructor (插入: 50, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 section: table "section" has more than one primary key
+[2025-11-22 23:59:09] 创建表失败 teaches: table "teaches" has more than one primary key
+[2025-11-22 23:59:09] 创建表失败 student: table "student" already exists
+[2025-11-22 23:59:09] 创建表失败 takes: table "takes" has more than one primary key
+[2025-11-22 23:59:09] 创建表: advisor
+[2025-11-22 23:59:09] 数据复制完成: advisor -> advisor (插入: 2000, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 time_slot: table "time_slot" has more than one primary key
+[2025-11-22 23:59:09] 创建表失败 prereq: table "prereq" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: college_2 (表: 2, 行: 2050)
+[2025-11-22 23:59:09] 开始合并数据库: college_3
+[2025-11-22 23:59:09] 表名冲突: Student -> college_3_Student
+[2025-11-22 23:59:09] 创建表: college_3_Student
+[2025-11-22 23:59:09] 数据复制完成: Student -> college_3_Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:09] 表名冲突: Faculty -> college_3_Faculty
+[2025-11-22 23:59:09] 创建表: college_3_Faculty
+[2025-11-22 23:59:09] 数据复制完成: Faculty -> college_3_Faculty (插入: 58, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 Department: table "Department" already exists
+[2025-11-22 23:59:09] 创建表: Member_of
+[2025-11-22 23:59:09] 数据复制完成: Member_of -> Member_of (插入: 63, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 Course: table "Course" already exists
+[2025-11-22 23:59:09] 创建表: Minor_in
+[2025-11-22 23:59:09] 数据复制完成: Minor_in -> Minor_in (插入: 10, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Enrolled_in
+[2025-11-22 23:59:09] 数据复制完成: Enrolled_in -> Enrolled_in (插入: 210, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Gradeconversion
+[2025-11-22 23:59:09] 数据复制完成: Gradeconversion -> Gradeconversion (插入: 13, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: college_3 (表: 6, 行: 388)
+[2025-11-22 23:59:09] 开始合并数据库: company_1
+[2025-11-22 23:59:09] 创建表失败 works_on: table "works_on" has more than one primary key
+[2025-11-22 23:59:09] 创建表失败 employee: table "employee" already exists
+[2025-11-22 23:59:09] 创建表失败 department: table "department" already exists
+[2025-11-22 23:59:09] 创建表: project
+[2025-11-22 23:59:09] 数据复制完成: project -> project (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 dependent: table "dependent" has more than one primary key
+[2025-11-22 23:59:09] 创建表失败 dept_locations: table "dept_locations" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: company_1 (表: 1, 行: 6)
+[2025-11-22 23:59:09] 开始合并数据库: company_employee
+[2025-11-22 23:59:09] 表名冲突: people -> company_employee_people
+[2025-11-22 23:59:09] 创建表: company_employee_people
+[2025-11-22 23:59:09] 数据复制完成: people -> company_employee_people (插入: 7, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: company
+[2025-11-22 23:59:09] 数据复制完成: company -> company (插入: 19, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 employment: table "employment" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: company_employee (表: 2, 行: 26)
+[2025-11-22 23:59:09] 开始合并数据库: company_office
+[2025-11-22 23:59:09] 创建表: buildings
+[2025-11-22 23:59:09] 数据复制完成: buildings -> buildings (插入: 12, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: Companies
+[2025-11-22 23:59:09] 数据复制完成: Companies -> Companies (插入: 19, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 Office_locations: table "Office_locations" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: company_office (表: 2, 行: 31)
+[2025-11-22 23:59:09] 开始合并数据库: concert_singer
+[2025-11-22 23:59:09] 创建表: stadium
+[2025-11-22 23:59:09] 数据复制完成: stadium -> stadium (插入: 9, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: singer
+[2025-11-22 23:59:09] 数据复制完成: singer -> singer (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 创建表: concert
+[2025-11-22 23:59:09] 数据复制完成: concert -> concert (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 singer_in_concert: table "singer_in_concert" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: concert_singer (表: 3, 行: 21)
+[2025-11-22 23:59:09] 开始合并数据库: county_public_safety
+[2025-11-22 23:59:09] 创建表: county_public_safety
+[2025-11-22 23:59:09] 数据复制完成: county_public_safety -> county_public_safety (插入: 6, 跳过: 0)
+[2025-11-22 23:59:09] 表名冲突: city -> county_public_safety_city
+[2025-11-22 23:59:09] 创建表: county_public_safety_city
+[2025-11-22 23:59:09] 数据复制完成: city -> county_public_safety_city (插入: 17, 跳过: 0)
+[2025-11-22 23:59:09] 数据库合并完成: county_public_safety (表: 2, 行: 23)
+[2025-11-22 23:59:09] 开始合并数据库: course_teach
+[2025-11-22 23:59:09] 创建表失败 course: table "course" already exists
+[2025-11-22 23:59:09] 创建表: teacher
+[2025-11-22 23:59:09] 数据复制完成: teacher -> teacher (插入: 7, 跳过: 0)
+[2025-11-22 23:59:09] 创建表失败 course_arrange: table "course_arrange" has more than one primary key
+[2025-11-22 23:59:09] 数据库合并完成: course_teach (表: 1, 行: 7)
+[2025-11-22 23:59:09] 开始合并数据库: cre_Docs_and_Epenses
+[2025-11-22 23:59:09] 创建表: Ref_Document_Types
+[2025-11-22 23:59:09] 数据复制完成: Ref_Document_Types -> Ref_Document_Types (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Budget_Codes
+[2025-11-22 23:59:10] 数据复制完成: Ref_Budget_Codes -> Ref_Budget_Codes (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Projects
+[2025-11-22 23:59:10] 数据复制完成: Projects -> Projects (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Documents
+[2025-11-22 23:59:10] 数据复制完成: Documents -> Documents (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Statements
+[2025-11-22 23:59:10] 数据复制完成: Statements -> Statements (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Documents_with_Expenses
+[2025-11-22 23:59:10] 数据复制完成: Documents_with_Expenses -> Documents_with_Expenses (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Accounts
+[2025-11-22 23:59:10] 数据复制完成: Accounts -> Accounts (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: cre_Docs_and_Epenses (表: 7, 行: 55)
+[2025-11-22 23:59:10] 开始合并数据库: cre_Doc_Control_Systems
+[2025-11-22 23:59:10] 表名冲突: Ref_Document_Types -> cre_Doc_Control_Systems_Ref_Document_Types
+[2025-11-22 23:59:10] 创建表: cre_Doc_Control_Systems_Ref_Document_Types
+[2025-11-22 23:59:10] 数据复制完成: Ref_Document_Types -> cre_Doc_Control_Systems_Ref_Document_Types (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Roles
+[2025-11-22 23:59:10] 数据复制完成: Roles -> Roles (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Addresses -> cre_Doc_Control_Systems_Addresses
+[2025-11-22 23:59:10] 创建表: cre_Doc_Control_Systems_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Addresses -> cre_Doc_Control_Systems_Addresses (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Document_Status
+[2025-11-22 23:59:10] 数据复制完成: Ref_Document_Status -> Ref_Document_Status (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Shipping_Agents
+[2025-11-22 23:59:10] 数据复制完成: Ref_Shipping_Agents -> Ref_Shipping_Agents (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Documents -> cre_Doc_Control_Systems_Documents
+[2025-11-22 23:59:10] 创建表: cre_Doc_Control_Systems_Documents
+[2025-11-22 23:59:10] 数据复制完成: Documents -> cre_Doc_Control_Systems_Documents (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Employees
+[2025-11-22 23:59:10] 数据复制完成: Employees -> Employees (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Document_Drafts: table "Document_Drafts" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Draft_Copies: table "Draft_Copies" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Circulation_History: table "Circulation_History" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Documents_Mailed: table "Documents_Mailed" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: cre_Doc_Control_Systems (表: 7, 行: 46)
+[2025-11-22 23:59:10] 开始合并数据库: cre_Doc_Template_Mgt
+[2025-11-22 23:59:10] 创建表: Ref_Template_Types
+[2025-11-22 23:59:10] 数据复制完成: Ref_Template_Types -> Ref_Template_Types (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Templates
+[2025-11-22 23:59:10] 数据复制完成: Templates -> Templates (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Documents -> cre_Doc_Template_Mgt_Documents
+[2025-11-22 23:59:10] 创建表: cre_Doc_Template_Mgt_Documents
+[2025-11-22 23:59:10] 数据复制完成: Documents -> cre_Doc_Template_Mgt_Documents (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Paragraphs
+[2025-11-22 23:59:10] 数据复制完成: Paragraphs -> Paragraphs (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: cre_Doc_Template_Mgt (表: 4, 行: 55)
+[2025-11-22 23:59:10] 开始合并数据库: cre_Doc_Tracking_DB
+[2025-11-22 23:59:10] 表名冲突: Ref_Document_Types -> cre_Doc_Tracking_DB_Ref_Document_Types
+[2025-11-22 23:59:10] 创建表: cre_Doc_Tracking_DB_Ref_Document_Types
+[2025-11-22 23:59:10] 数据复制完成: Ref_Document_Types -> cre_Doc_Tracking_DB_Ref_Document_Types (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Calendar
+[2025-11-22 23:59:10] 数据复制完成: Ref_Calendar -> Ref_Calendar (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Locations
+[2025-11-22 23:59:10] 数据复制完成: Ref_Locations -> Ref_Locations (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Roles -> cre_Doc_Tracking_DB_Roles
+[2025-11-22 23:59:10] 创建表: cre_Doc_Tracking_DB_Roles
+[2025-11-22 23:59:10] 数据复制完成: Roles -> cre_Doc_Tracking_DB_Roles (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: All_Documents
+[2025-11-22 23:59:10] 数据复制完成: All_Documents -> All_Documents (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Employees -> cre_Doc_Tracking_DB_Employees
+[2025-11-22 23:59:10] 创建表: cre_Doc_Tracking_DB_Employees
+[2025-11-22 23:59:10] 数据复制完成: Employees -> cre_Doc_Tracking_DB_Employees (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Document_Locations: table "Document_Locations" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Documents_to_be_Destroyed
+[2025-11-22 23:59:10] 数据复制完成: Documents_to_be_Destroyed -> Documents_to_be_Destroyed (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: cre_Doc_Tracking_DB (表: 7, 行: 70)
+[2025-11-22 23:59:10] 开始合并数据库: cre_Drama_Workshop_Groups
+[2025-11-22 23:59:10] 创建表: Ref_Payment_Methods
+[2025-11-22 23:59:10] 数据复制完成: Ref_Payment_Methods -> Ref_Payment_Methods (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Service_Types
+[2025-11-22 23:59:10] 数据复制完成: Ref_Service_Types -> Ref_Service_Types (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Addresses -> cre_Drama_Workshop_Groups_Addresses
+[2025-11-22 23:59:10] 创建表: cre_Drama_Workshop_Groups_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Addresses -> cre_Drama_Workshop_Groups_Addresses (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Marketing_Regions
+[2025-11-22 23:59:10] 数据复制完成: Marketing_Regions -> Marketing_Regions (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Clients
+[2025-11-22 23:59:10] 数据复制完成: Clients -> Clients (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Drama_Workshop_Groups
+[2025-11-22 23:59:10] 数据复制完成: Drama_Workshop_Groups -> Drama_Workshop_Groups (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Performers
+[2025-11-22 23:59:10] 数据复制完成: Performers -> Performers (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Stores
+[2025-11-22 23:59:10] 数据复制完成: Stores -> Stores (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Bookings
+[2025-11-22 23:59:10] 数据复制完成: Bookings -> Bookings (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Performers_in_Bookings: table "Performers_in_Bookings" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Customer_Orders
+[2025-11-22 23:59:10] 数据复制完成: Customer_Orders -> Customer_Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Order_Items
+[2025-11-22 23:59:10] 数据复制完成: Order_Items -> Order_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Invoices
+[2025-11-22 23:59:10] 数据复制完成: Invoices -> Invoices (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Services
+[2025-11-22 23:59:10] 数据复制完成: Services -> Services (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Bookings_Services: table "Bookings_Services" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Invoice_Items
+[2025-11-22 23:59:10] 数据复制完成: Invoice_Items -> Invoice_Items (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: cre_Drama_Workshop_Groups (表: 16, 行: 207)
+[2025-11-22 23:59:10] 开始合并数据库: cre_Theme_park
+[2025-11-22 23:59:10] 创建表: Ref_Hotel_Star_Ratings
+[2025-11-22 23:59:10] 数据复制完成: Ref_Hotel_Star_Ratings -> Ref_Hotel_Star_Ratings (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Locations
+[2025-11-22 23:59:10] 数据复制完成: Locations -> Locations (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Attraction_Types
+[2025-11-22 23:59:10] 数据复制完成: Ref_Attraction_Types -> Ref_Attraction_Types (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Visitors
+[2025-11-22 23:59:10] 数据复制完成: Visitors -> Visitors (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Features
+[2025-11-22 23:59:10] 数据复制完成: Features -> Features (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Hotels
+[2025-11-22 23:59:10] 数据复制完成: Hotels -> Hotels (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Tourist_Attractions
+[2025-11-22 23:59:10] 数据复制完成: Tourist_Attractions -> Tourist_Attractions (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Street_Markets
+[2025-11-22 23:59:10] 数据复制完成: Street_Markets -> Street_Markets (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Shops
+[2025-11-22 23:59:10] 数据复制完成: Shops -> Shops (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Museums
+[2025-11-22 23:59:10] 数据复制完成: Museums -> Museums (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Royal_Family
+[2025-11-22 23:59:10] 数据复制完成: Royal_Family -> Royal_Family (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Theme_Parks
+[2025-11-22 23:59:10] 数据复制完成: Theme_Parks -> Theme_Parks (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Visits
+[2025-11-22 23:59:10] 数据复制完成: Visits -> Visits (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Photos
+[2025-11-22 23:59:10] 数据复制完成: Photos -> Photos (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Staff -> cre_Theme_park_Staff
+[2025-11-22 23:59:10] 创建表: cre_Theme_park_Staff
+[2025-11-22 23:59:10] 数据复制完成: Staff -> cre_Theme_park_Staff (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Tourist_Attraction_Features: table "Tourist_Attraction_Features" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: cre_Theme_park (表: 15, 行: 154)
+[2025-11-22 23:59:10] 开始合并数据库: csu_1
+[2025-11-22 23:59:10] 创建表: Campuses
+[2025-11-22 23:59:10] 数据复制完成: Campuses -> Campuses (插入: 23, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: csu_fees
+[2025-11-22 23:59:10] 数据复制完成: csu_fees -> csu_fees (插入: 23, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 degrees: table "degrees" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 discipline_enrollments: table "discipline_enrollments" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 enrollments: table "enrollments" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 faculty: table "faculty" already exists
+[2025-11-22 23:59:10] 数据库合并完成: csu_1 (表: 2, 行: 46)
+[2025-11-22 23:59:10] 开始合并数据库: culture_company
+[2025-11-22 23:59:10] 创建表: book_club
+[2025-11-22 23:59:10] 数据复制完成: book_club -> book_club (插入: 12, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: movie
+[2025-11-22 23:59:10] 数据复制完成: movie -> movie (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: culture_company
+[2025-11-22 23:59:10] 数据复制完成: culture_company -> culture_company (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: culture_company (表: 3, 行: 28)
+[2025-11-22 23:59:10] 开始合并数据库: customers_and_addresses
+[2025-11-22 23:59:10] 表名冲突: Addresses -> customers_and_addresses_Addresses
+[2025-11-22 23:59:10] 创建表: customers_and_addresses_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Addresses -> customers_and_addresses_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Products -> customers_and_addresses_Products
+[2025-11-22 23:59:10] 创建表: customers_and_addresses_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> customers_and_addresses_Products (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> customers_and_addresses_Customers
+[2025-11-22 23:59:10] 创建表: customers_and_addresses_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> customers_and_addresses_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Customer_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Customer_Addresses -> Customer_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Customer_Contact_Channels
+[2025-11-22 23:59:10] 数据复制完成: Customer_Contact_Channels -> Customer_Contact_Channels (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customer_Orders -> customers_and_addresses_Customer_Orders
+[2025-11-22 23:59:10] 创建表: customers_and_addresses_Customer_Orders
+[2025-11-22 23:59:10] 数据复制完成: Customer_Orders -> customers_and_addresses_Customer_Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Order_Items -> customers_and_addresses_Order_Items
+[2025-11-22 23:59:10] 创建表: customers_and_addresses_Order_Items
+[2025-11-22 23:59:10] 数据复制完成: Order_Items -> customers_and_addresses_Order_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: customers_and_addresses (表: 7, 行: 98)
+[2025-11-22 23:59:10] 开始合并数据库: customers_and_invoices
+[2025-11-22 23:59:10] 表名冲突: Customers -> customers_and_invoices_Customers
+[2025-11-22 23:59:10] 创建表: customers_and_invoices_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> customers_and_invoices_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Orders
+[2025-11-22 23:59:10] 数据复制完成: Orders -> Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Invoices -> customers_and_invoices_Invoices
+[2025-11-22 23:59:10] 创建表: customers_and_invoices_Invoices
+[2025-11-22 23:59:10] 数据复制完成: Invoices -> customers_and_invoices_Invoices (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Accounts -> customers_and_invoices_Accounts
+[2025-11-22 23:59:10] 创建表: customers_and_invoices_Accounts
+[2025-11-22 23:59:10] 数据复制完成: Accounts -> customers_and_invoices_Accounts (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Product_Categories
+[2025-11-22 23:59:10] 数据复制完成: Product_Categories -> Product_Categories (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Products -> customers_and_invoices_Products
+[2025-11-22 23:59:10] 创建表: customers_and_invoices_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> customers_and_invoices_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Financial_Transactions
+[2025-11-22 23:59:10] 数据复制完成: Financial_Transactions -> Financial_Transactions (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Order_Items -> customers_and_invoices_Order_Items
+[2025-11-22 23:59:10] 创建表: customers_and_invoices_Order_Items
+[2025-11-22 23:59:10] 数据复制完成: Order_Items -> customers_and_invoices_Order_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Invoice_Line_Items
+[2025-11-22 23:59:10] 数据复制完成: Invoice_Line_Items -> Invoice_Line_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: customers_and_invoices (表: 9, 行: 124)
+[2025-11-22 23:59:10] 开始合并数据库: customers_and_products_contacts
+[2025-11-22 23:59:10] 表名冲突: Addresses -> customers_and_products_contacts_Addresses
+[2025-11-22 23:59:10] 创建表: customers_and_products_contacts_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Addresses -> customers_and_products_contacts_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Products -> customers_and_products_contacts_Products
+[2025-11-22 23:59:10] 创建表: customers_and_products_contacts_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> customers_and_products_contacts_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> customers_and_products_contacts_Customers
+[2025-11-22 23:59:10] 创建表: customers_and_products_contacts_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> customers_and_products_contacts_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Contacts
+[2025-11-22 23:59:10] 数据复制完成: Contacts -> Contacts (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Customer_Address_History
+[2025-11-22 23:59:10] 数据复制完成: Customer_Address_History -> Customer_Address_History (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customer_Orders -> customers_and_products_contacts_Customer_Orders
+[2025-11-22 23:59:10] 创建表: customers_and_products_contacts_Customer_Orders
+[2025-11-22 23:59:10] 数据复制完成: Customer_Orders -> customers_and_products_contacts_Customer_Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Order_Items -> customers_and_products_contacts_Order_Items
+[2025-11-22 23:59:10] 创建表: customers_and_products_contacts_Order_Items
+[2025-11-22 23:59:10] 数据复制完成: Order_Items -> customers_and_products_contacts_Order_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: customers_and_products_contacts (表: 7, 行: 110)
+[2025-11-22 23:59:10] 开始合并数据库: customers_campaigns_ecommerce
+[2025-11-22 23:59:10] 创建表: Premises
+[2025-11-22 23:59:10] 数据复制完成: Premises -> Premises (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Products -> customers_campaigns_ecommerce_Products
+[2025-11-22 23:59:10] 创建表: customers_campaigns_ecommerce_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> customers_campaigns_ecommerce_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> customers_campaigns_ecommerce_Customers
+[2025-11-22 23:59:10] 创建表: customers_campaigns_ecommerce_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> customers_campaigns_ecommerce_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Mailshot_Campaigns
+[2025-11-22 23:59:10] 数据复制完成: Mailshot_Campaigns -> Mailshot_Campaigns (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customer_Addresses -> customers_campaigns_ecommerce_Customer_Addresses
+[2025-11-22 23:59:10] 创建表: customers_campaigns_ecommerce_Customer_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Customer_Addresses -> customers_campaigns_ecommerce_Customer_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customer_Orders -> customers_campaigns_ecommerce_Customer_Orders
+[2025-11-22 23:59:10] 创建表: customers_campaigns_ecommerce_Customer_Orders
+[2025-11-22 23:59:10] 数据复制完成: Customer_Orders -> customers_campaigns_ecommerce_Customer_Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Mailshot_Customers
+[2025-11-22 23:59:10] 数据复制完成: Mailshot_Customers -> Mailshot_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Order_Items -> customers_campaigns_ecommerce_Order_Items
+[2025-11-22 23:59:10] 创建表: customers_campaigns_ecommerce_Order_Items
+[2025-11-22 23:59:10] 数据复制完成: Order_Items -> customers_campaigns_ecommerce_Order_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: customers_campaigns_ecommerce (表: 8, 行: 125)
+[2025-11-22 23:59:10] 开始合并数据库: customers_card_transactions
+[2025-11-22 23:59:10] 表名冲突: Accounts -> customers_card_transactions_Accounts
+[2025-11-22 23:59:10] 创建表: customers_card_transactions_Accounts
+[2025-11-22 23:59:10] 数据复制完成: Accounts -> customers_card_transactions_Accounts (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> customers_card_transactions_Customers
+[2025-11-22 23:59:10] 创建表: customers_card_transactions_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> customers_card_transactions_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Customers_Cards
+[2025-11-22 23:59:10] 数据复制完成: Customers_Cards -> Customers_Cards (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Financial_Transactions -> customers_card_transactions_Financial_Transactions
+[2025-11-22 23:59:10] 创建表: customers_card_transactions_Financial_Transactions
+[2025-11-22 23:59:10] 数据复制完成: Financial_Transactions -> customers_card_transactions_Financial_Transactions (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: customers_card_transactions (表: 4, 行: 60)
+[2025-11-22 23:59:10] 开始合并数据库: customer_complaints
+[2025-11-22 23:59:10] 表名冲突: Staff -> customer_complaints_Staff
+[2025-11-22 23:59:10] 创建表: customer_complaints_Staff
+[2025-11-22 23:59:10] 数据复制完成: Staff -> customer_complaints_Staff (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> customer_complaints_Customers
+[2025-11-22 23:59:10] 创建表: customer_complaints_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> customer_complaints_Customers (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Products -> customer_complaints_Products
+[2025-11-22 23:59:10] 创建表: customer_complaints_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> customer_complaints_Products (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Complaints
+[2025-11-22 23:59:10] 数据复制完成: Complaints -> Complaints (插入: 12, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: customer_complaints (表: 4, 行: 31)
+[2025-11-22 23:59:10] 开始合并数据库: customer_deliveries
+[2025-11-22 23:59:10] 表名冲突: Products -> customer_deliveries_Products
+[2025-11-22 23:59:10] 创建表: customer_deliveries_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> customer_deliveries_Products (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Addresses -> customer_deliveries_Addresses
+[2025-11-22 23:59:10] 创建表: customer_deliveries_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Addresses -> customer_deliveries_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> customer_deliveries_Customers
+[2025-11-22 23:59:10] 创建表: customer_deliveries_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> customer_deliveries_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Regular_Orders
+[2025-11-22 23:59:10] 数据复制完成: Regular_Orders -> Regular_Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Regular_Order_Products
+[2025-11-22 23:59:10] 数据复制完成: Regular_Order_Products -> Regular_Order_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Actual_Orders
+[2025-11-22 23:59:10] 数据复制完成: Actual_Orders -> Actual_Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Actual_Order_Products
+[2025-11-22 23:59:10] 数据复制完成: Actual_Order_Products -> Actual_Order_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customer_Addresses -> customer_deliveries_Customer_Addresses
+[2025-11-22 23:59:10] 创建表: customer_deliveries_Customer_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Customer_Addresses -> customer_deliveries_Customer_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Delivery_Routes
+[2025-11-22 23:59:10] 数据复制完成: Delivery_Routes -> Delivery_Routes (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Delivery_Route_Locations
+[2025-11-22 23:59:10] 数据复制完成: Delivery_Route_Locations -> Delivery_Route_Locations (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Trucks
+[2025-11-22 23:59:10] 数据复制完成: Trucks -> Trucks (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Employees -> customer_deliveries_Employees
+[2025-11-22 23:59:10] 创建表: customer_deliveries_Employees
+[2025-11-22 23:59:10] 数据复制完成: Employees -> customer_deliveries_Employees (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Order_Deliveries
+[2025-11-22 23:59:10] 数据复制完成: Order_Deliveries -> Order_Deliveries (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: customer_deliveries (表: 13, 行: 186)
+[2025-11-22 23:59:10] 开始合并数据库: debate
+[2025-11-22 23:59:10] 表名冲突: people -> debate_people
+[2025-11-22 23:59:10] 创建表: debate_people
+[2025-11-22 23:59:10] 数据复制完成: people -> debate_people (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: debate
+[2025-11-22 23:59:10] 数据复制完成: debate -> debate (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: debate_people -> debate_debate_people
+[2025-11-22 23:59:10] 创建表失败 debate_debate_people: table "debate_debate_people" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: debate (表: 2, 行: 16)
+[2025-11-22 23:59:10] 开始合并数据库: decoration_competition
+[2025-11-22 23:59:10] 表名冲突: college -> decoration_competition_college
+[2025-11-22 23:59:10] 创建表: decoration_competition_college
+[2025-11-22 23:59:10] 数据复制完成: college -> decoration_competition_college (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: member -> decoration_competition_member
+[2025-11-22 23:59:10] 创建表: decoration_competition_member
+[2025-11-22 23:59:10] 数据复制完成: member -> decoration_competition_member (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 round: table "round" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: decoration_competition (表: 2, 行: 15)
+[2025-11-22 23:59:10] 开始合并数据库: department_management
+[2025-11-22 23:59:10] 创建表失败 department: table "department" already exists
+[2025-11-22 23:59:10] 创建表: head
+[2025-11-22 23:59:10] 数据复制完成: head -> head (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 management: table "management" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: department_management (表: 1, 行: 10)
+[2025-11-22 23:59:10] 开始合并数据库: department_store
+[2025-11-22 23:59:10] 表名冲突: Addresses -> department_store_Addresses
+[2025-11-22 23:59:10] 创建表: department_store_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Addresses -> department_store_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Staff -> department_store_Staff
+[2025-11-22 23:59:10] 创建表: department_store_Staff
+[2025-11-22 23:59:10] 数据复制完成: Staff -> department_store_Staff (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Suppliers
+[2025-11-22 23:59:10] 数据复制完成: Suppliers -> Suppliers (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Department_Store_Chain
+[2025-11-22 23:59:10] 数据复制完成: Department_Store_Chain -> Department_Store_Chain (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> department_store_Customers
+[2025-11-22 23:59:10] 创建表: department_store_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> department_store_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Products -> department_store_Products
+[2025-11-22 23:59:10] 创建表: department_store_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> department_store_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Supplier_Addresses: table "Supplier_Addresses" has more than one primary key
+[2025-11-22 23:59:10] 表名冲突: Customer_Addresses -> department_store_Customer_Addresses
+[2025-11-22 23:59:10] 创建表失败 department_store_Customer_Addresses: table "department_store_Customer_Addresses" has more than one primary key
+[2025-11-22 23:59:10] 表名冲突: Customer_Orders -> department_store_Customer_Orders
+[2025-11-22 23:59:10] 创建表: department_store_Customer_Orders
+[2025-11-22 23:59:10] 数据复制完成: Customer_Orders -> department_store_Customer_Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Department_Stores
+[2025-11-22 23:59:10] 数据复制完成: Department_Stores -> Department_Stores (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Departments
+[2025-11-22 23:59:10] 数据复制完成: Departments -> Departments (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Order_Items -> department_store_Order_Items
+[2025-11-22 23:59:10] 创建表: department_store_Order_Items
+[2025-11-22 23:59:10] 数据复制完成: Order_Items -> department_store_Order_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Product_Suppliers: table "Product_Suppliers" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Staff_Department_Assignments: table "Staff_Department_Assignments" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: department_store (表: 10, 行: 118)
+[2025-11-22 23:59:10] 开始合并数据库: device
+[2025-11-22 23:59:10] 创建表: device
+[2025-11-22 23:59:10] 数据复制完成: device -> device (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: shop -> device_shop
+[2025-11-22 23:59:10] 创建表: device_shop
+[2025-11-22 23:59:10] 数据复制完成: shop -> device_shop (插入: 12, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 stock: table "stock" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: device (表: 2, 行: 18)
+[2025-11-22 23:59:10] 开始合并数据库: document_management
+[2025-11-22 23:59:10] 表名冲突: Roles -> document_management_Roles
+[2025-11-22 23:59:10] 创建表: document_management_Roles
+[2025-11-22 23:59:10] 数据复制完成: Roles -> document_management_Roles (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Users
+[2025-11-22 23:59:10] 数据复制完成: Users -> Users (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Document_Structures
+[2025-11-22 23:59:10] 数据复制完成: Document_Structures -> Document_Structures (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Functional_Areas
+[2025-11-22 23:59:10] 数据复制完成: Functional_Areas -> Functional_Areas (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Images
+[2025-11-22 23:59:10] 数据复制完成: Images -> Images (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Documents -> document_management_Documents
+[2025-11-22 23:59:10] 创建表: document_management_Documents
+[2025-11-22 23:59:10] 数据复制完成: Documents -> document_management_Documents (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Document_Functional_Areas
+[2025-11-22 23:59:10] 数据复制完成: Document_Functional_Areas -> Document_Functional_Areas (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Document_Sections
+[2025-11-22 23:59:10] 数据复制完成: Document_Sections -> Document_Sections (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Document_Sections_Images: table "Document_Sections_Images" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: document_management (表: 8, 行: 85)
+[2025-11-22 23:59:10] 开始合并数据库: dog_kennels
+[2025-11-22 23:59:10] 创建表: Breeds
+[2025-11-22 23:59:10] 数据复制完成: Breeds -> Breeds (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Charges
+[2025-11-22 23:59:10] 数据复制完成: Charges -> Charges (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Sizes
+[2025-11-22 23:59:10] 数据复制完成: Sizes -> Sizes (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Treatment_Types
+[2025-11-22 23:59:10] 数据复制完成: Treatment_Types -> Treatment_Types (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Owners
+[2025-11-22 23:59:10] 数据复制完成: Owners -> Owners (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Dogs
+[2025-11-22 23:59:10] 数据复制完成: Dogs -> Dogs (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Professionals
+[2025-11-22 23:59:10] 数据复制完成: Professionals -> Professionals (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Treatments
+[2025-11-22 23:59:10] 数据复制完成: Treatments -> Treatments (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: dog_kennels (表: 8, 行: 72)
+[2025-11-22 23:59:10] 开始合并数据库: dorm_1
+[2025-11-22 23:59:10] 表名冲突: Student -> dorm_1_Student
+[2025-11-22 23:59:10] 创建表: dorm_1_Student
+[2025-11-22 23:59:10] 数据复制完成: Student -> dorm_1_Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Dorm
+[2025-11-22 23:59:10] 数据复制完成: Dorm -> Dorm (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Dorm_amenity
+[2025-11-22 23:59:10] 数据复制完成: Dorm_amenity -> Dorm_amenity (插入: 12, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Has_amenity
+[2025-11-22 23:59:10] 数据复制完成: Has_amenity -> Has_amenity (插入: 40, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Lives_in
+[2025-11-22 23:59:10] 数据复制完成: Lives_in -> Lives_in (插入: 31, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: dorm_1 (表: 5, 行: 124)
+[2025-11-22 23:59:10] 开始合并数据库: driving_school
+[2025-11-22 23:59:10] 表名冲突: Addresses -> driving_school_Addresses
+[2025-11-22 23:59:10] 创建表: driving_school_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Addresses -> driving_school_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Staff -> driving_school_Staff
+[2025-11-22 23:59:10] 创建表: driving_school_Staff
+[2025-11-22 23:59:10] 数据复制完成: Staff -> driving_school_Staff (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Vehicles
+[2025-11-22 23:59:10] 数据复制完成: Vehicles -> Vehicles (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> driving_school_Customers
+[2025-11-22 23:59:10] 创建表: driving_school_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> driving_school_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Customer_Payments: table "Customer_Payments" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Lessons
+[2025-11-22 23:59:10] 数据复制完成: Lessons -> Lessons (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: driving_school (表: 5, 行: 63)
+[2025-11-22 23:59:10] 开始合并数据库: election
+[2025-11-22 23:59:10] 创建表: county
+[2025-11-22 23:59:10] 数据复制完成: county -> county (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: party
+[2025-11-22 23:59:10] 数据复制完成: party -> party (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: election
+[2025-11-22 23:59:10] 数据复制完成: election -> election (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: election (表: 3, 行: 20)
+[2025-11-22 23:59:10] 开始合并数据库: election_representative
+[2025-11-22 23:59:10] 表名冲突: election -> election_representative_election
+[2025-11-22 23:59:10] 创建表: election_representative_election
+[2025-11-22 23:59:10] 数据复制完成: election -> election_representative_election (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: representative
+[2025-11-22 23:59:10] 数据复制完成: representative -> representative (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: election_representative (表: 2, 行: 12)
+[2025-11-22 23:59:10] 开始合并数据库: employee_hire_evaluation
+[2025-11-22 23:59:10] 创建表失败 employee: table "employee" already exists
+[2025-11-22 23:59:10] 表名冲突: shop -> employee_hire_evaluation_shop
+[2025-11-22 23:59:10] 创建表: employee_hire_evaluation_shop
+[2025-11-22 23:59:10] 数据复制完成: shop -> employee_hire_evaluation_shop (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: hiring
+[2025-11-22 23:59:10] 数据复制完成: hiring -> hiring (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 evaluation: table "evaluation" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: employee_hire_evaluation (表: 2, 行: 16)
+[2025-11-22 23:59:10] 开始合并数据库: entertainment_awards
+[2025-11-22 23:59:10] 创建表: festival_detail
+[2025-11-22 23:59:10] 数据复制完成: festival_detail -> festival_detail (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: artwork
+[2025-11-22 23:59:10] 数据复制完成: artwork -> artwork (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 nomination: table "nomination" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: entertainment_awards (表: 2, 行: 14)
+[2025-11-22 23:59:10] 开始合并数据库: entrepreneur
+[2025-11-22 23:59:10] 创建表: entrepreneur
+[2025-11-22 23:59:10] 数据复制完成: entrepreneur -> entrepreneur (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: people -> entrepreneur_people
+[2025-11-22 23:59:10] 创建表: entrepreneur_people
+[2025-11-22 23:59:10] 数据复制完成: people -> entrepreneur_people (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: entrepreneur (表: 2, 行: 14)
+[2025-11-22 23:59:10] 开始合并数据库: epinions_1
+[2025-11-22 23:59:10] 创建表: item
+[2025-11-22 23:59:10] 数据复制完成: item -> item (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: review
+[2025-11-22 23:59:10] 数据复制完成: review -> review (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: useracct
+[2025-11-22 23:59:10] 数据复制完成: useracct -> useracct (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: trust
+[2025-11-22 23:59:10] 数据复制完成: trust -> trust (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: epinions_1 (表: 4, 行: 31)
+[2025-11-22 23:59:10] 开始合并数据库: e_government
+[2025-11-22 23:59:10] 表名冲突: Addresses -> e_government_Addresses
+[2025-11-22 23:59:10] 创建表: e_government_Addresses
+[2025-11-22 23:59:10] 数据复制完成: Addresses -> e_government_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Services -> e_government_Services
+[2025-11-22 23:59:10] 创建表: e_government_Services
+[2025-11-22 23:59:10] 数据复制完成: Services -> e_government_Services (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Forms
+[2025-11-22 23:59:10] 数据复制完成: Forms -> Forms (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Individuals
+[2025-11-22 23:59:10] 数据复制完成: Individuals -> Individuals (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Organizations
+[2025-11-22 23:59:10] 数据复制完成: Organizations -> Organizations (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Parties
+[2025-11-22 23:59:10] 数据复制完成: Parties -> Parties (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Organization_Contact_Individuals: table "Organization_Contact_Individuals" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Party_Addresses: table "Party_Addresses" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Party_Forms: table "Party_Forms" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Party_Services
+[2025-11-22 23:59:10] 数据复制完成: Party_Services -> Party_Services (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: e_government (表: 7, 行: 86)
+[2025-11-22 23:59:10] 开始合并数据库: e_learning
+[2025-11-22 23:59:10] 创建表: Course_Authors_and_Tutors
+[2025-11-22 23:59:10] 数据复制完成: Course_Authors_and_Tutors -> Course_Authors_and_Tutors (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Students -> e_learning_Students
+[2025-11-22 23:59:10] 创建表: e_learning_Students
+[2025-11-22 23:59:10] 数据复制完成: Students -> e_learning_Students (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Subjects
+[2025-11-22 23:59:10] 数据复制完成: Subjects -> Subjects (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Courses
+[2025-11-22 23:59:10] 数据复制完成: Courses -> Courses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Student_Course_Enrolment
+[2025-11-22 23:59:10] 数据复制完成: Student_Course_Enrolment -> Student_Course_Enrolment (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Student_Tests_Taken
+[2025-11-22 23:59:10] 数据复制完成: Student_Tests_Taken -> Student_Tests_Taken (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: e_learning (表: 6, 行: 83)
+[2025-11-22 23:59:10] 开始合并数据库: farm
+[2025-11-22 23:59:10] 表名冲突: city -> farm_city
+[2025-11-22 23:59:10] 创建表: farm_city
+[2025-11-22 23:59:10] 数据复制完成: city -> farm_city (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: farm
+[2025-11-22 23:59:10] 数据复制完成: farm -> farm (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: farm_competition
+[2025-11-22 23:59:10] 数据复制完成: farm_competition -> farm_competition (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 competition_record: table "competition_record" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: farm (表: 3, 行: 19)
+[2025-11-22 23:59:10] 开始合并数据库: film_rank
+[2025-11-22 23:59:10] 表名冲突: film -> film_rank_film
+[2025-11-22 23:59:10] 创建表: film_rank_film
+[2025-11-22 23:59:10] 数据复制完成: film -> film_rank_film (插入: 13, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: market
+[2025-11-22 23:59:10] 数据复制完成: market -> market (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: film_market_estimation
+[2025-11-22 23:59:10] 数据复制完成: film_market_estimation -> film_market_estimation (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: film_rank (表: 3, 行: 28)
+[2025-11-22 23:59:10] 开始合并数据库: flight_1
+[2025-11-22 23:59:10] 创建表: flight
+[2025-11-22 23:59:10] 数据复制完成: flight -> flight (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: aircraft -> flight_1_aircraft
+[2025-11-22 23:59:10] 创建表: flight_1_aircraft
+[2025-11-22 23:59:10] 数据复制完成: aircraft -> flight_1_aircraft (插入: 16, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 employee: table "employee" already exists
+[2025-11-22 23:59:10] 创建表失败 certificate: table "certificate" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: flight_1 (表: 2, 行: 26)
+[2025-11-22 23:59:10] 开始合并数据库: flight_2
+[2025-11-22 23:59:10] 创建表: airlines
+[2025-11-22 23:59:10] 数据复制完成: airlines -> airlines (插入: 12, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: airports
+[2025-11-22 23:59:10] 数据复制完成: airports -> airports (插入: 100, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 flights: table "flights" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: flight_2 (表: 2, 行: 112)
+[2025-11-22 23:59:10] 开始合并数据库: flight_4
+[2025-11-22 23:59:10] 创建表: routes
+[2025-11-22 23:59:10] 数据复制完成: routes -> routes (插入: 67240, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: airports -> flight_4_airports
+[2025-11-22 23:59:10] 创建表: flight_4_airports
+[2025-11-22 23:59:10] 数据复制完成: airports -> flight_4_airports (插入: 7184, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: airlines -> flight_4_airlines
+[2025-11-22 23:59:10] 创建表: flight_4_airlines
+[2025-11-22 23:59:10] 数据复制完成: airlines -> flight_4_airlines (插入: 6162, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: flight_4 (表: 3, 行: 80586)
+[2025-11-22 23:59:10] 开始合并数据库: flight_company
+[2025-11-22 23:59:10] 表名冲突: airport -> flight_company_airport
+[2025-11-22 23:59:10] 创建表: flight_company_airport
+[2025-11-22 23:59:10] 数据复制完成: airport -> flight_company_airport (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: operate_company
+[2025-11-22 23:59:10] 数据复制完成: operate_company -> operate_company (插入: 14, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: flight -> flight_company_flight
+[2025-11-22 23:59:10] 创建表: flight_company_flight
+[2025-11-22 23:59:10] 数据复制完成: flight -> flight_company_flight (插入: 13, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: flight_company (表: 3, 行: 36)
+[2025-11-22 23:59:10] 开始合并数据库: formula_1
+[2025-11-22 23:59:10] 创建表: circuits
+[2025-11-22 23:59:10] 数据复制完成: circuits -> circuits (插入: 73, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: races
+[2025-11-22 23:59:10] 数据复制完成: races -> races (插入: 997, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: drivers
+[2025-11-22 23:59:10] 数据复制完成: drivers -> drivers (插入: 842, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: status -> formula_1_status
+[2025-11-22 23:59:10] 创建表: formula_1_status
+[2025-11-22 23:59:10] 数据复制完成: status -> formula_1_status (插入: 134, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: seasons
+[2025-11-22 23:59:10] 数据复制完成: seasons -> seasons (插入: 69, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: constructors
+[2025-11-22 23:59:10] 数据复制完成: constructors -> constructors (插入: 208, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: constructorStandings
+[2025-11-22 23:59:10] 数据复制完成: constructorStandings -> constructorStandings (插入: 11896, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: results
+[2025-11-22 23:59:10] 数据复制完成: results -> results (插入: 23777, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: driverStandings
+[2025-11-22 23:59:10] 数据复制完成: driverStandings -> driverStandings (插入: 31726, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: constructorResults
+[2025-11-22 23:59:10] 数据复制完成: constructorResults -> constructorResults (插入: 11142, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: qualifying
+[2025-11-22 23:59:10] 数据复制完成: qualifying -> qualifying (插入: 7516, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 pitStops: table "pitStops" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 lapTimes: table "lapTimes" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: formula_1 (表: 11, 行: 88380)
+[2025-11-22 23:59:10] 开始合并数据库: game_1
+[2025-11-22 23:59:10] 表名冲突: Student -> game_1_Student
+[2025-11-22 23:59:10] 创建表: game_1_Student
+[2025-11-22 23:59:10] 数据复制完成: Student -> game_1_Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Video_Games
+[2025-11-22 23:59:10] 数据复制完成: Video_Games -> Video_Games (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Plays_Games
+[2025-11-22 23:59:10] 数据复制完成: Plays_Games -> Plays_Games (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: SportsInfo
+[2025-11-22 23:59:10] 数据复制完成: SportsInfo -> SportsInfo (插入: 14, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: game_1 (表: 4, 行: 64)
+[2025-11-22 23:59:10] 开始合并数据库: game_injury
+[2025-11-22 23:59:10] 表名冲突: stadium -> game_injury_stadium
+[2025-11-22 23:59:10] 创建表: game_injury_stadium
+[2025-11-22 23:59:10] 数据复制完成: stadium -> game_injury_stadium (插入: 13, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: game
+[2025-11-22 23:59:10] 数据复制完成: game -> game (插入: 20, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: injury_accident
+[2025-11-22 23:59:10] 数据复制完成: injury_accident -> injury_accident (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: game_injury (表: 3, 行: 48)
+[2025-11-22 23:59:10] 开始合并数据库: gas_company
+[2025-11-22 23:59:10] 表名冲突: company -> gas_company_company
+[2025-11-22 23:59:10] 创建表: gas_company_company
+[2025-11-22 23:59:10] 数据复制完成: company -> gas_company_company (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: gas_station
+[2025-11-22 23:59:10] 数据复制完成: gas_station -> gas_station (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 station_company: table "station_company" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: gas_company (表: 2, 行: 21)
+[2025-11-22 23:59:10] 开始合并数据库: geo
+[2025-11-22 23:59:10] 创建表: state
+[2025-11-22 23:59:10] 表名冲突: city -> geo_city
+[2025-11-22 23:59:10] 创建表失败 geo_city: table "geo_city" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 border_info: table "border_info" has more than one primary key
+[2025-11-22 23:59:10] 创建表: highlow
+[2025-11-22 23:59:10] 创建表: lake
+[2025-11-22 23:59:10] 表名冲突: mountain -> geo_mountain
+[2025-11-22 23:59:10] 创建表失败 geo_mountain: table "geo_mountain" has more than one primary key
+[2025-11-22 23:59:10] 创建表: river
+[2025-11-22 23:59:10] 数据库合并完成: geo (表: 4, 行: 0)
+[2025-11-22 23:59:10] 开始合并数据库: gymnast
+[2025-11-22 23:59:10] 创建表: gymnast
+[2025-11-22 23:59:10] 数据复制完成: gymnast -> gymnast (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: people -> gymnast_people
+[2025-11-22 23:59:10] 创建表: gymnast_people
+[2025-11-22 23:59:10] 数据复制完成: people -> gymnast_people (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: gymnast (表: 2, 行: 17)
+[2025-11-22 23:59:10] 开始合并数据库: hospital_1
+[2025-11-22 23:59:10] 创建表: Physician
+[2025-11-22 23:59:10] 数据复制完成: Physician -> Physician (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Department: table "Department" already exists
+[2025-11-22 23:59:10] 创建表失败 Affiliated_With: table "Affiliated_With" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Procedures
+[2025-11-22 23:59:10] 数据复制完成: Procedures -> Procedures (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Trained_In: table "Trained_In" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Patient
+[2025-11-22 23:59:10] 数据复制完成: Patient -> Patient (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Nurse
+[2025-11-22 23:59:10] 数据复制完成: Nurse -> Nurse (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Appointment
+[2025-11-22 23:59:10] 数据复制完成: Appointment -> Appointment (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Medication
+[2025-11-22 23:59:10] 数据复制完成: Medication -> Medication (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Prescribes: table "Prescribes" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Block: table "Block" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Room
+[2025-11-22 23:59:10] 数据复制完成: Room -> Room (插入: 36, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 On_Call: table "On_Call" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Stay
+[2025-11-22 23:59:10] 数据复制完成: Stay -> Stay (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Undergoes: table "Undergoes" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: hospital_1 (表: 8, 行: 76)
+[2025-11-22 23:59:10] 开始合并数据库: hr_1
+[2025-11-22 23:59:10] 创建表: regions
+[2025-11-22 23:59:10] 数据复制完成: regions -> regions (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: countries -> hr_1_countries
+[2025-11-22 23:59:10] 创建表: hr_1_countries
+[2025-11-22 23:59:10] 数据复制完成: countries -> hr_1_countries (插入: 25, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 departments: table "departments" already exists
+[2025-11-22 23:59:10] 创建表: jobs
+[2025-11-22 23:59:10] 数据复制完成: jobs -> jobs (插入: 19, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 employees: table "employees" already exists
+[2025-11-22 23:59:10] 创建表失败 job_history: table "job_history" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 locations: table "locations" already exists
+[2025-11-22 23:59:10] 数据库合并完成: hr_1 (表: 3, 行: 48)
+[2025-11-22 23:59:10] 开始合并数据库: icfp_1
+[2025-11-22 23:59:10] 创建表: Inst
+[2025-11-22 23:59:10] 数据复制完成: Inst -> Inst (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Authors
+[2025-11-22 23:59:10] 数据复制完成: Authors -> Authors (插入: 13, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Papers
+[2025-11-22 23:59:10] 数据复制完成: Papers -> Papers (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Authorship: table "Authorship" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: icfp_1 (表: 3, 行: 28)
+[2025-11-22 23:59:10] 开始合并数据库: imdb
+[2025-11-22 23:59:10] 创建表: actor
+[2025-11-22 23:59:10] 创建表: copyright
+[2025-11-22 23:59:10] 创建表: cast
+[2025-11-22 23:59:10] 创建表失败 genre: table "genre" already exists
+[2025-11-22 23:59:10] 创建表: classification
+[2025-11-22 23:59:10] 表名冲突: company -> imdb_company
+[2025-11-22 23:59:10] 创建表: imdb_company
+[2025-11-22 23:59:10] 创建表: director
+[2025-11-22 23:59:10] 创建表: producer
+[2025-11-22 23:59:10] 创建表: directed_by
+[2025-11-22 23:59:10] 表名冲突: keyword -> imdb_keyword
+[2025-11-22 23:59:10] 创建表: imdb_keyword
+[2025-11-22 23:59:10] 创建表: made_by
+[2025-11-22 23:59:10] 表名冲突: movie -> imdb_movie
+[2025-11-22 23:59:10] 创建表: imdb_movie
+[2025-11-22 23:59:10] 创建表: tags
+[2025-11-22 23:59:10] 创建表: tv_series
+[2025-11-22 23:59:10] 创建表: writer
+[2025-11-22 23:59:10] 创建表: written_by
+[2025-11-22 23:59:10] 数据库合并完成: imdb (表: 15, 行: 0)
+[2025-11-22 23:59:10] 开始合并数据库: inn_1
+[2025-11-22 23:59:10] 创建表: Rooms
+[2025-11-22 23:59:10] 数据复制完成: Rooms -> Rooms (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Reservations
+[2025-11-22 23:59:10] 数据复制完成: Reservations -> Reservations (插入: 600, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: inn_1 (表: 2, 行: 610)
+[2025-11-22 23:59:10] 开始合并数据库: insurance_and_eClaims
+[2025-11-22 23:59:10] 表名冲突: Customers -> insurance_and_eClaims_Customers
+[2025-11-22 23:59:10] 创建表: insurance_and_eClaims_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> insurance_and_eClaims_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Staff -> insurance_and_eClaims_Staff
+[2025-11-22 23:59:10] 创建表: insurance_and_eClaims_Staff
+[2025-11-22 23:59:10] 数据复制完成: Staff -> insurance_and_eClaims_Staff (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Policies
+[2025-11-22 23:59:10] 数据复制完成: Policies -> Policies (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Claim_Headers
+[2025-11-22 23:59:10] 数据复制完成: Claim_Headers -> Claim_Headers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Claims_Documents: table "Claims_Documents" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Claims_Processing_Stages
+[2025-11-22 23:59:10] 数据复制完成: Claims_Processing_Stages -> Claims_Processing_Stages (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Claims_Processing
+[2025-11-22 23:59:10] 数据复制完成: Claims_Processing -> Claims_Processing (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: insurance_and_eClaims (表: 6, 行: 77)
+[2025-11-22 23:59:10] 开始合并数据库: insurance_fnol
+[2025-11-22 23:59:10] 表名冲突: Customers -> insurance_fnol_Customers
+[2025-11-22 23:59:10] 创建表: insurance_fnol_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> insurance_fnol_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Services -> insurance_fnol_Services
+[2025-11-22 23:59:10] 创建表: insurance_fnol_Services
+[2025-11-22 23:59:10] 数据复制完成: Services -> insurance_fnol_Services (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Available_Policies
+[2025-11-22 23:59:10] 数据复制完成: Available_Policies -> Available_Policies (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Customers_Policies: table "Customers_Policies" has more than one primary key
+[2025-11-22 23:59:10] 创建表: First_Notification_of_Loss
+[2025-11-22 23:59:10] 数据复制完成: First_Notification_of_Loss -> First_Notification_of_Loss (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Claims
+[2025-11-22 23:59:10] 数据复制完成: Claims -> Claims (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Settlements
+[2025-11-22 23:59:10] 数据复制完成: Settlements -> Settlements (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: insurance_fnol (表: 6, 行: 61)
+[2025-11-22 23:59:10] 开始合并数据库: insurance_policies
+[2025-11-22 23:59:10] 表名冲突: Customers -> insurance_policies_Customers
+[2025-11-22 23:59:10] 创建表: insurance_policies_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> insurance_policies_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Customer_Policies
+[2025-11-22 23:59:10] 数据复制完成: Customer_Policies -> Customer_Policies (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Claims -> insurance_policies_Claims
+[2025-11-22 23:59:10] 创建表: insurance_policies_Claims
+[2025-11-22 23:59:10] 数据复制完成: Claims -> insurance_policies_Claims (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Settlements -> insurance_policies_Settlements
+[2025-11-22 23:59:10] 创建表: insurance_policies_Settlements
+[2025-11-22 23:59:10] 数据复制完成: Settlements -> insurance_policies_Settlements (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Payments
+[2025-11-22 23:59:10] 数据复制完成: Payments -> Payments (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: insurance_policies (表: 5, 行: 75)
+[2025-11-22 23:59:10] 开始合并数据库: journal_committee
+[2025-11-22 23:59:10] 表名冲突: journal -> journal_committee_journal
+[2025-11-22 23:59:10] 创建表: journal_committee_journal
+[2025-11-22 23:59:10] 数据复制完成: journal -> journal_committee_journal (插入: 16, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: editor
+[2025-11-22 23:59:10] 数据复制完成: editor -> editor (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 journal_committee: table "journal_committee" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: journal_committee (表: 2, 行: 25)
+[2025-11-22 23:59:10] 开始合并数据库: loan_1
+[2025-11-22 23:59:10] 创建表: bank
+[2025-11-22 23:59:10] 数据复制完成: bank -> bank (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 customer: table "customer" already exists
+[2025-11-22 23:59:10] 创建表: loan
+[2025-11-22 23:59:10] 数据复制完成: loan -> loan (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: loan_1 (表: 2, 行: 7)
+[2025-11-22 23:59:10] 开始合并数据库: local_govt_and_lot
+[2025-11-22 23:59:10] 表名冲突: Customers -> local_govt_and_lot_Customers
+[2025-11-22 23:59:10] 创建表: local_govt_and_lot_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> local_govt_and_lot_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Properties
+[2025-11-22 23:59:10] 数据复制完成: Properties -> Properties (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Residents: table "Residents" has more than one primary key
+[2025-11-22 23:59:10] 表名冲突: Organizations -> local_govt_and_lot_Organizations
+[2025-11-22 23:59:10] 创建表: local_govt_and_lot_Organizations
+[2025-11-22 23:59:10] 数据复制完成: Organizations -> local_govt_and_lot_Organizations (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Services -> local_govt_and_lot_Services
+[2025-11-22 23:59:10] 创建表: local_govt_and_lot_Services
+[2025-11-22 23:59:10] 数据复制完成: Services -> local_govt_and_lot_Services (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Residents_Services: table "Residents_Services" has more than one primary key
+[2025-11-22 23:59:10] 创建表: Things
+[2025-11-22 23:59:10] 数据复制完成: Things -> Things (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Customer_Events
+[2025-11-22 23:59:10] 数据复制完成: Customer_Events -> Customer_Events (插入: 13, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Customer_Event_Notes
+[2025-11-22 23:59:10] 数据复制完成: Customer_Event_Notes -> Customer_Event_Notes (插入: 13, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Timed_Status_of_Things: table "Timed_Status_of_Things" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Timed_Locations_of_Things: table "Timed_Locations_of_Things" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: local_govt_and_lot (表: 7, 行: 89)
+[2025-11-22 23:59:10] 开始合并数据库: local_govt_in_alabama
+[2025-11-22 23:59:10] 表名冲突: Services -> local_govt_in_alabama_Services
+[2025-11-22 23:59:10] 创建表: local_govt_in_alabama_Services
+[2025-11-22 23:59:10] 数据复制完成: Services -> local_govt_in_alabama_Services (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Participants
+[2025-11-22 23:59:10] 数据复制完成: Participants -> Participants (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Events
+[2025-11-22 23:59:10] 数据复制完成: Events -> Events (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Participants_in_Events: table "Participants_in_Events" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: local_govt_in_alabama (表: 3, 行: 34)
+[2025-11-22 23:59:10] 开始合并数据库: local_govt_mdm
+[2025-11-22 23:59:10] 创建表: Customer_Master_Index
+[2025-11-22 23:59:10] 数据复制完成: Customer_Master_Index -> Customer_Master_Index (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: CMI_Cross_References
+[2025-11-22 23:59:10] 数据复制完成: CMI_Cross_References -> CMI_Cross_References (插入: 21, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Council_Tax
+[2025-11-22 23:59:10] 数据复制完成: Council_Tax -> Council_Tax (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Business_Rates
+[2025-11-22 23:59:10] 数据复制完成: Business_Rates -> Business_Rates (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Benefits_Overpayments
+[2025-11-22 23:59:10] 数据复制完成: Benefits_Overpayments -> Benefits_Overpayments (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Parking_Fines
+[2025-11-22 23:59:10] 数据复制完成: Parking_Fines -> Parking_Fines (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Rent_Arrears
+[2025-11-22 23:59:10] 数据复制完成: Rent_Arrears -> Rent_Arrears (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Electoral_Register
+[2025-11-22 23:59:10] 数据复制完成: Electoral_Register -> Electoral_Register (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: local_govt_mdm (表: 8, 行: 55)
+[2025-11-22 23:59:10] 开始合并数据库: machine_repair
+[2025-11-22 23:59:10] 创建表: repair
+[2025-11-22 23:59:10] 数据复制完成: repair -> repair (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: machine
+[2025-11-22 23:59:10] 数据复制完成: machine -> machine (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: technician
+[2025-11-22 23:59:10] 数据复制完成: technician -> technician (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 repair_assignment: table "repair_assignment" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: machine_repair (表: 3, 行: 28)
+[2025-11-22 23:59:10] 开始合并数据库: manufactory_1
+[2025-11-22 23:59:10] 创建表: Manufacturers
+[2025-11-22 23:59:10] 数据复制完成: Manufacturers -> Manufacturers (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Products -> manufactory_1_Products
+[2025-11-22 23:59:10] 创建表: manufactory_1_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> manufactory_1_Products (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: manufactory_1 (表: 2, 行: 17)
+[2025-11-22 23:59:10] 开始合并数据库: manufacturer
+[2025-11-22 23:59:10] 创建表: manufacturer
+[2025-11-22 23:59:10] 数据复制完成: manufacturer -> manufacturer (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: furniture
+[2025-11-22 23:59:10] 数据复制完成: furniture -> furniture (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 furniture_manufacte: table "furniture_manufacte" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: manufacturer (表: 2, 行: 14)
+[2025-11-22 23:59:10] 开始合并数据库: match_season
+[2025-11-22 23:59:10] 创建表: country
+[2025-11-22 23:59:10] 数据复制完成: country -> country (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: team -> match_season_team
+[2025-11-22 23:59:10] 创建表: match_season_team
+[2025-11-22 23:59:10] 数据复制完成: team -> match_season_team (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: match_season
+[2025-11-22 23:59:10] 数据复制完成: match_season -> match_season (插入: 16, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: player -> match_season_player
+[2025-11-22 23:59:10] 创建表: match_season_player
+[2025-11-22 23:59:10] 数据复制完成: player -> match_season_player (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: match_season (表: 4, 行: 42)
+[2025-11-22 23:59:10] 开始合并数据库: medicine_enzyme_interaction
+[2025-11-22 23:59:10] 创建表: medicine
+[2025-11-22 23:59:10] 数据复制完成: medicine -> medicine (插入: 21, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: enzyme
+[2025-11-22 23:59:10] 数据复制完成: enzyme -> enzyme (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 medicine_enzyme_interaction: table "medicine_enzyme_interaction" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: medicine_enzyme_interaction (表: 2, 行: 29)
+[2025-11-22 23:59:10] 开始合并数据库: mountain_photos
+[2025-11-22 23:59:10] 表名冲突: mountain -> mountain_photos_mountain
+[2025-11-22 23:59:10] 创建表: mountain_photos_mountain
+[2025-11-22 23:59:10] 数据复制完成: mountain -> mountain_photos_mountain (插入: 23, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: camera_lens
+[2025-11-22 23:59:10] 数据复制完成: camera_lens -> camera_lens (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 photos: table "photos" already exists
+[2025-11-22 23:59:10] 数据库合并完成: mountain_photos (表: 2, 行: 34)
+[2025-11-22 23:59:10] 开始合并数据库: movie_1
+[2025-11-22 23:59:10] 创建表失败 Movie: table "Movie" already exists
+[2025-11-22 23:59:10] 创建表: Reviewer
+[2025-11-22 23:59:10] 数据复制完成: Reviewer -> Reviewer (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Rating
+[2025-11-22 23:59:10] 数据复制完成: Rating -> Rating (插入: 14, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: movie_1 (表: 2, 行: 22)
+[2025-11-22 23:59:10] 开始合并数据库: museum_visit
+[2025-11-22 23:59:10] 创建表: museum
+[2025-11-22 23:59:10] 数据复制完成: museum -> museum (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: visitor
+[2025-11-22 23:59:10] 数据复制完成: visitor -> visitor (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 visit: table "visit" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: museum_visit (表: 2, 行: 14)
+[2025-11-22 23:59:10] 开始合并数据库: musical
+[2025-11-22 23:59:10] 创建表: musical
+[2025-11-22 23:59:10] 数据复制完成: musical -> musical (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: actor -> musical_actor
+[2025-11-22 23:59:10] 创建表: musical_actor
+[2025-11-22 23:59:10] 数据复制完成: actor -> musical_actor (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: musical (表: 2, 行: 16)
+[2025-11-22 23:59:10] 开始合并数据库: music_1
+[2025-11-22 23:59:10] 创建表失败 genre: table "genre" already exists
+[2025-11-22 23:59:10] 创建表失败 artist: table "artist" already exists
+[2025-11-22 23:59:10] 创建表: files
+[2025-11-22 23:59:10] 数据复制完成: files -> files (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: song
+[2025-11-22 23:59:10] 数据复制完成: song -> song (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: music_1 (表: 2, 行: 12)
+[2025-11-22 23:59:10] 开始合并数据库: music_2
+[2025-11-22 23:59:10] 创建表: Songs
+[2025-11-22 23:59:10] 创建表: Albums
+[2025-11-22 23:59:10] 创建表: Band
+[2025-11-22 23:59:10] 创建表失败 Instruments: table "Instruments" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Performance: table "Performance" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Tracklists: table "Tracklists" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Vocals: table "Vocals" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: music_2 (表: 3, 行: 0)
+[2025-11-22 23:59:10] 开始合并数据库: music_4
+[2025-11-22 23:59:10] 创建表失败 artist: table "artist" already exists
+[2025-11-22 23:59:10] 创建表: volume
+[2025-11-22 23:59:10] 数据复制完成: volume -> volume (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: music_festival
+[2025-11-22 23:59:10] 数据复制完成: music_festival -> music_festival (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: music_4 (表: 2, 行: 19)
+[2025-11-22 23:59:10] 开始合并数据库: network_1
+[2025-11-22 23:59:10] 创建表: Highschooler
+[2025-11-22 23:59:10] 数据复制完成: Highschooler -> Highschooler (插入: 16, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Friend: table "Friend" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 Likes: table "Likes" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: network_1 (表: 1, 行: 16)
+[2025-11-22 23:59:10] 开始合并数据库: network_2
+[2025-11-22 23:59:10] 创建表: Person
+[2025-11-22 23:59:10] 数据复制完成: Person -> Person (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: PersonFriend
+[2025-11-22 23:59:10] 数据复制完成: PersonFriend -> PersonFriend (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: network_2 (表: 2, 行: 8)
+[2025-11-22 23:59:10] 开始合并数据库: news_report
+[2025-11-22 23:59:10] 创建表: event
+[2025-11-22 23:59:10] 数据复制完成: event -> event (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: journalist
+[2025-11-22 23:59:10] 数据复制完成: journalist -> journalist (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 news_report: table "news_report" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: news_report (表: 2, 行: 16)
+[2025-11-22 23:59:10] 开始合并数据库: orchestra
+[2025-11-22 23:59:10] 创建表: conductor
+[2025-11-22 23:59:10] 数据复制完成: conductor -> conductor (插入: 12, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: orchestra
+[2025-11-22 23:59:10] 数据复制完成: orchestra -> orchestra (插入: 12, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: performance
+[2025-11-22 23:59:10] 数据复制完成: performance -> performance (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: show
+[2025-11-22 23:59:10] 数据复制完成: show -> show (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: orchestra (表: 4, 行: 40)
+[2025-11-22 23:59:10] 开始合并数据库: party_host
+[2025-11-22 23:59:10] 表名冲突: party -> party_host_party
+[2025-11-22 23:59:10] 创建表: party_host_party
+[2025-11-22 23:59:10] 数据复制完成: party -> party_host_party (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: host
+[2025-11-22 23:59:10] 数据复制完成: host -> host (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 party_host: table "party_host" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: party_host (表: 2, 行: 18)
+[2025-11-22 23:59:10] 开始合并数据库: party_people
+[2025-11-22 23:59:10] 创建表: region
+[2025-11-22 23:59:10] 数据复制完成: region -> region (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: party -> party_people_party
+[2025-11-22 23:59:10] 创建表: party_people_party
+[2025-11-22 23:59:10] 数据复制完成: party -> party_people_party (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: member -> party_people_member
+[2025-11-22 23:59:10] 创建表: party_people_member
+[2025-11-22 23:59:10] 数据复制完成: member -> party_people_member (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: party_events
+[2025-11-22 23:59:10] 数据复制完成: party_events -> party_events (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: party_people (表: 4, 行: 33)
+[2025-11-22 23:59:10] 开始合并数据库: performance_attendance
+[2025-11-22 23:59:10] 表名冲突: member -> performance_attendance_member
+[2025-11-22 23:59:10] 创建表: performance_attendance_member
+[2025-11-22 23:59:10] 数据复制完成: member -> performance_attendance_member (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: performance -> performance_attendance_performance
+[2025-11-22 23:59:10] 创建表: performance_attendance_performance
+[2025-11-22 23:59:10] 数据复制完成: performance -> performance_attendance_performance (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 member_attendance: table "member_attendance" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: performance_attendance (表: 2, 行: 17)
+[2025-11-22 23:59:10] 开始合并数据库: perpetrator
+[2025-11-22 23:59:10] 创建表: perpetrator
+[2025-11-22 23:59:10] 数据复制完成: perpetrator -> perpetrator (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: people -> perpetrator_people
+[2025-11-22 23:59:10] 创建表: perpetrator_people
+[2025-11-22 23:59:10] 数据复制完成: people -> perpetrator_people (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: perpetrator (表: 2, 行: 16)
+[2025-11-22 23:59:10] 开始合并数据库: pets_1
+[2025-11-22 23:59:10] 表名冲突: Student -> pets_1_Student
+[2025-11-22 23:59:10] 创建表: pets_1_Student
+[2025-11-22 23:59:10] 数据复制完成: Student -> pets_1_Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Has_Pet
+[2025-11-22 23:59:10] 数据复制完成: Has_Pet -> Has_Pet (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Pets
+[2025-11-22 23:59:10] 数据复制完成: Pets -> Pets (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: pets_1 (表: 3, 行: 40)
+[2025-11-22 23:59:10] 开始合并数据库: phone_1
+[2025-11-22 23:59:10] 创建表: chip_model
+[2025-11-22 23:59:10] 数据复制完成: chip_model -> chip_model (插入: 14, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: screen_mode
+[2025-11-22 23:59:10] 数据复制完成: screen_mode -> screen_mode (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: phone
+[2025-11-22 23:59:10] 数据复制完成: phone -> phone (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: phone_1 (表: 3, 行: 29)
+[2025-11-22 23:59:10] 开始合并数据库: phone_market
+[2025-11-22 23:59:10] 表名冲突: phone -> phone_market_phone
+[2025-11-22 23:59:10] 创建表: phone_market_phone
+[2025-11-22 23:59:10] 数据复制完成: phone -> phone_market_phone (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: market -> phone_market_market
+[2025-11-22 23:59:10] 创建表: phone_market_market
+[2025-11-22 23:59:10] 数据复制完成: market -> phone_market_market (插入: 6, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 phone_market: table "phone_market" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: phone_market (表: 2, 行: 11)
+[2025-11-22 23:59:10] 开始合并数据库: pilot_record
+[2025-11-22 23:59:10] 表名冲突: aircraft -> pilot_record_aircraft
+[2025-11-22 23:59:10] 创建表: pilot_record_aircraft
+[2025-11-22 23:59:10] 数据复制完成: aircraft -> pilot_record_aircraft (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: pilot -> pilot_record_pilot
+[2025-11-22 23:59:10] 创建表: pilot_record_pilot
+[2025-11-22 23:59:10] 数据复制完成: pilot -> pilot_record_pilot (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 pilot_record: table "pilot_record" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: pilot_record (表: 2, 行: 12)
+[2025-11-22 23:59:10] 开始合并数据库: poker_player
+[2025-11-22 23:59:10] 创建表: poker_player
+[2025-11-22 23:59:10] 数据复制完成: poker_player -> poker_player (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: people -> poker_player_people
+[2025-11-22 23:59:10] 创建表: poker_player_people
+[2025-11-22 23:59:10] 数据复制完成: people -> poker_player_people (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: poker_player (表: 2, 行: 12)
+[2025-11-22 23:59:10] 开始合并数据库: products_for_hire
+[2025-11-22 23:59:10] 创建表: Discount_Coupons
+[2025-11-22 23:59:10] 数据复制完成: Discount_Coupons -> Discount_Coupons (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Customers -> products_for_hire_Customers
+[2025-11-22 23:59:10] 创建表: products_for_hire_Customers
+[2025-11-22 23:59:10] 数据复制完成: Customers -> products_for_hire_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Bookings -> products_for_hire_Bookings
+[2025-11-22 23:59:10] 创建表: products_for_hire_Bookings
+[2025-11-22 23:59:10] 数据复制完成: Bookings -> products_for_hire_Bookings (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Products_for_Hire
+[2025-11-22 23:59:10] 数据复制完成: Products_for_Hire -> Products_for_Hire (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Payments -> products_for_hire_Payments
+[2025-11-22 23:59:10] 创建表: products_for_hire_Payments
+[2025-11-22 23:59:10] 数据复制完成: Payments -> products_for_hire_Payments (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Products_Booked: table "Products_Booked" has more than one primary key
+[2025-11-22 23:59:10] 创建表: View_Product_Availability
+[2025-11-22 23:59:10] 数据复制完成: View_Product_Availability -> View_Product_Availability (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: products_for_hire (表: 6, 行: 69)
+[2025-11-22 23:59:10] 开始合并数据库: products_gen_characteristics
+[2025-11-22 23:59:10] 创建表: Ref_Characteristic_Types
+[2025-11-22 23:59:10] 数据复制完成: Ref_Characteristic_Types -> Ref_Characteristic_Types (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Colors
+[2025-11-22 23:59:10] 数据复制完成: Ref_Colors -> Ref_Colors (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Product_Categories
+[2025-11-22 23:59:10] 数据复制完成: Ref_Product_Categories -> Ref_Product_Categories (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Characteristics
+[2025-11-22 23:59:10] 数据复制完成: Characteristics -> Characteristics (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Products -> products_gen_characteristics_Products
+[2025-11-22 23:59:10] 创建表: products_gen_characteristics_Products
+[2025-11-22 23:59:10] 数据复制完成: Products -> products_gen_characteristics_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Product_Characteristics
+[2025-11-22 23:59:10] 数据复制完成: Product_Characteristics -> Product_Characteristics (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: products_gen_characteristics (表: 6, 行: 58)
+[2025-11-22 23:59:10] 开始合并数据库: product_catalog
+[2025-11-22 23:59:10] 创建表: Attribute_Definitions
+[2025-11-22 23:59:10] 数据复制完成: Attribute_Definitions -> Attribute_Definitions (插入: 4, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Catalogs
+[2025-11-22 23:59:10] 数据复制完成: Catalogs -> Catalogs (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Catalog_Structure
+[2025-11-22 23:59:10] 数据复制完成: Catalog_Structure -> Catalog_Structure (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Catalog_Contents
+[2025-11-22 23:59:10] 数据复制完成: Catalog_Contents -> Catalog_Contents (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Catalog_Contents_Additional_Attributes
+[2025-11-22 23:59:10] 数据复制完成: Catalog_Contents_Additional_Attributes -> Catalog_Contents_Additional_Attributes (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: product_catalog (表: 5, 行: 45)
+[2025-11-22 23:59:10] 开始合并数据库: program_share
+[2025-11-22 23:59:10] 创建表: program
+[2025-11-22 23:59:10] 数据复制完成: program -> program (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: channel
+[2025-11-22 23:59:10] 数据复制完成: channel -> channel (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 broadcast: table "broadcast" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 broadcast_share: table "broadcast_share" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: program_share (表: 2, 行: 15)
+[2025-11-22 23:59:10] 开始合并数据库: protein_institute
+[2025-11-22 23:59:10] 创建表: building
+[2025-11-22 23:59:10] 数据复制完成: building -> building (插入: 8, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Institution
+[2025-11-22 23:59:10] 数据复制完成: Institution -> Institution (插入: 11, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: protein
+[2025-11-22 23:59:10] 数据复制完成: protein -> protein (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: protein_institute (表: 3, 行: 24)
+[2025-11-22 23:59:10] 开始合并数据库: race_track
+[2025-11-22 23:59:10] 创建表: race
+[2025-11-22 23:59:10] 数据复制完成: race -> race (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 track: table "track" already exists
+[2025-11-22 23:59:10] 数据库合并完成: race_track (表: 1, 行: 7)
+[2025-11-22 23:59:10] 开始合并数据库: railway
+[2025-11-22 23:59:10] 创建表: railway
+[2025-11-22 23:59:10] 数据复制完成: railway -> railway (插入: 10, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: train
+[2025-11-22 23:59:10] 数据复制完成: train -> train (插入: 9, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: manager -> railway_manager
+[2025-11-22 23:59:10] 创建表: railway_manager
+[2025-11-22 23:59:10] 数据复制完成: manager -> railway_manager (插入: 7, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 railway_manage: table "railway_manage" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: railway (表: 3, 行: 26)
+[2025-11-22 23:59:10] 开始合并数据库: real_estate_properties
+[2025-11-22 23:59:10] 创建表: Ref_Feature_Types
+[2025-11-22 23:59:10] 数据复制完成: Ref_Feature_Types -> Ref_Feature_Types (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Ref_Property_Types
+[2025-11-22 23:59:10] 数据复制完成: Ref_Property_Types -> Ref_Property_Types (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Other_Available_Features
+[2025-11-22 23:59:10] 数据复制完成: Other_Available_Features -> Other_Available_Features (插入: 3, 跳过: 0)
+[2025-11-22 23:59:10] 表名冲突: Properties -> real_estate_properties_Properties
+[2025-11-22 23:59:10] 创建表: real_estate_properties_Properties
+[2025-11-22 23:59:10] 数据复制完成: Properties -> real_estate_properties_Properties (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Other_Property_Features
+[2025-11-22 23:59:10] 数据复制完成: Other_Property_Features -> Other_Property_Features (插入: 15, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: real_estate_properties (表: 5, 行: 40)
+[2025-11-22 23:59:10] 开始合并数据库: restaurants
+[2025-11-22 23:59:10] 创建表: GEOGRAPHIC
+[2025-11-22 23:59:10] 创建表: RESTAURANT
+[2025-11-22 23:59:10] 创建表: LOCATION
+[2025-11-22 23:59:10] 数据库合并完成: restaurants (表: 3, 行: 0)
+[2025-11-22 23:59:10] 开始合并数据库: restaurant_1
+[2025-11-22 23:59:10] 表名冲突: Student -> restaurant_1_Student
+[2025-11-22 23:59:10] 创建表: restaurant_1_Student
+[2025-11-22 23:59:10] 数据复制完成: Student -> restaurant_1_Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 Restaurant: table "Restaurant" already exists
+[2025-11-22 23:59:10] 创建表: Type_Of_Restaurant
+[2025-11-22 23:59:10] 数据复制完成: Type_Of_Restaurant -> Type_Of_Restaurant (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Restaurant_Type
+[2025-11-22 23:59:10] 数据复制完成: Restaurant_Type -> Restaurant_Type (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 创建表: Visits_Restaurant
+[2025-11-22 23:59:10] 数据复制完成: Visits_Restaurant -> Visits_Restaurant (插入: 2, 跳过: 0)
+[2025-11-22 23:59:10] 数据库合并完成: restaurant_1 (表: 4, 行: 40)
+[2025-11-22 23:59:10] 开始合并数据库: riding_club
+[2025-11-22 23:59:10] 表名冲突: player -> riding_club_player
+[2025-11-22 23:59:10] 创建表: riding_club_player
+[2025-11-22 23:59:10] 数据复制完成: player -> riding_club_player (插入: 14, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 club: table "club" already exists
+[2025-11-22 23:59:10] 创建表: coach
+[2025-11-22 23:59:10] 数据复制完成: coach -> coach (插入: 5, 跳过: 0)
+[2025-11-22 23:59:10] 创建表失败 player_coach: table "player_coach" has more than one primary key
+[2025-11-22 23:59:10] 创建表失败 match_result: table "match_result" has more than one primary key
+[2025-11-22 23:59:10] 数据库合并完成: riding_club (表: 2, 行: 19)
+[2025-11-22 23:59:10] 开始合并数据库: roller_coaster
+[2025-11-22 23:59:10] 创建表: roller_coaster
+[2025-11-22 23:59:10] 数据复制完成: roller_coaster -> roller_coaster (插入: 6, 跳过: 0)
+[2025-11-22 23:59:11] 表名冲突: country -> roller_coaster_country
+[2025-11-22 23:59:11] 创建表: roller_coaster_country
+[2025-11-22 23:59:11] 数据复制完成: country -> roller_coaster_country (插入: 3, 跳过: 0)
+[2025-11-22 23:59:11] 数据库合并完成: roller_coaster (表: 2, 行: 9)
+[2025-11-22 23:59:11] 开始合并数据库: sakila_1
+[2025-11-22 23:59:11] 表名冲突: actor -> sakila_1_actor
+[2025-11-22 23:59:11] 创建表: sakila_1_actor
+[2025-11-22 23:59:11] 数据复制完成: actor -> sakila_1_actor (插入: 200, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: address
+[2025-11-22 23:59:11] 数据复制完成: address -> address (插入: 603, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: category
+[2025-11-22 23:59:11] 数据复制完成: category -> category (插入: 16, 跳过: 0)
+[2025-11-22 23:59:11] 表名冲突: city -> sakila_1_city
+[2025-11-22 23:59:11] 创建表: sakila_1_city
+[2025-11-22 23:59:11] 数据复制完成: city -> sakila_1_city (插入: 600, 跳过: 0)
+[2025-11-22 23:59:11] 表名冲突: country -> sakila_1_country
+[2025-11-22 23:59:11] 创建表: sakila_1_country
+[2025-11-22 23:59:11] 数据复制完成: country -> sakila_1_country (插入: 109, 跳过: 0)
+[2025-11-22 23:59:11] 创建表失败 customer: table "customer" already exists
+[2025-11-22 23:59:11] 表名冲突: film -> sakila_1_film
+[2025-11-22 23:59:11] 创建表: sakila_1_film
+[2025-11-22 23:59:11] 数据复制完成: film -> sakila_1_film (插入: 1000, 跳过: 0)
+[2025-11-22 23:59:11] 创建表失败 film_actor: table "film_actor" has more than one primary key
+[2025-11-22 23:59:11] 创建表失败 film_category: table "film_category" has more than one primary key
+[2025-11-22 23:59:11] 创建表: film_text
+[2025-11-22 23:59:11] 创建表: inventory
+[2025-11-22 23:59:11] 数据复制完成: inventory -> inventory (插入: 4581, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: language
+[2025-11-22 23:59:11] 创建表: payment
+[2025-11-22 23:59:11] 数据复制完成: payment -> payment (插入: 16049, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: rental
+[2025-11-22 23:59:11] 数据复制完成: rental -> rental (插入: 16044, 跳过: 0)
+[2025-11-22 23:59:11] 创建表失败 staff: table "staff" already exists
+[2025-11-22 23:59:11] 创建表: store
+[2025-11-22 23:59:11] 数据库合并完成: sakila_1 (表: 12, 行: 39202)
+[2025-11-22 23:59:11] 开始合并数据库: scholar
+[2025-11-22 23:59:11] 创建表: venue
+[2025-11-22 23:59:11] 表名冲突: author -> scholar_author
+[2025-11-22 23:59:11] 创建表: scholar_author
+[2025-11-22 23:59:11] 创建表: dataset
+[2025-11-22 23:59:11] 表名冲突: journal -> scholar_journal
+[2025-11-22 23:59:11] 创建表: scholar_journal
+[2025-11-22 23:59:11] 创建表: keyphrase
+[2025-11-22 23:59:11] 创建表: paper
+[2025-11-22 23:59:11] 表名冲突: cite -> scholar_cite
+[2025-11-22 23:59:11] 创建表失败 scholar_cite: table "scholar_cite" has more than one primary key
+[2025-11-22 23:59:11] 创建表失败 paperDataset: table "paperDataset" has more than one primary key
+[2025-11-22 23:59:11] 创建表失败 paperKeyphrase: table "paperKeyphrase" has more than one primary key
+[2025-11-22 23:59:11] 创建表失败 writes: table "writes" has more than one primary key
+[2025-11-22 23:59:11] 数据库合并完成: scholar (表: 6, 行: 0)
+[2025-11-22 23:59:11] 开始合并数据库: school_bus
+[2025-11-22 23:59:11] 创建表: driver
+[2025-11-22 23:59:11] 数据复制完成: driver -> driver (插入: 12, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: school
+[2025-11-22 23:59:11] 数据复制完成: school -> school (插入: 7, 跳过: 0)
+[2025-11-22 23:59:11] 创建表失败 school_bus: table "school_bus" has more than one primary key
+[2025-11-22 23:59:11] 数据库合并完成: school_bus (表: 2, 行: 19)
+[2025-11-22 23:59:11] 开始合并数据库: school_finance
+[2025-11-22 23:59:11] 创建表失败 School: table "School" already exists
+[2025-11-22 23:59:11] 创建表失败 budget: table "budget" has more than one primary key
+[2025-11-22 23:59:11] 创建表: endowment
+[2025-11-22 23:59:11] 数据复制完成: endowment -> endowment (插入: 11, 跳过: 0)
+[2025-11-22 23:59:11] 数据库合并完成: school_finance (表: 1, 行: 11)
+[2025-11-22 23:59:11] 开始合并数据库: school_player
+[2025-11-22 23:59:11] 表名冲突: school -> school_player_school
+[2025-11-22 23:59:11] 创建表: school_player_school
+[2025-11-22 23:59:11] 数据复制完成: school -> school_player_school (插入: 6, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: school_details
+[2025-11-22 23:59:11] 数据复制完成: school_details -> school_details (插入: 6, 跳过: 0)
+[2025-11-22 23:59:11] 创建表失败 school_performance: table "school_performance" has more than one primary key
+[2025-11-22 23:59:11] 表名冲突: player -> school_player_player
+[2025-11-22 23:59:11] 创建表: school_player_player
+[2025-11-22 23:59:11] 数据复制完成: player -> school_player_player (插入: 23, 跳过: 0)
+[2025-11-22 23:59:11] 数据库合并完成: school_player (表: 3, 行: 35)
+[2025-11-22 23:59:11] 开始合并数据库: scientist_1
+[2025-11-22 23:59:11] 创建表: Scientists
+[2025-11-22 23:59:11] 数据复制完成: Scientists -> Scientists (插入: 12, 跳过: 0)
+[2025-11-22 23:59:11] 表名冲突: Projects -> scientist_1_Projects
+[2025-11-22 23:59:11] 创建表: scientist_1_Projects
+[2025-11-22 23:59:11] 数据复制完成: Projects -> scientist_1_Projects (插入: 14, 跳过: 0)
+[2025-11-22 23:59:11] 创建表失败 AssignedTo: table "AssignedTo" has more than one primary key
+[2025-11-22 23:59:11] 数据库合并完成: scientist_1 (表: 2, 行: 26)
+[2025-11-22 23:59:11] 开始合并数据库: ship_1
+[2025-11-22 23:59:11] 创建表: captain
+[2025-11-22 23:59:11] 数据复制完成: captain -> captain (插入: 7, 跳过: 0)
+[2025-11-22 23:59:11] 创建表失败 Ship: table "Ship" already exists
+[2025-11-22 23:59:11] 数据库合并完成: ship_1 (表: 1, 行: 7)
+[2025-11-22 23:59:11] 开始合并数据库: ship_mission
+[2025-11-22 23:59:11] 创建表: mission
+[2025-11-22 23:59:11] 数据复制完成: mission -> mission (插入: 7, 跳过: 0)
+[2025-11-22 23:59:11] 表名冲突: ship -> ship_mission_ship
+[2025-11-22 23:59:11] 创建表: ship_mission_ship
+[2025-11-22 23:59:11] 数据复制完成: ship -> ship_mission_ship (插入: 8, 跳过: 0)
+[2025-11-22 23:59:11] 数据库合并完成: ship_mission (表: 2, 行: 15)
+[2025-11-22 23:59:11] 开始合并数据库: shop_membership
+[2025-11-22 23:59:11] 表名冲突: member -> shop_membership_member
+[2025-11-22 23:59:11] 创建表: shop_membership_member
+[2025-11-22 23:59:11] 数据复制完成: member -> shop_membership_member (插入: 10, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: branch
+[2025-11-22 23:59:11] 数据复制完成: branch -> branch (插入: 8, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: membership_register_branch
+[2025-11-22 23:59:11] 数据复制完成: membership_register_branch -> membership_register_branch (插入: 8, 跳过: 0)
+[2025-11-22 23:59:11] 创建表失败 purchase: table "purchase" has more than one primary key
+[2025-11-22 23:59:11] 数据库合并完成: shop_membership (表: 3, 行: 26)
+[2025-11-22 23:59:11] 开始合并数据库: singer
+[2025-11-22 23:59:11] 表名冲突: singer -> singer_singer
+[2025-11-22 23:59:11] 创建表: singer_singer
+[2025-11-22 23:59:11] 数据复制完成: singer -> singer_singer (插入: 8, 跳过: 0)
+[2025-11-22 23:59:11] 表名冲突: song -> singer_song
+[2025-11-22 23:59:11] 创建表: singer_song
+[2025-11-22 23:59:11] 数据复制完成: song -> singer_song (插入: 8, 跳过: 0)
+[2025-11-22 23:59:11] 数据库合并完成: singer (表: 2, 行: 16)
+[2025-11-22 23:59:11] 开始合并数据库: small_bank_1
+[2025-11-22 23:59:11] 创建表失败 ACCOUNTS: table "ACCOUNTS" already exists
+[2025-11-22 23:59:11] 创建表: SAVINGS
+[2025-11-22 23:59:11] 数据复制完成: SAVINGS -> SAVINGS (插入: 6, 跳过: 0)
+[2025-11-22 23:59:11] 创建表: CHECKING
+[2025-11-22 23:59:11] 数据复制完成: CHECKING -> CHECKING (插入: 7, 跳过: 0)
+[2025-11-22 23:59:11] 数据库合并完成: small_bank_1 (表: 2, 行: 13)
+[2025-11-22 23:59:11] 开始合并数据库: soccer_1
+[2025-11-22 23:59:11] 创建表: Player_Attributes
+[2025-11-22 23:59:12] 数据复制完成: Player_Attributes -> Player_Attributes (插入: 183978, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 sqlite_sequence: object name reserved for internal use: sqlite_sequence
+[2025-11-22 23:59:12] 创建表失败 Player: table "Player" already exists
+[2025-11-22 23:59:12] 创建表: League
+[2025-11-22 23:59:12] 数据复制完成: League -> League (插入: 11, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 Country: table "Country" already exists
+[2025-11-22 23:59:12] 创建表失败 Team: table "Team" already exists
+[2025-11-22 23:59:12] 创建表: Team_Attributes
+[2025-11-22 23:59:12] 数据复制完成: Team_Attributes -> Team_Attributes (插入: 1458, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: soccer_1 (表: 3, 行: 185447)
+[2025-11-22 23:59:12] 开始合并数据库: soccer_2
+[2025-11-22 23:59:12] 创建表失败 College: table "College" already exists
+[2025-11-22 23:59:12] 创建表失败 Player: table "Player" already exists
+[2025-11-22 23:59:12] 创建表失败 Tryout: table "Tryout" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: soccer_2 (表: 0, 行: 0)
+[2025-11-22 23:59:12] 开始合并数据库: solvency_ii
+[2025-11-22 23:59:12] 表名冲突: Addresses -> solvency_ii_Addresses
+[2025-11-22 23:59:12] 创建表: solvency_ii_Addresses
+[2025-11-22 23:59:12] 数据复制完成: Addresses -> solvency_ii_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Locations -> solvency_ii_Locations
+[2025-11-22 23:59:12] 创建表: solvency_ii_Locations
+[2025-11-22 23:59:12] 数据复制完成: Locations -> solvency_ii_Locations (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Products -> solvency_ii_Products
+[2025-11-22 23:59:12] 创建表: solvency_ii_Products
+[2025-11-22 23:59:12] 数据复制完成: Products -> solvency_ii_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Parties -> solvency_ii_Parties
+[2025-11-22 23:59:12] 创建表: solvency_ii_Parties
+[2025-11-22 23:59:12] 数据复制完成: Parties -> solvency_ii_Parties (插入: 7, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Assets -> solvency_ii_Assets
+[2025-11-22 23:59:12] 创建表: solvency_ii_Assets
+[2025-11-22 23:59:12] 数据复制完成: Assets -> solvency_ii_Assets (插入: 3, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Channels
+[2025-11-22 23:59:12] 数据复制完成: Channels -> Channels (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Finances
+[2025-11-22 23:59:12] 数据复制完成: Finances -> Finances (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Events -> solvency_ii_Events
+[2025-11-22 23:59:12] 创建表: solvency_ii_Events
+[2025-11-22 23:59:12] 数据复制完成: Events -> solvency_ii_Events (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Products_in_Events
+[2025-11-22 23:59:12] 数据复制完成: Products_in_Events -> Products_in_Events (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 Parties_in_Events: table "Parties_in_Events" has more than one primary key
+[2025-11-22 23:59:12] 创建表: Agreements
+[2025-11-22 23:59:12] 数据复制完成: Agreements -> Agreements (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 Assets_in_Events: table "Assets_in_Events" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: solvency_ii (表: 10, 行: 130)
+[2025-11-22 23:59:12] 开始合并数据库: sports_competition
+[2025-11-22 23:59:12] 创建表失败 club: table "club" already exists
+[2025-11-22 23:59:12] 创建表失败 club_rank: table "club_rank" has more than one primary key
+[2025-11-22 23:59:12] 表名冲突: player -> sports_competition_player
+[2025-11-22 23:59:12] 创建表: sports_competition_player
+[2025-11-22 23:59:12] 数据复制完成: player -> sports_competition_player (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: competition
+[2025-11-22 23:59:12] 数据复制完成: competition -> competition (插入: 11, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 competition_result: table "competition_result" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: sports_competition (表: 2, 行: 26)
+[2025-11-22 23:59:12] 开始合并数据库: station_weather
+[2025-11-22 23:59:12] 表名冲突: train -> station_weather_train
+[2025-11-22 23:59:12] 创建表: station_weather_train
+[2025-11-22 23:59:12] 数据复制完成: train -> station_weather_train (插入: 11, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: station -> station_weather_station
+[2025-11-22 23:59:12] 创建表: station_weather_station
+[2025-11-22 23:59:12] 数据复制完成: station -> station_weather_station (插入: 11, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 route: table "route" has more than one primary key
+[2025-11-22 23:59:12] 创建表失败 weekly_weather: table "weekly_weather" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: station_weather (表: 2, 行: 22)
+[2025-11-22 23:59:12] 开始合并数据库: store_1
+[2025-11-22 23:59:12] 创建表: artists
+[2025-11-22 23:59:12] 数据复制完成: artists -> artists (插入: 275, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 sqlite_sequence: object name reserved for internal use: sqlite_sequence
+[2025-11-22 23:59:12] 创建表失败 albums: table "albums" already exists
+[2025-11-22 23:59:12] 创建表失败 employees: table "employees" already exists
+[2025-11-22 23:59:12] 创建表失败 customers: table "customers" already exists
+[2025-11-22 23:59:12] 创建表: genres
+[2025-11-22 23:59:12] 数据复制完成: genres -> genres (插入: 25, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 invoices: table "invoices" already exists
+[2025-11-22 23:59:12] 创建表: media_types
+[2025-11-22 23:59:12] 数据复制完成: media_types -> media_types (插入: 5, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: tracks
+[2025-11-22 23:59:12] 数据复制完成: tracks -> tracks (插入: 3503, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: invoice_lines
+[2025-11-22 23:59:12] 数据复制完成: invoice_lines -> invoice_lines (插入: 2240, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: playlists
+[2025-11-22 23:59:12] 数据复制完成: playlists -> playlists (插入: 18, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 playlist_tracks: table "playlist_tracks" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: store_1 (表: 6, 行: 6066)
+[2025-11-22 23:59:12] 开始合并数据库: store_product
+[2025-11-22 23:59:12] 创建表: product
+[2025-11-22 23:59:12] 数据复制完成: product -> product (插入: 6, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: store -> store_product_store
+[2025-11-22 23:59:12] 创建表: store_product_store
+[2025-11-22 23:59:12] 数据复制完成: store -> store_product_store (插入: 5, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: district
+[2025-11-22 23:59:12] 数据复制完成: district -> district (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 store_product: table "store_product" has more than one primary key
+[2025-11-22 23:59:12] 创建表: store_district
+[2025-11-22 23:59:12] 数据复制完成: store_district -> store_district (插入: 5, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: store_product (表: 4, 行: 31)
+[2025-11-22 23:59:12] 开始合并数据库: storm_record
+[2025-11-22 23:59:12] 创建表: storm
+[2025-11-22 23:59:12] 数据复制完成: storm -> storm (插入: 10, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: region -> storm_record_region
+[2025-11-22 23:59:12] 创建表: storm_record_region
+[2025-11-22 23:59:12] 数据复制完成: region -> storm_record_region (插入: 13, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 affected_region: table "affected_region" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: storm_record (表: 2, 行: 23)
+[2025-11-22 23:59:12] 开始合并数据库: student_1
+[2025-11-22 23:59:12] 创建表失败 list: table "list" has more than one primary key
+[2025-11-22 23:59:12] 创建表失败 teachers: table "teachers" already exists
+[2025-11-22 23:59:12] 数据库合并完成: student_1 (表: 0, 行: 0)
+[2025-11-22 23:59:12] 开始合并数据库: student_assessment
+[2025-11-22 23:59:12] 表名冲突: Addresses -> student_assessment_Addresses
+[2025-11-22 23:59:12] 创建表: student_assessment_Addresses
+[2025-11-22 23:59:12] 数据复制完成: Addresses -> student_assessment_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 People: table "People" already exists
+[2025-11-22 23:59:12] 表名冲突: Students -> student_assessment_Students
+[2025-11-22 23:59:12] 创建表: student_assessment_Students
+[2025-11-22 23:59:12] 数据复制完成: Students -> student_assessment_Students (插入: 8, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Courses -> student_assessment_Courses
+[2025-11-22 23:59:12] 创建表: student_assessment_Courses
+[2025-11-22 23:59:12] 数据复制完成: Courses -> student_assessment_Courses (插入: 6, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: People_Addresses
+[2025-11-22 23:59:12] 数据复制完成: People_Addresses -> People_Addresses (插入: 8, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 Student_Course_Registrations: table "Student_Course_Registrations" has more than one primary key
+[2025-11-22 23:59:12] 创建表失败 Student_Course_Attendance: table "Student_Course_Attendance" has more than one primary key
+[2025-11-22 23:59:12] 创建表: Candidates
+[2025-11-22 23:59:12] 数据复制完成: Candidates -> Candidates (插入: 8, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 Candidate_Assessments: table "Candidate_Assessments" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: student_assessment (表: 5, 行: 45)
+[2025-11-22 23:59:12] 开始合并数据库: student_transcripts_tracking
+[2025-11-22 23:59:12] 表名冲突: Addresses -> student_transcripts_tracking_Addresses
+[2025-11-22 23:59:12] 创建表: student_transcripts_tracking_Addresses
+[2025-11-22 23:59:12] 数据复制完成: Addresses -> student_transcripts_tracking_Addresses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Courses -> student_transcripts_tracking_Courses
+[2025-11-22 23:59:12] 创建表: student_transcripts_tracking_Courses
+[2025-11-22 23:59:12] 数据复制完成: Courses -> student_transcripts_tracking_Courses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Departments -> student_transcripts_tracking_Departments
+[2025-11-22 23:59:12] 创建表: student_transcripts_tracking_Departments
+[2025-11-22 23:59:12] 数据复制完成: Departments -> student_transcripts_tracking_Departments (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Degree_Programs
+[2025-11-22 23:59:12] 数据复制完成: Degree_Programs -> Degree_Programs (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Sections
+[2025-11-22 23:59:12] 数据复制完成: Sections -> Sections (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Semesters
+[2025-11-22 23:59:12] 数据复制完成: Semesters -> Semesters (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Students -> student_transcripts_tracking_Students
+[2025-11-22 23:59:12] 创建表: student_transcripts_tracking_Students
+[2025-11-22 23:59:12] 数据复制完成: Students -> student_transcripts_tracking_Students (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Student_Enrolment
+[2025-11-22 23:59:12] 数据复制完成: Student_Enrolment -> Student_Enrolment (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Student_Enrolment_Courses
+[2025-11-22 23:59:12] 数据复制完成: Student_Enrolment_Courses -> Student_Enrolment_Courses (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Transcripts
+[2025-11-22 23:59:12] 数据复制完成: Transcripts -> Transcripts (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Transcript_Contents
+[2025-11-22 23:59:12] 数据复制完成: Transcript_Contents -> Transcript_Contents (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: student_transcripts_tracking (表: 11, 行: 165)
+[2025-11-22 23:59:12] 开始合并数据库: swimming
+[2025-11-22 23:59:12] 创建表: swimmer
+[2025-11-22 23:59:12] 数据复制完成: swimmer -> swimmer (插入: 8, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: stadium -> swimming_stadium
+[2025-11-22 23:59:12] 创建表: swimming_stadium
+[2025-11-22 23:59:12] 数据复制完成: stadium -> swimming_stadium (插入: 10, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: event -> swimming_event
+[2025-11-22 23:59:12] 创建表: swimming_event
+[2025-11-22 23:59:12] 数据复制完成: event -> swimming_event (插入: 6, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 record: table "record" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: swimming (表: 3, 行: 24)
+[2025-11-22 23:59:12] 开始合并数据库: theme_gallery
+[2025-11-22 23:59:12] 创建表失败 artist: table "artist" already exists
+[2025-11-22 23:59:12] 创建表: exhibition
+[2025-11-22 23:59:12] 数据复制完成: exhibition -> exhibition (插入: 6, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 exhibition_record: table "exhibition_record" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: theme_gallery (表: 1, 行: 6)
+[2025-11-22 23:59:12] 开始合并数据库: tracking_grants_for_research
+[2025-11-22 23:59:12] 创建表: Document_Types
+[2025-11-22 23:59:12] 数据复制完成: Document_Types -> Document_Types (插入: 2, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Documents -> tracking_grants_for_research_Documents
+[2025-11-22 23:59:12] 创建表: tracking_grants_for_research_Documents
+[2025-11-22 23:59:12] 数据复制完成: Documents -> tracking_grants_for_research_Documents (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Grants
+[2025-11-22 23:59:12] 数据复制完成: Grants -> Grants (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Organisation_Types
+[2025-11-22 23:59:12] 数据复制完成: Organisation_Types -> Organisation_Types (插入: 2, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Organisations
+[2025-11-22 23:59:12] 数据复制完成: Organisations -> Organisations (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Project_Outcomes
+[2025-11-22 23:59:12] 数据复制完成: Project_Outcomes -> Project_Outcomes (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Project_Staff
+[2025-11-22 23:59:12] 数据复制完成: Project_Staff -> Project_Staff (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Projects -> tracking_grants_for_research_Projects
+[2025-11-22 23:59:12] 创建表: tracking_grants_for_research_Projects
+[2025-11-22 23:59:12] 数据复制完成: Projects -> tracking_grants_for_research_Projects (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Research_Outcomes
+[2025-11-22 23:59:12] 数据复制完成: Research_Outcomes -> Research_Outcomes (插入: 2, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Research_Staff
+[2025-11-22 23:59:12] 数据复制完成: Research_Staff -> Research_Staff (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Staff_Roles
+[2025-11-22 23:59:12] 数据复制完成: Staff_Roles -> Staff_Roles (插入: 2, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Tasks
+[2025-11-22 23:59:12] 数据复制完成: Tasks -> Tasks (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: tracking_grants_for_research (表: 12, 行: 128)
+[2025-11-22 23:59:12] 开始合并数据库: tracking_orders
+[2025-11-22 23:59:12] 表名冲突: Customers -> tracking_orders_Customers
+[2025-11-22 23:59:12] 创建表: tracking_orders_Customers
+[2025-11-22 23:59:12] 数据复制完成: Customers -> tracking_orders_Customers (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Invoices -> tracking_orders_Invoices
+[2025-11-22 23:59:12] 创建表: tracking_orders_Invoices
+[2025-11-22 23:59:12] 数据复制完成: Invoices -> tracking_orders_Invoices (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Orders -> tracking_orders_Orders
+[2025-11-22 23:59:12] 创建表: tracking_orders_Orders
+[2025-11-22 23:59:12] 数据复制完成: Orders -> tracking_orders_Orders (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Products -> tracking_orders_Products
+[2025-11-22 23:59:12] 创建表: tracking_orders_Products
+[2025-11-22 23:59:12] 数据复制完成: Products -> tracking_orders_Products (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: Order_Items -> tracking_orders_Order_Items
+[2025-11-22 23:59:12] 创建表: tracking_orders_Order_Items
+[2025-11-22 23:59:12] 数据复制完成: Order_Items -> tracking_orders_Order_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Shipments
+[2025-11-22 23:59:12] 数据复制完成: Shipments -> Shipments (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Shipment_Items
+[2025-11-22 23:59:12] 数据复制完成: Shipment_Items -> Shipment_Items (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: tracking_orders (表: 7, 行: 105)
+[2025-11-22 23:59:12] 开始合并数据库: tracking_share_transactions
+[2025-11-22 23:59:12] 创建表: Investors
+[2025-11-22 23:59:12] 数据复制完成: Investors -> Investors (插入: 20, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Lots
+[2025-11-22 23:59:12] 数据复制完成: Lots -> Lots (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Ref_Transaction_Types
+[2025-11-22 23:59:12] 数据复制完成: Ref_Transaction_Types -> Ref_Transaction_Types (插入: 2, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Transactions
+[2025-11-22 23:59:12] 数据复制完成: Transactions -> Transactions (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Sales
+[2025-11-22 23:59:12] 数据复制完成: Sales -> Sales (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Purchases
+[2025-11-22 23:59:12] 数据复制完成: Purchases -> Purchases (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Transactions_Lots
+[2025-11-22 23:59:12] 数据复制完成: Transactions_Lots -> Transactions_Lots (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: tracking_share_transactions (表: 7, 行: 97)
+[2025-11-22 23:59:12] 开始合并数据库: tracking_software_problems
+[2025-11-22 23:59:12] 创建表: Problem_Category_Codes
+[2025-11-22 23:59:12] 数据复制完成: Problem_Category_Codes -> Problem_Category_Codes (插入: 3, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Problem_Log
+[2025-11-22 23:59:12] 数据复制完成: Problem_Log -> Problem_Log (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Problem_Status_Codes
+[2025-11-22 23:59:12] 数据复制完成: Problem_Status_Codes -> Problem_Status_Codes (插入: 2, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 Product: table "Product" already exists
+[2025-11-22 23:59:12] 表名冲突: Staff -> tracking_software_problems_Staff
+[2025-11-22 23:59:12] 创建表: tracking_software_problems_Staff
+[2025-11-22 23:59:12] 数据复制完成: Staff -> tracking_software_problems_Staff (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Problems
+[2025-11-22 23:59:12] 数据复制完成: Problems -> Problems (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: tracking_software_problems (表: 5, 行: 50)
+[2025-11-22 23:59:12] 开始合并数据库: train_station
+[2025-11-22 23:59:12] 表名冲突: station -> train_station_station
+[2025-11-22 23:59:12] 创建表: train_station_station
+[2025-11-22 23:59:12] 数据复制完成: station -> train_station_station (插入: 12, 跳过: 0)
+[2025-11-22 23:59:12] 表名冲突: train -> train_station_train
+[2025-11-22 23:59:12] 创建表: train_station_train
+[2025-11-22 23:59:12] 数据复制完成: train -> train_station_train (插入: 11, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 train_station: table "train_station" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: train_station (表: 2, 行: 23)
+[2025-11-22 23:59:12] 开始合并数据库: tvshow
+[2025-11-22 23:59:12] 创建表: TV_Channel
+[2025-11-22 23:59:12] 数据复制完成: TV_Channel -> TV_Channel (插入: 15, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 TV_series: table "TV_series" already exists
+[2025-11-22 23:59:12] 创建表: Cartoon
+[2025-11-22 23:59:12] 数据复制完成: Cartoon -> Cartoon (插入: 12, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: tvshow (表: 2, 行: 27)
+[2025-11-22 23:59:12] 开始合并数据库: twitter_1
+[2025-11-22 23:59:12] 创建表失败 follows: table "follows" has more than one primary key
+[2025-11-22 23:59:12] 创建表: tweets
+[2025-11-22 23:59:12] 数据复制完成: tweets -> tweets (插入: 8, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: user_profiles
+[2025-11-22 23:59:12] 数据复制完成: user_profiles -> user_profiles (插入: 7, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: twitter_1 (表: 2, 行: 15)
+[2025-11-22 23:59:12] 开始合并数据库: university_basketball
+[2025-11-22 23:59:12] 创建表: basketball_match
+[2025-11-22 23:59:12] 数据复制完成: basketball_match -> basketball_match (插入: 4, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: university
+[2025-11-22 23:59:12] 数据复制完成: university -> university (插入: 5, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: university_basketball (表: 2, 行: 9)
+[2025-11-22 23:59:12] 开始合并数据库: voter_1
+[2025-11-22 23:59:12] 创建表: AREA_CODE_STATE
+[2025-11-22 23:59:12] 数据复制完成: AREA_CODE_STATE -> AREA_CODE_STATE (插入: 305, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: CONTESTANTS
+[2025-11-22 23:59:12] 数据复制完成: CONTESTANTS -> CONTESTANTS (插入: 11, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: VOTES
+[2025-11-22 23:59:12] 数据复制完成: VOTES -> VOTES (插入: 4, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: voter_1 (表: 3, 行: 320)
+[2025-11-22 23:59:12] 开始合并数据库: voter_2
+[2025-11-22 23:59:12] 表名冲突: Student -> voter_2_Student
+[2025-11-22 23:59:12] 创建表: voter_2_Student
+[2025-11-22 23:59:12] 数据复制完成: Student -> voter_2_Student (插入: 34, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Voting_record
+[2025-11-22 23:59:12] 数据复制完成: Voting_record -> Voting_record (插入: 10, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: voter_2 (表: 2, 行: 44)
+[2025-11-22 23:59:12] 开始合并数据库: wedding
+[2025-11-22 23:59:12] 表名冲突: people -> wedding_people
+[2025-11-22 23:59:12] 创建表: wedding_people
+[2025-11-22 23:59:12] 数据复制完成: people -> wedding_people (插入: 12, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: church
+[2025-11-22 23:59:12] 数据复制完成: church -> church (插入: 9, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 wedding: table "wedding" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: wedding (表: 2, 行: 21)
+[2025-11-22 23:59:12] 开始合并数据库: wine_1
+[2025-11-22 23:59:12] 创建表: grapes
+[2025-11-22 23:59:12] 数据复制完成: grapes -> grapes (插入: 20, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: appellations
+[2025-11-22 23:59:12] 数据复制完成: appellations -> appellations (插入: 57, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: wine
+[2025-11-22 23:59:12] 数据复制完成: wine -> wine (插入: 500, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: wine_1 (表: 3, 行: 577)
+[2025-11-22 23:59:12] 开始合并数据库: workshop_paper
+[2025-11-22 23:59:12] 创建表: workshop
+[2025-11-22 23:59:12] 数据复制完成: workshop -> workshop (插入: 6, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: submission
+[2025-11-22 23:59:12] 数据复制完成: submission -> submission (插入: 10, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 Acceptance: table "Acceptance" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: workshop_paper (表: 2, 行: 16)
+[2025-11-22 23:59:12] 开始合并数据库: world_1
+[2025-11-22 23:59:12] 表名冲突: city -> world_1_city
+[2025-11-22 23:59:12] 创建表: world_1_city
+[2025-11-22 23:59:12] 数据复制完成: city -> world_1_city (插入: 4079, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 sqlite_sequence: object name reserved for internal use: sqlite_sequence
+[2025-11-22 23:59:12] 表名冲突: country -> world_1_country
+[2025-11-22 23:59:12] 创建表: world_1_country
+[2025-11-22 23:59:12] 数据复制完成: country -> world_1_country (插入: 239, 跳过: 0)
+[2025-11-22 23:59:12] 创建表失败 countrylanguage: table "countrylanguage" has more than one primary key
+[2025-11-22 23:59:12] 数据库合并完成: world_1 (表: 2, 行: 4318)
+[2025-11-22 23:59:12] 开始合并数据库: wrestler
+[2025-11-22 23:59:12] 创建表: wrestler
+[2025-11-22 23:59:12] 数据复制完成: wrestler -> wrestler (插入: 10, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: Elimination
+[2025-11-22 23:59:12] 数据复制完成: Elimination -> Elimination (插入: 6, 跳过: 0)
+[2025-11-22 23:59:12] 数据库合并完成: wrestler (表: 2, 行: 16)
+[2025-11-22 23:59:12] 开始合并数据库: wta_1
+[2025-11-22 23:59:12] 创建表: players
+[2025-11-22 23:59:12] 复制数据失败 players -> players: Could not decode to UTF-8 column 'last_name' with text 'Treyes Albarrac��N'
+[2025-11-22 23:59:12] 创建表: matches
+[2025-11-22 23:59:12] 数据复制完成: matches -> matches (插入: 278, 跳过: 0)
+[2025-11-22 23:59:12] 创建表: rankings
+[2025-11-22 23:59:13] 数据复制完成: rankings -> rankings (插入: 510437, 跳过: 0)
+[2025-11-22 23:59:13] 数据库合并完成: wta_1 (表: 3, 行: 510715)
+[2025-11-22 23:59:13] 开始合并数据库: yelp
+[2025-11-22 23:59:13] 创建表: business
+[2025-11-22 23:59:13] 表名冲突: category -> yelp_category
+[2025-11-22 23:59:13] 创建表: yelp_category
+[2025-11-22 23:59:13] 创建表: user
+[2025-11-22 23:59:13] 创建表: checkin
+[2025-11-22 23:59:13] 创建表: neighbourhood
+[2025-11-22 23:59:13] 表名冲突: review -> yelp_review
+[2025-11-22 23:59:13] 创建表: yelp_review
+[2025-11-22 23:59:13] 创建表: tip
+[2025-11-22 23:59:13] 数据库合并完成: yelp (表: 7, 行: 0)
+[2025-11-22 23:59:13] 
+================================================================================
+[2025-11-22 23:59:13] 数据库合并报告
+[2025-11-22 23:59:13] ================================================================================
+[2025-11-22 23:59:13] 总数据库数量: 166
+[2025-11-22 23:59:13] 成功合并: 166
+[2025-11-22 23:59:13] 合并失败: 0
+[2025-11-22 23:59:13] 总表数量: 694
+[2025-11-22 23:59:13] 总数据行数: 1508698
+[2025-11-22 23:59:13] 解决的冲突: 694
+[2025-11-22 23:59:13] 
+各数据库合并统计:
+[2025-11-22 23:59:13] ------------------------------------------------------------
+[2025-11-22 23:59:13] baseball_1                 26表 553693行
+[2025-11-22 23:59:13] cre_Drama_Workshop_Groups  16表    207行
+[2025-11-22 23:59:13] imdb                       15表      0行
+[2025-11-22 23:59:13] cre_Theme_park             15表    154行
+[2025-11-22 23:59:13] assets_maintenance         14表    191行
+[2025-11-22 23:59:13] customer_deliveries        13表    186行
+[2025-11-22 23:59:13] tracking_grants_for_research  12表    128行
+[2025-11-22 23:59:13] sakila_1                   12表  39202行
+[2025-11-22 23:59:13] student_transcripts_tracking  11表    165行
+[2025-11-22 23:59:13] formula_1                  11表  88380行
+[2025-11-22 23:59:13] 
+详细报告已保存到: merge_report_20251122_235913.json
+[2025-11-22 23:59:13] 数据库连接已关闭

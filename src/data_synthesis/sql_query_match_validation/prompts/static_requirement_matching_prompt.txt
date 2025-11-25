@@ -1,0 +1,128 @@
+# 任务目标
+评估模型生成的SQL语句是否准确匹配用户查询的意图。基于用户查询、SQL语句和数据库结构信息进行判断，**不涉及数据库实际值的验证**。
+
+# 评估核心原则
+- 仅关注逻辑结构：不验证数据库实际内容，只判断SQL语句是否准确表达用户意图。
+- 数据库内容无关：即使查询内容在数据库中不存在，只要SQL逻辑正确，仍算需求匹配。
+- 基于schema分析：通过数据库结构（表/列的业务语义、类型）判断表列使用是否合适。
+
+# 需求匹配判断标准
+## 需求匹配
+- SQL语句的逻辑结构能够准确表达用户查询的语义意图
+- 查询目标、条件、排序、分组等操作与用户需求一致
+- 使用的表、列与查询意图相符（基于schema中的业务语义，而非仅名称存在）
+- 即使数据库中没有对应的数据，只要SQL逻辑正确表达用户意图也算匹配
+
+## 需求不匹配
+- SQL语句的逻辑结构与用户查询意图存在偏差
+- 遗漏必要的查询条件或表连接
+- 返回错误的列或表达式
+- 排序、分组、聚合等操作不符合用户需求
+- 使用了不合适的表或列（如用“单价”代替“销售额”）
+- 其他逻辑层面的不一致
+
+# 常见需求不匹配模式
+## 结构性问题
+- 查询目标错误：SELECT子句返回的列与用户需求不符（例如用户要部门名却返回员工ID）
+- 条件不完整：WHERE子句遗漏必要过滤条件
+- 表关联错误：JOIN条件或关联关系不正确
+- 表选择不当：遗漏实现查询意图所必需的表，或引入了无关表
+- 列选择不当：使用了语义或业务逻辑上不匹配的列（即使该列在schema中存在，例如用产品单价 `price` 代替销售额）
+
+## 逻辑操作问题
+- 排序方向错误：ORDER BY的ASC/DESC与需求相反
+- 分组缺失：需要GROUP BY但缺失
+- 去重问题：需要DISTINCT但缺失，或不需要却添加
+- 操作符误用：如该用IN时误用=
+
+## 语义表达问题
+- 模糊引用：多表查询时列名未指定表别名，导致歧义（虽可能执行，但逻辑不清）
+- 聚合误用：对不合适的列使用聚合函数（如对非分组字段直接聚合）
+- 子查询范围错误：子查询与主查询的数据范围或逻辑不一致
+
+# 评估操作指南
+1. 先对齐语义：分析用户查询的核心意图（如“查销售额最高”vs“查单价最高”），确认SQL的逻辑方向是否一致。
+2. 再验证表列：基于数据库schema，检查SQL使用的表（是否遗漏/多余）、列（语义是否匹配）是否符合意图（参考“常见需求不匹配模式”排查）。
+3. 后检查操作：确认查询条件、排序、分组、聚合等操作（是否符合“需求匹配判断标准”）。
+4. 最后定结果：若完全符合，判定匹配；若存在不匹配（参考“常见需求不匹配模式”归类），则判断是否能推导正确SQL。
+5. 输出适配：根据上述步骤结果，按“输出格式规范”组织最终输出（若不匹配且可推导，补充corrected_sql）。
+
+# 输出格式规范
+直接输出以下格式的 JSON 对象，不要包含任何额外文本、解释或其他内容。
+```json
+{
+  "analysis": "整体分析说明，解释判断依据，特别说明表和列的使用是否合适，并明确指出未验证数据库实际值",
+  "is_requirement_matched": true/false,
+  "mismatch_details": [
+    {
+      "issue_category": "结构性问题/逻辑操作问题/语义表达问题",
+      "description": "具体不匹配描述"
+    }
+  ],
+  "corrected_sql": "可选字段。当 is_requirement_matched 为 false 且能基于用户查询和schema明确推导出正确SQL时，提供优化后的SQL语句；否则可省略或设为 null"
+}
+```
+
+# 示例
+## 示例 1：需求匹配（尽管查询的值可能不存在）
+**输入信息：**
+- **用户查询**: 查询员工 "张三" 所在的部门名称。
+- **生成的SQL**:  `SELECT d.department_name FROM employees e JOIN departments d ON e.department_id = d.department_id WHERE e.name = '张三';`
+- **数据库结构**:
+  ```sql
+  employees (employee_id, name, department_id)
+  departments (department_id, department_name)
+  ```
+- **数据库类型**: SQLite
+
+**输出：**
+```json
+{
+  "analysis": "SQL 正确表达了用户查询意图：通过 employees 表和 departments 表连接，根据员工姓名 '张三' 查询其所在部门名称。使用的表和列（employees.name、departments.department_name、department_id 关联）均符合 schema 定义。虽然无法确认数据库中是否存在名为 '张三' 的员工，但根据评估原则，不验证实际数据存在性，仅关注逻辑结构，因此视为需求匹配。",
+  "is_requirement_matched": true,
+  "mismatch_details": [],
+  "corrected_sql": null
+}
+```
+
+## 示例 2：需求不匹配（列选择不当）
+**输入信息：**
+- **用户查询**: 查询销售额最高的产品名称。
+- **生成的SQL**:  `SELECT product_name FROM products ORDER BY price DESC LIMIT 1;`
+- **数据库结构**:
+  ```sql
+  products (product_id, product_name, price)
+  sales (sale_id, product_id, quantity, sale_amount)
+  ```
+- **数据库类型**: SQLite
+
+**输出：**
+```json
+{
+  "analysis": "用户意图是查询‘销售额最高’的产品，但生成的 SQL 使用了 products 表中的 price（单价）进行排序，而销售额应基于 sales 表中的 sale_amount（或其聚合值）。虽然 price 列存在，但其业务语义与‘销售额’不符，属于列选择不当。同时，未使用 sales 表也构成表选择不当。尽管无法验证具体销售数据是否存在，但基于 schema 可明确判断逻辑错误，因此需求不匹配。",
+  "is_requirement_matched": false,
+  "mismatch_details": [
+    {
+      "issue_category": "结构性问题",
+      "description": "列选择不当：使用产品单价 (price) 代替销售额进行排序，无法反映真实销售表现"
+    },
+    {
+      "issue_category": "结构性问题",
+      "description": "表选择不当：未关联包含销售额信息的 sales 表，导致无法获取正确指标"
+    }
+  ],
+  "corrected_sql": "SELECT p.product_name\\nFROM products p\\nJOIN sales s ON p.product_id = s.product_id\\nORDER BY s.sale_amount DESC\\nLIMIT 1;"
+}
+```
+
+# 输入信息
+- **数据库类型**: {db_type}
+- **数据库结构**:
+```
+{database_schema}
+```
+- **用户查询**: {user_query}
+- **生成的SQL**:
+```
+{generated_sql}
+```

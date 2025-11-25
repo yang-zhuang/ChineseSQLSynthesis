@@ -1,0 +1,17 @@
+请按照以下格式组织你的回答：
+
+[EXPLANATION-START]
+（SQL 解释）
+[EXPLANATION-END]
+
+[QUESTION-START]
+（自然语言问题）
+[QUESTION-END]
+
+[EXTERNAL-KNOWLEDGE-START]
+（外部知识）
+[EXTERNAL-KNOWLEDGE-END]
+
+- **SQL 解释**：在 [EXPLANATION-START] 和 [EXPLANATION-END] 之间，对 SQL 查询进行清晰且详细的解释。
+- **自然语言问题**：在 [QUESTION-START] 和 [QUESTION-END] 之间，将 SQL 查询转化为一个自然语言问题。
+- **外部知识**：如适用，请在 [EXTERNAL-KNOWLEDGE-START] 和 [EXTERNAL-KNOWLEDGE-END] 之间提供相关的外部知识；若无需补充，则此部分留空。

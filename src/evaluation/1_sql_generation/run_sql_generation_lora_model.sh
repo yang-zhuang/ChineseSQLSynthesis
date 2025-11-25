@@ -1,0 +1,1 @@
+python run_sql_generation.py --model_type lora_model --max_workers 10

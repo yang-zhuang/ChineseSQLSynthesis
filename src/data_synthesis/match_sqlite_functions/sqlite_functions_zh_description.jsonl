@@ -1,0 +1,101 @@
+{"ABS": "ABS(X)函数返回数值参数X的绝对值。若X为NULL，则返回NULL；若X是无法转换为数值的字符串或BLOB，则返回0.0；若X是整数-9223372036854775808，则会抛出整数溢出错误，因为不存在对应的64位二进制补码正数。"}
+{"SIGN": "SIGN(X)函数若参数X为数值，当X为负数时返回-1，为0时返回0，为正数时返回+1；若X为NULL，或为无法无损转换为数值的字符串、BLOB，则返回NULL。"}
+{"ROUND": "ROUND(X,Y)函数返回将数值X四舍五入到小数点后Y位的浮点值；若省略Y参数或Y为负数，则Y视为0。"}
+{"CEIL": "CEIL(X)函数返回大于或等于X的第一个可表示整数。对于正数X，向远离零的方向取整；对于负数X，向零的方向取整（与CEILING(X)为同一函数的别名）。"}
+{"CEILING": "CEILING(X)函数返回大于或等于X的第一个可表示整数。对于正数X，向远离零的方向取整；对于负数X，向零的方向取整（与CEIL(X)为同一函数的别名）。"}
+{"FLOOR": "FLOOR(X)函数返回小于或等于X的第一个可表示整数。对于正数，向零的方向取整；对于负数，向远离零的方向取整。"}
+{"TRUNC": "TRUNC(X)函数返回X和0（包含）之间最远离零的可表示整数，即返回X的整数部分，向零取整。该函数与CEILING(X)和FLOOR(X)类似，但始终向零取整，而CEILING(X)向上取整、FLOOR(X)向下取整。"}
+{"SQRT": "SQRT(X)函数返回X的平方根；若X为负数，则返回NULL。"}
+{"POW": "POW(X,Y)函数计算X的Y次幂（即X^Y），与POWER(X,Y)为同一函数的别名。"}
+{"POWER": "POWER(X,Y)函数计算X的Y次幂（即X^Y），与POW(X,Y)为同一函数的别名。"}
+{"EXP": "EXP(X)函数计算自然常数e（约2.71828182845905）的X次幂。"}
+{"LN": "LN(X)函数返回X的自然对数（以e为底）。"}
+{"LOG": "LOG(X)（别名LOG10(X)）函数返回X的以10为底的对数；双参数形式LOG(B,X)返回X的以B为底的对数。兼容性说明：SQLite中LOG()函数行为与PostgreSQL一致，计算以10为底的对数（多数其他SQL数据库引擎中LOG()计算自然对数）；双参数形式中第一个参数为底数、第二个为真数，与PostgreSQL和MySQL一致，但与SQL Server（第二个参数为底数）相反。"}
+{"LOG2": "LOG2(X)函数返回X的以2为底的对数。"}
+{"LOG10": "LOG10(X)函数返回X的以10为底的对数，与LOG(X)为同一函数的别名。"}
+{"MOD": "MOD(X,Y)函数返回X除以Y后的余数，与“%”运算符类似，但支持非整数参数。"}
+{"PI": "PI()函数返回圆周率π的近似值。"}
+{"RADIANS": "RADIANS(X)函数将角度值X从度转换为弧度。"}
+{"DEGREES": "DEGREES(X)函数将角度值X从弧度转换为度。"}
+{"SIN": "SIN(X)函数返回X的正弦值，X以弧度为单位。"}
+{"COS": "COS(X)函数返回X的余弦值，X以弧度为单位。"}
+{"TAN": "TAN(X)函数返回X的正切值，X以弧度为单位。"}
+{"ASIN": "ASIN(X)函数返回X的反正弦值，结果以弧度为单位。"}
+{"ACOS": "ACOS(X)函数返回X的反余弦值，结果以弧度为单位。"}
+{"ATAN": "ATAN(X)函数返回X的反正切值，结果以弧度为单位。"}
+{"ATAN2": "ATAN2(Y,X)函数返回Y/X的反正切值，结果以弧度为单位，且会根据X和Y的符号确定正确的象限。"}
+{"SINH": "SINH(X)函数返回X的双曲正弦值。"}
+{"COSH": "COSH(X)函数返回X的双曲余弦值。"}
+{"TANH": "TANH(X)函数返回X的双曲正切值。"}
+{"ASINH": "ASINH(X)函数返回X的反双曲正弦值。"}
+{"ACOSH": "ACOSH(X)函数返回X的反双曲余弦值。"}
+{"ATANH": "ATANH(X)函数返回X的反双曲正切值。"}
+{"LOWER": "LOWER(X) 函数返回字符串 X 的副本，其中所有 ASCII 字符都转换为小写。默认的内置 LOWER() 函数仅对 ASCII 字符有效。要对非 ASCII 字符进行大小写转换，请加载 ICU 扩展。"}
+{"UPPER": "UPPER(X) 函数返回输入字符串 X 的副本，其中所有小写 ASCII 字符都转换为对应的大写形式。"}
+{"TRIM": "TRIM(X) 或 TRIM(X,Y) 函数返回一个字符串，该字符串是从 X 的两端移除所有出现在 Y 中的字符后形成的。如果省略 Y 参数，TRIM(X) 会从 X 的两端移除空格。"}
+{"LTRIM": "LTRIM(X) 或 LTRIM(X,Y) 函数返回一个字符串，该字符串是从 X 的左侧移除所有出现在 Y 中的字符后形成的。如果省略 Y 参数，LTRIM(X) 会从 X 的左侧移除空格。"}
+{"RTRIM": "RTRIM(X) 或 RTRIM(X,Y) 函数返回一个字符串，该字符串是从 X 的右侧移除所有出现在 Y 中的字符后形成的。如果省略 Y 参数，RTRIM(X) 会从 X 的右侧移除空格。"}
+{"SUBSTR": "SUBSTR(X,Y,Z) 或 SUBSTR(X,Y) 函数返回输入字符串 X 的子字符串，该子字符串从第 Y 个字符开始，长度为 Z 个字符。如果省略 Z，则返回从第 Y 个字符开始到 X 字符串末尾的所有字符。最左侧的字符编号为 1；Y 为负数时从右侧计数；Z 为负数时返回 Y 所指字符之前的 abs(Z) 个字符。若 X 是字符串，索引指 UTF-8 字符；若为 BLOB，索引指字节。"}
+{"SUBSTRING": "SUBSTRING(X,Y,Z) 或 SUBSTRING(X,Y) 是 SUBSTR 函数的别名（从 SQLite 3.34 版本开始），功能与 SUBSTR 完全一致。返回输入字符串 X 的子字符串，从第 Y 个字符开始，长度为 Z 个字符（省略 Z 则取至字符串末尾）。最左侧字符编号为 1，Y 为负数从右侧计数，Z 为负数返回 Y 之前的 abs(Z) 个字符；X 为字符串时索引指 UTF-8 字符，为 BLOB 时指字节。"}
+{"LENGTH": "对于字符串值 X，LENGTH(X) 返回 X 中第一个 NUL 字符之前的字符数（通常为字符串总字符数，因 SQLite 字符串通常不含 NUL）；对于 BLOB 值 X，返回其字节数；X 为 NULL 时返回 NULL；X 为数值时返回其字符串表示形式的长度。注意：字符串返回字符长度（非字节长度），UTF-16 字符串的字符长度与字节长度始终不同，UTF-8 字符串含多字节字符时可能不同，需字节长度可用 octet_length()。BLOB 的 LENGTH(X) 无需加载值到内存，处理大值时比字符串更高效。"}
+{"OCTET_LENGTH": "OCTET_LENGTH(X) 函数返回文本字符串 X 编码后的字节数；X 为 NULL 时返回 NULL；X 为 BLOB 时与 LENGTH(X) 结果相同；X 为数值时返回其文本表示形式的字节数。返回值依赖数据库编码（UTF8 与 UTF16 可能不同）。若 X 是表中的文本或 BLOB 列，可通过元数据计算字节长度，无需读取列内容，处理大值时高效。"}
+{"REPLACE": "REPLACE(X,Y,Z) 函数返回将字符串 X 中所有出现的字符串 Y 替换为字符串 Z 后形成的字符串。比较使用 BINARY 排序序列；若 Y 为空字符串则返回 X 本身；若 Z 最初非字符串，处理前会转换为 UTF-8 字符串。"}
+{"INSTR": "INSTR(X,Y) 函数：若 X、Y 为字符串，查找 Y 在 X 中首次出现的位置，返回前面的字符数加 1，未找到则返回 0；若两者均为 BLOB，返回首次出现 Y 之前的字节数加 1，未找到则返回 0；若 X 或 Y 为 NULL，返回 NULL；非 NULL 且非 BLOB 时均按字符串处理。"}
+{"CHAR": "CHAR(X1,X2,...,XN) 函数返回一个字符串，该字符串由整数 X1 到 XN 对应的 Unicode 码点值的字符组成。"}
+{"UNICODE": "UNICODE(X) 函数返回字符串 X 第一个字符对应的 Unicode 码点数值。若参数 X 不是字符串，结果未定义。"}
+{"CONCAT": "CONCAT(...) 函数返回一个字符串，该字符串是其所有非 NULL 参数的字符串表示形式的连接。若所有参数均为 NULL，则返回空字符串。"}
+{"CONCAT_WS": "CONCAT_WS(SEP,...) 函数返回第一个参数之后所有非 NULL 参数的连接字符串，使用第一个参数的文本值作为分隔符。若第一个参数为 NULL，返回 NULL；若除第一个参数外所有参数均为 NULL，返回空字符串。"}
+{"QUOTE": "QUOTE(X) 函数返回适合嵌入 SQL 语句的 SQL 字面量文本：字符串用单引号括起，内部引号按需转义；BLOB 编码为十六进制字面量；含嵌入 NUL 字符的字符串会在第一个 NUL 前截断（因 SQL 字符串字面量无法表示该类字符串）。"}
+{"COALESCE": "COALESCE(X,Y,...) 函数返回其第一个非 NULL 参数的副本，若所有参数均为 NULL 则返回 NULL。该函数至少需要 2 个参数。"}
+{"IFNULL": "IFNULL(X,Y) 函数返回其第一个非 NULL 参数的副本，若两个参数均为 NULL 则返回 NULL。该函数必须恰好有 2 个参数，且等同于仅含两个参数的 COALESCE() 函数。"}
+{"NULLIF": "NULLIF(X,Y) 函数若两个参数的值不同，则返回第一个参数；若两个参数的值相同，则返回 NULL。该函数从左到右搜索定义了排序序列的参数，并使用该排序序列进行所有字符串比较；若两个参数均未定义排序序列，则使用 BINARY 排序序列。"}
+{"IIF": "IIF(X,Y,Z) 函数若条件 X 为真，则返回值 Y；否则返回值 Z。该函数在逻辑上等同于 CASE 表达式“CASE WHEN X THEN Y ELSE Z END”，且会生成相同的字节码。"}
+{"IIF": "IIF(X,Y,Z) 函数若条件 X 为真，则返回值 Y；否则返回值 Z。该函数在逻辑上等同于 CASE 表达式“CASE WHEN X THEN Y ELSE Z END”，且会生成相同的字节码。"}
+{"LIKELY": "LIKELY(X) 函数返回参数 X 本身，它是一个无操作函数，代码生成器会将其优化移除，运行时（调用 sqlite3_step() 期间）不消耗 CPU 周期。该函数的作用是向查询优化器提供提示，表明参数 X 是一个通常为真的布尔值，等同于 LIKELIHOOD(X, 0.9375)。参见 UNLIKELY(X)。"}
+{"UNLIKELY": "UNLIKELY(X) 函数返回参数 X 本身，它是一个无操作函数，代码生成器会将其优化移除，运行时（调用 sqlite3_step() 期间）不消耗 CPU 周期。该函数的作用是向查询优化器提供提示，表明参数 X 是一个通常为假的布尔值，等同于 LIKELIHOOD(X, 0.0625)。"}
+{"LIKELIHOOD": "LIKELIHOOD(X,Y) 函数返回参数 X 本身，参数 Y 必须是 0.0 到 1.0（含边界）之间的浮点常量。该函数是一个无操作函数，代码生成器会将其优化移除，运行时（调用 sqlite3_step() 期间）不消耗 CPU 周期。其作用是向查询优化器提供提示，表明参数 X 是一个布尔值，且为真的概率约为 Y。UNLIKELY(X) 是该函数的简写形式（对应 Y=0.0625），LIKELY(X) 也是其简写形式（对应 Y=0.9375）。"}
+{"AVG": "AVG(X) 函数返回组内所有非 NULL 值 X 的平均值。不形似数字的字符串和 BLOB 值会被解释为 0。只要存在至少一个非 NULL 输入，AVG() 的结果始终是浮点型值；若没有非 NULL 输入，结果为 NULL。AVG() 的计算方式为 total()/count()，因此适用于 total() 的所有约束也适用于 AVG()。"}
+{"COUNT": "COUNT(X) 函数返回组内 X 不为 NULL 的次数；COUNT(*) 函数（无参数）返回组内的总行数。"}
+{"SUM": "SUM(X) 函数返回组内所有非 NULL 值的总和。若没有非 NULL 输入行，SUM() 返回 NULL（符合 SQL 标准）。"}
+{"TOTAL": "TOTAL(X) 函数返回组内所有非 NULL 值的总和。若没有非 NULL 输入行，TOTAL() 返回 0.0（非 SQL 标准，用于规避 SUM() 的设计问题）。"}
+{"MAX": "MAX(X) 聚合函数返回组内所有值的最大值（最大值为对该列执行 ORDER BY 时最后返回的值）。仅当组内没有非 NULL 值时，聚合 MAX() 返回 NULL。"}
+{"MIN": "MIN(X) 聚合函数返回组内所有非 NULL 值的最小值（最小值为对该列执行 ORDER BY 时第一个出现的非 NULL 值）。仅当组内没有非 NULL 值时，聚合 MIN() 返回 NULL。"}
+{"GROUP_CONCAT": "GROUP_CONCAT(X) 或 GROUP_CONCAT(X,Y) 函数返回将所有非 NULL 值 X 连接后的字符串。参数 Y 为连接分隔符，若省略则默认使用逗号（,）。GROUP_CONCAT 兼容 MySQL，连接元素的顺序默认随机，可在最后一个参数后添加 ORDER BY 指定顺序。"}
+{"STRING_AGG": "STRING_AGG(X,Y) 是 GROUP_CONCAT(X,Y) 的别名，兼容 PostgreSQL 和 SQL-Server。功能与 GROUP_CONCAT 一致，返回将所有非 NULL 值 X 用分隔符 Y 连接后的字符串，可通过 ORDER BY 指定连接顺序。"}
+{"ROW_NUMBER": "当前分区内的行号。行从1开始编号，编号顺序由窗口定义中的ORDER BY子句指定，若未指定则顺序任意。"}
+{"RANK": "每个组中第一个同级行的行号（row_number()）——当前行的排名（含间隔）。若没有ORDER BY子句，则所有行均视为同级，该函数始终返回1。"}
+{"DENSE_RANK": "当前行所在同级组在其分区中的序号——当前行的排名（不含间隔）。行从1开始编号，编号顺序由窗口定义中的ORDER BY子句指定。若没有ORDER BY子句，则所有行均视为同级，该函数始终返回1。"}
+{"PERCENT_RANK": "尽管名称如此，该函数始终返回0.0到1.0之间的值，计算公式为（rank - 1）/（partition-rows - 1），其中rank是内置窗口函数rank()的返回值，partition-rows是分区中的总行数。若分区仅含一行，则该函数返回0.0。"}
+{"CUME_DIST": "累积分布。计算公式为row-number/partition-rows，其中row-number是组中最后一个同级行的row_number()返回值，partition-rows是分区中的总行数。"}
+{"NTILE": "参数N按整数处理。该函数将分区尽可能均匀地划分为N个组，并按窗口定义中ORDER BY子句指定的顺序（若未指定则顺序任意）为每个组分配1到N之间的整数。必要时，较大的组优先出现。该函数返回当前行所在组的分配整数。"}
+{"LAG": "LAG()函数的第一种形式（LAG(expr)）返回对分区中前一行计算表达式expr的结果；若没有前一行（当前行为第一行），则返回NULL。也支持指定偏移量和默认值的形式：LAG(expr, offset)返回前offset行的expr结果，LAG(expr, offset, default)在不存在对应行时返回默认值default（未指定default时返回NULL）。"}
+{"LEAD": "LEAD()函数的第一种形式（LEAD(expr)）返回对分区中后一行计算表达式expr的结果；若没有后一行（当前行为最后一行），则返回NULL。也支持指定偏移量和默认值的形式：LEAD(expr, offset)返回后offset行的expr结果，LEAD(expr, offset, default)在不存在对应行时返回默认值default（未指定default时返回NULL）。"}
+{"FIRST_VALUE": "该内置窗口函数按聚合窗口函数的方式为每行计算窗口框架，返回对窗口框架中第一行计算表达式expr的结果。"}
+{"LAST_VALUE": "该内置窗口函数按聚合窗口函数的方式为每行计算窗口框架，返回对窗口框架中最后一行计算表达式expr的结果。"}
+{"NTH_VALUE": "该内置窗口函数按聚合窗口函数的方式为每行计算窗口框架，返回对窗口框架中第N行计算表达式expr的结果。窗口框架内的行从1开始编号，编号顺序由ORDER BY子句指定（若未指定则顺序任意）。若分区中不存在第N行，则返回NULL。"}
+{"DATE": "以文本形式返回日期，格式为：YYYY-MM-DD。"}
+{"TIME": "以文本形式返回时间，格式为HH:MM:SS；如果使用了subsec修饰符，则格式为HH:MM:SS.SSS。"}
+{"DATETIME": "以文本形式返回日期和时间，格式为YYYY-MM-DD HH:MM:SS；如果使用了subsec修饰符，则格式为YYYY-MM-DD HH:MM:SS.SSS。"}
+{"JULIANDAY": "返回儒略日——即自公元前4714年11月24日（推算公历）格林威治时间中午起的天数（含小数部分）。"}
+{"UNIXEPOCH": "返回Unix时间戳——即自1970-01-01 00:00:00 UTC起的秒数。UNIXEPOCH()函数通常返回整数秒数，但如果使用了可选的subsec修饰符，则会返回包含小数部分的浮点数秒数。"}
+{"STRFTIME": "根据第一个参数指定的格式字符串格式化并返回日期。该格式字符串支持标准C库中STRFTIME()函数的大多数常见替换符，此外还新增了两个替换符：%f 和 %J。"}
+{"TIMEDIFF": "返回一个字符串，描述为了从时间B到达时间A所需添加的时间量。TIMEDIFF()结果的格式设计为人类可读。"}
+{"LAST_INSERT_ROWID": "返回调用该函数的数据库连接中最后插入行的ROWID，是sqlite3_last_insert_rowid() C/C++接口函数的包装器"}
+{"CHANGES": "返回由最近完成的INSERT、DELETE或UPDATE语句更改、插入或删除的数据库行数（不包括低级触发器中的语句），是sqlite3_changes64() C/C++函数的包装器，遵循相同的更改计数规则"}
+{"TOTAL_CHANGES": "返回自当前数据库连接打开以来，由INSERT、UPDATE或DELETE语句引起的行更改总数，是sqlite3_total_changes64() C/C++接口的包装器"}
+{"SQLITE_VERSION": "返回正在运行的SQLite库的版本字符串，是sqlite3_libversion() C接口的SQL包装器"}
+{"SQLITE_SOURCE_ID": "返回标识构建SQLite库所用源代码特定版本的字符串，该字符串包含源代码签入日期和时间以及对应的SHA3-256哈希值，是sqlite3_sourceid() C接口的SQL包装器"}
+{"SQLITE_COMPILEOPTION_GET": "返回构建SQLite时使用的第N个编译时选项，若N超出范围则返回NULL，是sqlite3_compileoption_get() C/C++函数的包装器，另请参阅compile_options编译指示"}
+{"SQLITE_COMPILEOPTION_USED": "当参数X为编译时选项名称字符串时，返回该选项在构建时是否被使用（1表示使用，0表示未使用），是sqlite3_compileoption_used() C/C++函数的包装器"}
+{"TYPEOF": "返回指示表达式X数据类型的字符串，可能的值为\"null\"、\"integer\"、\"real\"、\"text\"或\"blob\""}
+{"GLOB": "GLOB(X,Y)函数等价于表达式\"Y GLOB X\"。注意，GLOB()函数中的X和Y参数相对于中缀GLOB运算符是颠倒的：Y是字符串，X是模式。例如，以下表达式是等价的：name GLOB '*helium*' 和 GLOB('*helium*',name)。如果使用sqlite3_create_function()接口重写GLOB(X,Y)函数的替代实现，那么GLOB运算符将调用该替代实现。"}
+{"LIKE": "LIKE()函数用于实现\"Y LIKE X [ESCAPE Z]\"表达式。如果存在可选的ESCAPE子句，则LIKE()函数接受三个参数调用；否则，仅接受两个参数调用。注意，LIKE()函数中的X和Y参数相对于中缀LIKE运算符是颠倒的：X是模式，Y是要匹配该模式的字符串。因此，以下表达式是等价的：name LIKE '%neon%' 和 LIKE('%neon%',name)。可以使用sqlite3_create_function()接口重写LIKE()函数，从而改变LIKE运算符的行为。重写LIKE()函数时，可能需要同时重写两个参数和三个参数版本的LIKE()函数，否则根据是否指定了ESCAPE子句，LIKE运算符可能会调用不同的代码。"}
+{"SOUNDEX": "SOUNDEX(X)函数返回字符串X的soundex编码。如果参数为NULL或不包含任何ASCII字母字符，则返回\"?000\"。该函数在SQLite中默认省略，仅当SQLite编译时使用了SQLITE_SOUNDEX编译选项时才可用。"}
+{"FORMAT": "FORMAT(FORMAT,...) SQL函数的工作方式类似于sqlite3_mprintf() C语言函数和标准C库中的printf()函数。第一个参数是格式字符串，用于指定如何使用后续参数的值构造输出字符串。如果FORMAT参数缺失或为NULL，则结果为NULL。%n格式会被静默忽略，且不消耗参数。%p格式是%X的别名，%z格式可与%s互换。如果参数列表中的参数数量不足，缺失的参数会被视为NULL值，对于数值格式会转换为0或0.0，对于%s格式会转换为空字符串。有关更多信息，请参阅内置printf()文档。"}
+{"PRINTF": "PRINTF() SQL函数是FORMAT() SQL函数的别名。FORMAT()函数最初名为PRINTF()，后为兼容其他数据库引擎更名为FORMAT()，PRINTF()名称作为别名保留，以避免破坏遗留代码。"}
+{"LOAD_EXTENSION": "LOAD_EXTENSION(X)或LOAD_EXTENSION(X,Y)函数从名为X的共享库文件中加载SQLite扩展，使用入口点Y。若省略Y，则使用默认入口点名称，该函数的结果始终为NULL。如果扩展加载或初始化失败，函数会引发异常。若扩展尝试修改或删除SQL函数或排序序列，LOAD_EXTENSION()会执行失败；扩展仅可添加新的函数或排序序列，因为现有函数和/或排序序列可能在当前运行的SQL语句中被使用。如需加载会修改或删除函数或排序序列的扩展，请使用sqlite3_load_extension() C语言API。出于安全原因，扩展加载默认禁用，必须通过之前调用sqlite3_enable_load_extension()来启用该功能。"}
+{"RANDOM": "RANDOM()函数返回一个介于-9223372036854775808和+9223372036854775807之间的伪随机整数。"}
+{"RANDOMBLOB": "RANDOMBLOB(N)函数返回一个包含伪随机字节的N字节BLOB。如果N小于1，则返回1字节的随机BLOB。提示：应用程序可以结合hex()和/或lower()函数使用该函数生成全局唯一标识符，例如：hex(randomblob(16)) 或 lower(hex(randomblob(16)))。"}
+{"HEX": "HEX()函数将其参数解释为BLOB，并返回该BLOB内容的大写十六进制字符串表示。如果\"hex(X)\"中的参数X是整数或浮点数，则\"将其参数解释为BLOB\"意味着该二进制数会先转换为UTF8文本表示，然后该文本再被解释为BLOB。因此，\"hex(12345678)\"的结果是\"3132333435363738\"，而非整数\"0000000000BC614E\"的二进制表示。另见：unhex()"}
+{"UNHEX": "UNHEX(X)或UNHEX(X,Y)函数返回一个BLOB值，该值是十六进制字符串X的解码结果。如果X包含任何非十六进制数字且不在Y中的字符，则UNHEX(X,Y)返回NULL。如果省略Y，则默认Y为空字符串，因此X必须是纯十六进制字符串。X中的所有十六进制数字必须成对出现，且每对的两个数字必须紧邻，否则UNHEX(X,Y)返回NULL。如果参数X或Y任意一个为NULL，则UNHEX(X,Y)返回NULL。输入X可以包含任意大小写的十六进制数字。Y中的十六进制数字对X的转换无影响，仅Y中非十六进制数字的字符会在X中被忽略。另见：hex()"}
+{"ZEROBLOB": "ZEROBLOB(N)函数返回一个由N个0x00字节组成的BLOB。SQLite对这些零字节BLOB的管理非常高效。零字节BLOB可用于预留空间，以便后续通过增量BLOB I/O写入BLOB数据。该SQL函数通过C/C++接口中的sqlite3_result_zeroblob()例程实现。"}

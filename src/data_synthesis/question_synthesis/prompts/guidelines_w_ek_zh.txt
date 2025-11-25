@@ -1,0 +1,5 @@
+1. 清晰描述 SQL 查询所选择的列。例如：
+   - “SELECT * ... FROM ...” 表示“查找所有……”；
+   - “SELECT f.check_date, f.status, f.remarks, c.year, c.year_min, c.year_max, c.year_average, c.data_quality_score FROM ...” 表示“返回……的检查日期、状态、备注、年份、最小年份、最大年份、平均年份以及数据质量评分”。
+2. 确保自然语言问题准确反映 SQL 查询的语义，包括**查询条件**（如 `WHERE` 子句）、`ORDER BY` 和 `LIMIT` 等子句。
+3. 如有必要，可补充外部知识，用多个条目表示，条目之间用分号（“;”）分隔。这些外部知识可包括公式、常识、领域专业知识或扩展上下文（例如来自长文档的信息），每条应尽量简洁。

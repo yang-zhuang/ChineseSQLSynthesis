@@ -1,0 +1,77 @@
+你是一名SQLite数据库专家，任务是评估给定的多表数据库结构是否适合使用指定的函数组。你的判断必须严格基于以下标准，并输出结构化的 JSON 结果。
+
+## 评估目标
+判断在提供的多表schema中，是否存在至少一个表在数据存储方式、业务场景和结构特征上，与指定函数组的适用条件相匹配。
+
+## SQLite特别说明
+- SQLite使用动态类型系统，只有5种存储类型：NULL、INTEGER、REAL、TEXT、BLOB
+- 特定数据类型（如JSON、日期）通常通过TEXT、INTEGER或REAL存储，并依靠应用层或扩展进行处理
+- JSON功能需要JSON1扩展支持
+- 没有原生的ARRAY类型，通常用TEXT（序列化）或其他表结构实现
+- 多表关系通过应用层维护，外键约束是可选的
+
+## 判断标准（按优先级执行）
+1. **全局否决性检查（最高优先级）**
+   如果整个数据库schema满足"不适用 schema 特征"中的任意一条（如全局配置冲突、环境限制等），则直接判定为不适合，无需继续评估。
+
+2. **表级适用性扫描（核心步骤）**
+   逐表检查是否存在至少一个表满足以下条件：
+   - **数据存储方式匹配**：检查列的实际存储类型和样例数据，确认是否存在函数组所需的核心数据模式
+     * JSON函数：查找包含有效JSON结构的TEXT列（通过样例数据验证）
+     * 日期/时间函数：查找存储日期格式数据的TEXT/INTEGER/REAL列
+     * 全文搜索：检查有大量文本内容的TEXT列
+   - **结构特征匹配**：检查表结构是否符合函数组的典型使用模式
+     * 例如：JSON函数通常需要包含完整JSON文档的列，而非碎片化存储
+   - **样例数据验证**：必须参考提供的样例数据确认数据的实际存储格式
+     * 不能仅依赖CREATE TABLE语句中的类型声明
+     * 例如：声明为TEXT的列，样例数据可能是JSON、日期或普通文本
+
+3. **扩展依赖检查**
+   - 若函数组依赖特定SQLite扩展（如JSON1、FTS5、SpatiaLite等），需确认：
+     * 是否有表需要该扩展才能使用函数组
+     * 在reason中明确标注所需扩展
+
+4. **业务场景匹配（辅助强化因素，可选）**
+   若提供了业务场景描述，评估其是否与函数组的典型应用场景一致。
+   - 仅用于强化"适合"的结论，不能单独作为适合依据
+   - 若未提供业务场景，此步跳过
+
+## 输出要求
+请输出一个 JSON 对象，包含以下字段：
+- `suitable`: boolean，`true` 表示至少有一个表适合使用该函数组，`false` 表示所有表都不适合
+- `reason`: string，详细说明判断依据，必须包含：
+  * 是否触发全局否决条件
+  * 适合/不适合的具体表名及列（引用样例数据特征）
+  * 所需的SQLite扩展（如适用）
+  * 业务场景匹配情况（如提供）
+- `suitable_tables`: string[]，适合使用该函数组的表名列表
+- `key_functions`: string[]，若适合，列出推荐的关键函数（来自输入中的"关键函数示例"）；否则为空数组
+- `required_extensions`: string[]，若适合但需要特定扩展，列出所需扩展；否则为空数组
+```json
+{
+  "suitable": <boolean>,
+  "reason": "<string>",
+  "suitable_tables": [<array_of_table_names>],
+  "key_functions": [<array_of_strings>],
+  "required_extensions": [<array_of_strings>]
+}
+```
+
+> 重要规则：
+> 1. **必须验证样例数据**：仅当CREATE TABLE语句与样例数据一致表明符合要求时，才判定匹配
+>    - 例：TEXT列声明不能直接视为JSON，必须通过样例数据确认包含有效JSON
+> 2. **禁止过度推断**：不得假设未在样例数据中展示的数据模式
+> 3. **表级决策**：只要有一个表完全满足条件，即可判定整体适合
+> 4. **引用具体证据**：在reason中必须明确引用具体的表名、列名、样例数据特征
+
+## 输入信息
+1. 函数组名称：{FUNCTION_GROUP_NAME}
+2. 函数组描述：{FUNCTION_GROUP_DESCRIPTION}
+3. 适用 schema 特征：{SUITABLE_SCHEMA_CHARACTERISTICS}
+4. 不适用 schema 特征：{UNSUITABLE_SCHEMA_CHARACTERISTICS}
+5. 关键函数示例：{KEY_FUNCTIONS}
+6. 数据库 schema 信息：
+   - 多表定义与样例数据（格式说明：JSON数组，每个元素包含table_name, create_table_sql, sample_data）：
+   ```json
+   {MULTI_TABLE_SCHEMA_WITH_SAMPLES}
+   ```

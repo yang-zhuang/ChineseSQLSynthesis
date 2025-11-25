@@ -1,0 +1,47 @@
+**评判标准：**
+复杂 SQL 查询应满足以下一项或多项条件：  
+- 深度嵌套子查询（≥3 层或相关子查询）  
+- 多类型 JOIN 组合（含自连接）  
+- 使用窗口函数（SQLite ≥3.25.0）  
+- 使用递归 CTE（`WITH RECURSIVE`）  
+- 组合多个聚合与 `FILTER(WHERE ...)`  
+- 复杂 `WHERE`/`HAVING` 逻辑（含 `EXISTS`、`CASE` 嵌套等）  
+
+---
+
+**示例 1：递归 CTE 查询组织层级（单条语句）**
+```sql
+WITH RECURSIVE dept_tree AS (
+    SELECT dept_id, name, parent_id, 0 AS level
+    FROM departments
+    WHERE parent_id IS NULL
+    UNION ALL
+    SELECT d.dept_id, d.name, d.parent_id, dt.level + 1
+    FROM departments d
+    JOIN dept_tree dt ON d.parent_id = dt.dept_id
+)
+SELECT name, level
+FROM dept_tree
+ORDER BY level, name;
+```
+
+**示例 2：窗口函数 + 多条件聚合（单条语句，SQLite ≥3.25.0）**
+```sql
+WITH ranked_salaries AS (
+    SELECT 
+        name,
+        department_id,
+        salary,
+        ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) AS rn
+    FROM employees
+)
+SELECT 
+    d.name AS department,
+    AVG(e.salary) AS avg_salary,
+    COUNT(e.name) FILTER (WHERE e.salary > 50000) AS high_earners
+FROM departments d
+LEFT JOIN ranked_salaries e ON d.dept_id = e.department_id
+WHERE e.rn <= 3 OR e.rn IS NULL
+GROUP BY d.dept_id, d.name
+HAVING COUNT(e.name) > 0;
+```

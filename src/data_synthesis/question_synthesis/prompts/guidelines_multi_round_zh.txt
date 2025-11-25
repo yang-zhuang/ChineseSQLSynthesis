@@ -1,0 +1,4 @@
+1. 清晰描述 SQL 查询所选择的列。例如：
+   - “SELECT * ... FROM ...” 表示“查找所有……”；
+   - “SELECT f.check_date, f.status, f.remarks, c.year, c.year_min, c.year_max, c.year_average, c.data_quality_score FROM ...” 表示“返回……的检查日期、状态、备注、年份、最小年份、最大年份、平均年份以及数据质量评分”。
+2. 确保对话准确体现 SQL 查询的语义，包括**查询条件**（如 `WHERE` 子句）、`ORDER BY` 和 `LIMIT` 等子句。

@@ -1,0 +1,121 @@
+[
+    {
+      "name": "数值函数",
+      "description": "用于执行基本数学运算、数值处理和三角/双曲函数计算。",
+      "suitable_schemas": "包含数值类型字段（INTEGER、REAL）的表，例如财务、科学计算、统计类数据。",
+      "unsuitable_schemas": "仅包含文本或二进制数据且无数值运算需求的表。",
+      "key_functions": [
+        "ABS", "SIGN", "ROUND", "CEIL", "CEILING", "FLOOR", "TRUNC",
+        "SQRT", "POW", "POWER", "EXP", "LN", "LOG", "LOG2", "LOG10",
+        "MOD", "PI", "RADIANS", "DEGREES",
+        "SIN", "COS", "TAN", "ASIN", "ACOS", "ATAN", "ATAN2",
+        "SINH", "COSH", "TANH", "ASINH", "ACOSH", "ATANH"
+      ]
+    },
+    {
+      "name": "字符串函数",
+      "description": "用于字符串拼接、截取、大小写转换、查找、替换、去除空白等操作。",
+      "suitable_schemas": "包含文本字段（TEXT）的表，例如用户信息、日志、内容管理等场景。",
+      "unsuitable_schemas": "仅包含数值或二进制数据且无需文本处理的表。",
+      "key_functions": [
+        "LOWER", "UPPER", "TRIM", "LTRIM", "RTRIM",
+        "SUBSTR", "SUBSTRING", "LENGTH", "OCTET_LENGTH",
+        "REPLACE", "INSTR", "CHAR", "UNICODE",
+        "CONCAT", "CONCAT_WS", "QUOTE"
+      ]
+    },
+    {
+      "name": "空值处理函数",
+      "description": "用于处理 NULL 值，提供默认值或条件判断。",
+      "suitable_schemas": "任何可能包含 NULL 值的表结构，尤其是业务字段允许为空的场景。",
+      "unsuitable_schemas": "表结构中所有字段均为 NOT NULL 且无空值逻辑需求。",
+      "key_functions": [
+        "COALESCE", "IFNULL", "NULLIF", "IIF"
+      ]
+    },
+    {
+      "name": "条件与控制流函数",
+      "description": "提供简单的条件分支逻辑，用于动态返回不同值。",
+      "suitable_schemas": "需要在查询中实现简单逻辑判断的任何表结构。",
+      "unsuitable_schemas": "仅执行简单投影或过滤、无需条件逻辑的查询场景。",
+      "key_functions": [
+        "IIF", "LIKELY", "UNLIKELY", "LIKELIHOOD"
+      ]
+    },
+    {
+      "name": "聚合函数",
+      "description": "用于对一组值进行统计计算，如求和、平均、计数、最大/最小值等。",
+      "suitable_schemas": "需要分组统计的表，例如销售记录、日志分析、用户行为数据等。",
+      "unsuitable_schemas": "仅用于单行查询、无 GROUP BY 或窗口需求的表。",
+      "key_functions": [
+        "AVG", "COUNT", "SUM", "TOTAL", "MAX", "MIN", "GROUP_CONCAT", "STRING_AGG"
+      ]
+    },
+    {
+      "name": "窗口函数",
+      "description": "支持在结果集分区上执行排名、偏移、累计等计算，适用于高级分析。",
+      "suitable_schemas": "需要行间比较或序列分析的表，如排名、趋势分析、时间序列等。",
+      "unsuitable_schemas": "简单 CRUD 或无排序/分组分析需求的表。",
+      "key_functions": [
+        "ROW_NUMBER", "RANK", "DENSE_RANK", "PERCENT_RANK", "CUME_DIST",
+        "NTILE", "LAG", "LEAD", "FIRST_VALUE", "LAST_VALUE", "NTH_VALUE"
+      ]
+    },
+    {
+      "name": "日期与时间函数",
+      "description": "用于处理日期、时间、时间戳的解析、格式化与计算。",
+      "suitable_schemas": "包含时间相关字段（如 TEXT 存储 ISO8601 时间戳）的表，如日志、事件、订单等。",
+      "unsuitable_schemas": "无时间字段或时间仅作为普通字符串存储且无需解析的表。",
+      "key_functions": [
+        "DATE", "TIME", "DATETIME", "JULIANDAY", "UNIXEPOCH", "STRFTIME", "TIMEDIFF"
+      ]
+    },
+    {
+      "name": "二进制与编码函数",
+      "description": "处理 BLOB 数据、十六进制编码/解码、随机字节生成等。",
+      "suitable_schemas": "包含二进制数据（如文件、哈希值、UUID、加密内容）的表。",
+      "unsuitable_schemas": "纯文本或数值表，无二进制处理需求。",
+      "key_functions": [
+        "HEX", "UNHEX", "RANDOMBLOB", "ZEROBLOB", "LENGTH", "OCTET_LENGTH"
+      ]
+    },
+    {
+      "name": "数据库元信息与状态函数",
+      "description": "返回数据库状态、版本、变更统计、行 ID 等运行时信息。",
+      "suitable_schemas": "适用于所有表，通常用于调试、审计或连接管理。",
+      "unsuitable_schemas": "无（通用功能）。",
+      "key_functions": [
+        "LAST_INSERT_ROWID", "CHANGES", "TOTAL_CHANGES",
+        "SQLITE_VERSION", "SQLITE_SOURCE_ID",
+        "SQLITE_COMPILEOPTION_GET", "SQLITE_COMPILEOPTION_USED",
+        "TYPEOF"
+      ]
+    },
+    {
+      "name": "模式匹配与文本搜索函数",
+      "description": "支持通配符匹配（GLOB/LIKE）等文本模式判断。",
+      "suitable_schemas": "需要模糊搜索或模式匹配的文本字段表，如日志、用户输入、文件名等。",
+      "unsuitable_schemas": "结构化数值表或精确匹配即可满足需求的场景。",
+      "key_functions": [
+        "GLOB", "LIKE", "SOUNDEX"
+      ]
+    },
+    {
+      "name": "扩展与格式化函数",
+      "description": "提供字符串格式化、扩展加载等高级功能。",
+      "suitable_schemas": "需要动态生成格式化输出或加载自定义扩展的场景。",
+      "unsuitable_schemas": "标准查询场景，无需格式化或扩展。",
+      "key_functions": [
+        "FORMAT", "PRINTF", "LOAD_EXTENSION"
+      ]
+    },
+    {
+      "name": "随机函数",
+      "description": "生成伪随机数或随机字节序列。",
+      "suitable_schemas": "需要生成唯一标识符、随机抽样或测试数据的表。",
+      "unsuitable_schemas": "确定性查询或无随机性需求的场景。",
+      "key_functions": [
+        "RANDOM", "RANDOMBLOB"
+      ]
+    }
+]
